@@ -1,0 +1,30 @@
+
+
+
+// Instantiate the module
+simpleTestModuleOne instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .userRunValue(userRunValue), 
+    .userRunClear(userRunClear), 
+    .register32CmdReq(register32CmdReq), 
+    .register32CmdAck(register32CmdAck), 
+    .register32WriteData(register32WriteData), 
+    .register32Address(register32Address), 
+    .register32WriteEn(register32WriteEn), 
+    .register32ReadDataValid(register32ReadDataValid), 
+    .register32ReadData(register32ReadData), 
+    .inputMemoryReadReq(inputMemoryReadReq), 
+    .inputMemoryReadAck(inputMemoryReadAck), 
+    .inputMemoryReadAdd(inputMemoryReadAdd), 
+    .inputMemoryReadDataValid(inputMemoryReadDataValid), 
+    .inputMemoryReadData(inputMemoryReadData), 
+    .outputMemoryWriteReq(outputMemoryWriteReq), 
+    .outputMemoryWriteAck(outputMemoryWriteAck), 
+    .outputMemoryWriteAdd(outputMemoryWriteAdd), 
+    .outputMemoryWriteData(outputMemoryWriteData), 
+    .outputMemoryWriteByteMask(outputMemoryWriteByteMask), 
+    .LED(LED)
+    );
+
+

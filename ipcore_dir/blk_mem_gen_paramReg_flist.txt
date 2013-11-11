@@ -1,0 +1,12 @@
+# Output products list for <blk_mem_gen_paramReg>
+blk_mem_gen_ds512.pdf
+blk_mem_gen_paramReg.asy
+blk_mem_gen_paramReg.gise
+blk_mem_gen_paramReg.ngc
+blk_mem_gen_paramReg.v
+blk_mem_gen_paramReg.veo
+blk_mem_gen_paramReg.xco
+blk_mem_gen_paramReg.xise
+blk_mem_gen_paramReg_flist.txt
+blk_mem_gen_paramReg_xmdf.tcl
+blk_mem_gen_readme.txt
