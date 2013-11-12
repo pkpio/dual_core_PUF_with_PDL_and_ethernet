@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.76xd on Tue Nov 12 08:32:29 2013
+// Written by: Map O.76xd on Tue Nov 12 16:40:38 2013
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -94,17 +94,18 @@ PIN
         = BEL
         "E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP"
         PINNAME CLKBU;
-TIMEGRP clk_user_interface = BEL "tm/PUF/a_0_0" BEL "tm/PUF/b_0_0" BEL
-        "tm/bitCount_7" BEL "tm/bitCount_6" BEL "tm/bitCount_5" BEL
-        "tm/bitCount_4" BEL "tm/bitCount_3" BEL "tm/bitCount_2" BEL
-        "tm/bitCount_1" BEL "tm/bitCount_0" BEL "tm/outputMemoryWriteData_0"
-        BEL "tm/a_0" BEL "tm/register32CmdReq" BEL "tm/b_0" BEL "tm/LED_0" BEL
-        "tm/inputDone" BEL "tm/outputMemoryWriteReq" BEL "tm/paramCount" BEL
-        "tm/inputMemoryReadReq" BEL "tm/register32Address_7" BEL
-        "tm/register32Address_6" BEL "tm/register32Address_5" BEL
-        "tm/register32Address_4" BEL "tm/register32Address_3" BEL
-        "tm/register32Address_2" BEL "tm/register32Address_1" BEL
-        "tm/register32Address_0" BEL "tm/inputMemoryReadAdd_16" BEL
+TIMEGRP clk_user_interface = BEL "tm/bitCount_7" BEL "tm/bitCount_6" BEL
+        "tm/bitCount_5" BEL "tm/bitCount_4" BEL "tm/bitCount_3" BEL
+        "tm/bitCount_2" BEL "tm/bitCount_1" BEL "tm/bitCount_0" BEL
+        "tm/register32CmdReq" BEL "tm/LED_0" BEL "tm/inputDone" BEL
+        "tm/paramCount" BEL "tm/outputMemoryWriteAdd_12" BEL
+        "tm/outputMemoryWriteAdd_11" BEL "tm/outputMemoryWriteAdd_10" BEL
+        "tm/outputMemoryWriteAdd_9" BEL "tm/outputMemoryWriteAdd_8" BEL
+        "tm/outputMemoryWriteAdd_7" BEL "tm/outputMemoryWriteAdd_6" BEL
+        "tm/outputMemoryWriteAdd_5" BEL "tm/outputMemoryWriteAdd_4" BEL
+        "tm/outputMemoryWriteAdd_3" BEL "tm/outputMemoryWriteAdd_2" BEL
+        "tm/outputMemoryWriteAdd_1" BEL "tm/outputMemoryWriteAdd_0" BEL
+        "tm/outputMemoryWriteReq" BEL "tm/inputMemoryReadAdd_16" BEL
         "tm/inputMemoryReadAdd_15" BEL "tm/inputMemoryReadAdd_14" BEL
         "tm/inputMemoryReadAdd_13" BEL "tm/inputMemoryReadAdd_12" BEL
         "tm/inputMemoryReadAdd_11" BEL "tm/inputMemoryReadAdd_10" BEL
@@ -113,8 +114,12 @@ TIMEGRP clk_user_interface = BEL "tm/PUF/a_0_0" BEL "tm/PUF/b_0_0" BEL
         "tm/inputMemoryReadAdd_5" BEL "tm/inputMemoryReadAdd_4" BEL
         "tm/inputMemoryReadAdd_3" BEL "tm/inputMemoryReadAdd_2" BEL
         "tm/inputMemoryReadAdd_1" BEL "tm/inputMemoryReadAdd_0" BEL
-        "tm/currState_2" BEL "tm/currState_1" BEL "tm/currState_0" BEL
-        "tm/userRunClear" BEL "E2M/EC/resetUserClockDomain" BEL
+        "tm/inputMemoryReadReq" BEL "tm/register32Address_7" BEL
+        "tm/register32Address_6" BEL "tm/register32Address_5" BEL
+        "tm/register32Address_4" BEL "tm/register32Address_3" BEL
+        "tm/register32Address_2" BEL "tm/register32Address_1" BEL
+        "tm/register32Address_0" BEL "tm/userRunClear" BEL "tm/currState_2"
+        BEL "tm/currState_1" BEL "E2M/EC/resetUserClockDomain" BEL
         "E2M/EC/userRunClearToggle" BEL "E2M/EC/userRunClearHistory" BEL
         "E2M/EC/userLogicReset" BEL
         "E2M/EC/inputMemoryReadDataValidPipeline_0" BEL
@@ -124,7 +129,16 @@ TIMEGRP clk_user_interface = BEL "tm/PUF/a_0_0" BEL "tm/PUF/b_0_0" BEL
         "E2M/EC/userRunRegisterSetToggleUserSide_0" BEL
         "E2M/EC/userRunRegisterSetToggleUserSide_1" BEL
         "E2M/EC/inputMemoryReadDataValidPipeline_1" BEL
-        "E2M/EC/userRunRegisterUserSide" PIN
+        "E2M/EC/tx_max_output_address_0" BEL "E2M/EC/tx_max_output_address_1"
+        BEL "E2M/EC/tx_max_output_address_2" BEL
+        "E2M/EC/tx_max_output_address_3" BEL "E2M/EC/tx_max_output_address_4"
+        BEL "E2M/EC/tx_max_output_address_5" BEL
+        "E2M/EC/tx_max_output_address_6" BEL "E2M/EC/tx_max_output_address_7"
+        BEL "E2M/EC/tx_max_output_address_8" BEL
+        "E2M/EC/tx_max_output_address_9" BEL "E2M/EC/tx_max_output_address_10"
+        BEL "E2M/EC/tx_max_output_address_11" BEL
+        "E2M/EC/tx_max_output_address_12" BEL "E2M/EC/userRunRegisterUserSide"
+        BEL "tm/currState_0" PIN
         "E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_pins<62>"
         PIN
         "E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_pins<63>"
@@ -163,34 +177,34 @@ PIN E2M/EC/SysACEToEthFifo/FIFO18_inst_pins<63> = BEL
         "E2M/EC/SysACEToEthFifo/FIFO18_inst" PINNAME RDRCLK;
 PIN E2M/EC/EthToSysACEFifo/FIFO18_inst_pins<73> = BEL
         "E2M/EC/EthToSysACEFifo/FIFO18_inst" PINNAME WRCLK;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<31> = BEL
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKBU;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<109> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<25> = BEL
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKBL;
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<58> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
-        REGCLKBU;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<33> = BEL
+        REGCLKBL;
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<25> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME CLKBL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<111> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<58> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
         REGCLKBL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24> = BEL
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKAL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25> = BEL
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKBL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30> = BEL
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKAU;
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31> = BEL
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKBU;
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
-        REGCLKAL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58> = BEL
+        REGCLKAU;
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
-        REGCLKBL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24> = BEL
+        REGCLKBU;
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME CLKAL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME CLKBL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
         REGCLKAL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
         REGCLKBL;
 PIN
@@ -584,31 +598,32 @@ TIMEGRP clk_125_eth = BEL "E2M/emac_ll/tx_pre_reset_0_i_0" BEL
         "E2M/EC/tx_ll_sof_out" BEL "E2M/EC/tx_ll_eof_out" BEL
         "E2M/EC/register32InternalWriteEnable" BEL
         "E2M/EC/executeAfterReceive" BEL "E2M/EC/softReset" BEL
-        "E2M/EC/rx_header_buffer_len_6" BEL "E2M/EC/rx_header_buffer_len_7"
-        BEL "E2M/EC/rx_header_buffer_len_5" BEL
-        "E2M/EC/rx_header_buffer_len_4" BEL "E2M/EC/rx_header_buffer_len_1"
-        BEL "E2M/EC/rx_header_buffer_len_3" BEL
-        "E2M/EC/rx_header_buffer_len_2" BEL "E2M/EC/rx_header_buffer_len_0"
-        BEL "E2M/EC/rx_header_counter_0" BEL "E2M/EC/rx_header_counter_1" BEL
-        "E2M/EC/rx_header_counter_2" BEL "E2M/EC/rx_header_counter_3" BEL
-        "E2M/EC/tx_header_counter_0" BEL "E2M/EC/tx_header_counter_1" BEL
-        "E2M/EC/tx_header_counter_2" BEL "E2M/EC/tx_header_counter_3" BEL
-        "E2M/EC/tx_header_counter_4" BEL "E2M/EC/rx_error_status_0" BEL
-        "E2M/EC/rx_error_status_1" BEL "E2M/EC/rx_error_status_2" BEL
-        "E2M/EC/rx_error_status_3" BEL "E2M/EC/rx_error_status_4" BEL
-        "E2M/EC/rx_error_status_5" BEL "E2M/EC/rx_error_status_6" BEL
-        "E2M/EC/rx_command_counter_0" BEL "E2M/EC/rx_command_counter_1" BEL
-        "E2M/EC/rx_command_counter_2" BEL "E2M/EC/tx_header_buffer_len_0" BEL
-        "E2M/EC/tx_header_buffer_len_1" BEL "E2M/EC/tx_header_buffer_len_2"
-        BEL "E2M/EC/tx_header_buffer_len_3" BEL
-        "E2M/EC/tx_header_buffer_len_4" BEL "E2M/EC/tx_header_buffer_len_5"
-        BEL "E2M/EC/tx_header_buffer_len_6" BEL
-        "E2M/EC/tx_header_buffer_len_7" BEL "E2M/EC/tx_header_buffer_len_8"
-        BEL "E2M/EC/tx_header_buffer_len_9" BEL
-        "E2M/EC/tx_header_buffer_len_10" BEL "E2M/EC/tx_header_buffer_len_11"
-        BEL "E2M/EC/tx_header_buffer_len_12" BEL
-        "E2M/EC/tx_header_buffer_len_13" BEL "E2M/EC/tx_header_buffer_len_14"
-        BEL "E2M/EC/tx_header_buffer_len_15" BEL
+        "E2M/EC/rx_header_buffer_len_6" BEL "E2M/EC/resetMaxOutputAddress" BEL
+        "E2M/EC/rx_header_buffer_len_7" BEL "E2M/EC/rx_header_buffer_len_5"
+        BEL "E2M/EC/rx_header_buffer_len_4" BEL
+        "E2M/EC/rx_header_buffer_len_1" BEL "E2M/EC/rx_header_buffer_len_3"
+        BEL "E2M/EC/rx_header_buffer_len_2" BEL
+        "E2M/EC/rx_header_buffer_len_0" BEL "E2M/EC/rx_header_counter_0" BEL
+        "E2M/EC/rx_header_counter_1" BEL "E2M/EC/rx_header_counter_2" BEL
+        "E2M/EC/rx_header_counter_3" BEL "E2M/EC/tx_header_counter_0" BEL
+        "E2M/EC/tx_header_counter_1" BEL "E2M/EC/tx_header_counter_2" BEL
+        "E2M/EC/tx_header_counter_3" BEL "E2M/EC/tx_header_counter_4" BEL
+        "E2M/EC/rx_error_status_0" BEL "E2M/EC/rx_error_status_1" BEL
+        "E2M/EC/rx_error_status_2" BEL "E2M/EC/rx_error_status_3" BEL
+        "E2M/EC/rx_error_status_4" BEL "E2M/EC/rx_error_status_5" BEL
+        "E2M/EC/rx_error_status_6" BEL "E2M/EC/rx_command_counter_0" BEL
+        "E2M/EC/rx_command_counter_1" BEL "E2M/EC/rx_command_counter_2" BEL
+        "E2M/EC/tx_header_buffer_len_0" BEL "E2M/EC/tx_header_buffer_len_1"
+        BEL "E2M/EC/tx_header_buffer_len_2" BEL
+        "E2M/EC/tx_header_buffer_len_3" BEL "E2M/EC/tx_header_buffer_len_4"
+        BEL "E2M/EC/tx_header_buffer_len_5" BEL
+        "E2M/EC/tx_header_buffer_len_6" BEL "E2M/EC/tx_header_buffer_len_7"
+        BEL "E2M/EC/tx_header_buffer_len_8" BEL
+        "E2M/EC/tx_header_buffer_len_9" BEL "E2M/EC/tx_header_buffer_len_10"
+        BEL "E2M/EC/tx_header_buffer_len_11" BEL
+        "E2M/EC/tx_header_buffer_len_12" BEL "E2M/EC/tx_header_buffer_len_13"
+        BEL "E2M/EC/tx_header_buffer_len_14" BEL
+        "E2M/EC/tx_header_buffer_len_15" BEL
         "E2M/EC/tx_header_buffer_dest_add_0" BEL
         "E2M/EC/tx_header_buffer_dest_add_1" BEL
         "E2M/EC/tx_header_buffer_dest_add_2" BEL
@@ -1021,35 +1036,33 @@ TIMEGRP clk_125_eth = BEL "E2M/emac_ll/tx_pre_reset_0_i_0" BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_valid" BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd7" BEL
         "E2M/EC/tx_state_0" BEL "E2M/EC/tx_state_1" BEL "E2M/EC/rx_state_0"
-        BEL "E2M/EC/rx_ll_dst_rdy_out" BEL "E2M/EC/tx_readback_after_execute"
-        BEL "E2M/EC/ethToFifoWrite" BEL "E2M/EC/fifoToEthRead" BEL
-        "E2M/EC/rx_state_3" BEL "E2M/EC/rx_state_1" BEL "E2M/EC/rx_state_2"
-        BEL "E2M/EC/rx_state_4" BEL
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_3_1" BEL
-        "E2M/EC/tx_state_1_1" BEL "E2M/EC/rx_state_1_1" BEL
-        "E2M/EC/rx_state_2_1" BEL
+        BEL "E2M/EC/rx_state_2" BEL "E2M/EC/rx_state_4" BEL
+        "E2M/EC/rx_ll_dst_rdy_out" BEL "E2M/EC/tx_readback_after_execute" BEL
+        "E2M/EC/ethToFifoWrite" BEL "E2M/EC/fifoToEthRead" BEL
+        "E2M/EC/rx_state_3" BEL "E2M/EC/rx_state_1" BEL
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_7_1" BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_rd_valid_pipe_1"
         BEL "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_valid_pipe_1" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<31>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<109>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<33>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<111>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<25>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<58>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<25>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<58>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>" PIN
         "E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_pins<64>"
         PIN
         "E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_pins<65>"
@@ -1273,32 +1286,32 @@ TIMEGRP hard_reset = BEL "E2M/emac_ll/tx_pre_reset_0_i_0" BEL
         "E2M/EC/sysACE_MPDATA_In_3" BEL "E2M/EC/sysACE_MPDATA_In_2" BEL
         "E2M/EC/sysACE_MPDATA_In_0" BEL "E2M/delayCtrl0_MapLib_replicate13"
         BEL "E2M/delayCtrl0_MapLib_replicate1" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<31>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<109>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<33>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<111>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58>";
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<25>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<58>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<25>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<58>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>";
 PIN E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac_pins<18> = BEL
         "E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac" PINNAME
         CLIENTEMAC0RXCLIENTCLKIN;
 PIN E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac_pins<231> =
         BEL "E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac"
         PINNAME PHYEMAC0RXCLK;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<30> = BEL
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKAU;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<108> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<24> = BEL
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKAL;
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<57> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
-        REGCLKAU;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<32> = BEL
+        REGCLKAL;
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<24> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME CLKAL;
-PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<110> = BEL
+PIN E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<57> = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
         REGCLKAL;
 TIMEGRP phy_clk_rx0 = BEL "E2M/emac_ll/rx_pre_reset_0_i_0" BEL
@@ -1427,10 +1440,10 @@ TIMEGRP phy_clk_rx0 = BEL "E2M/emac_ll/rx_pre_reset_0_i_0" BEL
         BEL "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_0" BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_gf_pipe_1" BEL
         "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_gf_pipe_1" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<30>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<108>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<32>" PIN
-        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<110>";
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<24>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<57>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<24>" PIN
+        "E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<57>";
 TIMEGRP tx_metastable_0 = BEL
         "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_0"
         BEL "E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog"
@@ -1741,7 +1754,7 @@ TIMEGRP tx_max_output_target = BEL "E2M/EC/tx_ll_src_rdy_out" BEL
         "E2M/EC/oldReadAddress_7" BEL "E2M/EC/oldReadAddress_8" BEL
         "E2M/EC/oldReadAddress_9" BEL "E2M/EC/oldReadAddress_10" BEL
         "E2M/EC/oldReadAddress_11" BEL "E2M/EC/oldReadAddress_12" BEL
-        "E2M/EC/tx_state_0" BEL "E2M/EC/tx_state_1" BEL "E2M/EC/tx_state_1_1";
+        "E2M/EC/tx_state_0" BEL "E2M/EC/tx_state_1";
 PIN E2M/EC/SysACEToEthFifo/FIFO18_inst_pins<71> = BEL
         "E2M/EC/SysACEToEthFifo/FIFO18_inst" PINNAME WRCLK;
 TIMEGRP sysACE_clk_o = BEL "E2M/EC/sysACE_MPADD_0" BEL "E2M/EC/sysACE_MPADD_1"

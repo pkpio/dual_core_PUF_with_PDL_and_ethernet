@@ -23,10 +23,23 @@
 (* keep="true" *)
 
 module DFF_32 #(parameter DATA_WIDTH = 32)(
-data   , // Data Input
-clk     , // LatchInput
-q        // Q output
+        data,   // Data Input
+        clk,    // LatchInput
+        q       // Q output
     );
+
+input data;
+input clk;
+output q;
+
+(* KEEP = "TRUE" *) DFF dff_inst (
+                         data,
+                         clk,
+                         q
+                     );
+
+//Current 1-bit implementation doesn't require this
+/*
 input [DATA_WIDTH-1:0] data, clk;
 output [DATA_WIDTH-1:0] q;
 
@@ -306,7 +319,6 @@ dlatch d31 (
  en[31],
  q[31] );
 
-
+*/
 
 endmodule
-*/

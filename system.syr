@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: system.prj
 
@@ -181,13 +181,14 @@ Analyzing hierarchy for module <simpleTestModuleOne> in library <work> with para
 	IDLE = "00000000000000000000000000000000"
 	INMEM_ADDRESS_WIDTH = "00000000000000000000000000010001"
 	INMEM_BYTE_WIDTH = "00000000000000000000000000000001"
-	LENGTH = "00000000000000000000000011111111"
 	OUTMEM_ADDRESS_WIDTH = "00000000000000000000000000001101"
 	OUTMEM_BYTE_WIDTH = "00000000000000000000000000000001"
 	READ = "00000000000000000000000000000010"
 	READING_IN_PARAMETERS = "00000000000000000000000000000001"
+	READ_LENGTH = "00000000000000000000000111111111"
 	WAIT_READ = "00000000000000000000000000000011"
 	WRITE = "00000000000000000000000000000101"
+	WRITE_LENGTH = "00000000000000000000000000011111"
 
 Analyzing hierarchy for module <emac_single_locallink> in library <work>.
 
@@ -318,68 +319,6 @@ Analyzing hierarchy for module <rx_client_fifo_8> in library <work> with paramet
 	QUEUE_SOF_s = "100"
 	SOF_s = "101"
 	WAIT_s = "000"
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
-
-Analyzing hierarchy for module <DFF> in library <work>.
 
 Analyzing hierarchy for module <DFF> in library <work>.
 
@@ -1223,13 +1162,14 @@ Analyzing module <simpleTestModuleOne> in library <work>.
 	IDLE = 32'sb00000000000000000000000000000000
 	INMEM_ADDRESS_WIDTH = 32'sb00000000000000000000000000010001
 	INMEM_BYTE_WIDTH = 32'sb00000000000000000000000000000001
-	LENGTH = 32'sb00000000000000000000000011111111
 	OUTMEM_ADDRESS_WIDTH = 32'sb00000000000000000000000000001101
 	OUTMEM_BYTE_WIDTH = 32'sb00000000000000000000000000000001
 	READ = 32'sb00000000000000000000000000000010
 	READING_IN_PARAMETERS = 32'sb00000000000000000000000000000001
+	READ_LENGTH = 32'sb00000000000000000000000111111111
 	WAIT_READ = 32'sb00000000000000000000000000000011
 	WRITE = 32'sb00000000000000000000000000000101
+	WRITE_LENGTH = 32'sb00000000000000000000000000011111
 Module <simpleTestModuleOne> is correct for synthesis.
  
 Analyzing module <top_PUF> in library <work>.
@@ -1244,6 +1184,7 @@ Module <top_PUF> is correct for synthesis.
     Set user-defined property "KEEP =  TRUE" for signal <out2>.
     Set user-defined property "KEEP =  TRUE" for signal <c_0>.
     Set user-defined property "KEEP =  TRUE" for signal <c_1>.
+    Set user-defined property "KEEP =  TRUE" for signal <trig>.
     Set user-defined property "KEEP =  TRUE" for signal <a_0>.
     Set user-defined property "KEEP =  TRUE" for signal <a_1>.
     Set user-defined property "KEEP =  TRUE" for signal <b_0>.
@@ -1318,133 +1259,9 @@ Module <DFF_32> is correct for synthesis.
  
 WARNING:Xst:37 - Detected unknown constraint/property "EQUIVALCLKT_REGISTER_REMOVAL". This constraint/property is not supported by the current software release and will be ignored.
     Set user-defined property "KEEP_HIERARCHY =  TRUE" for unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d0> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d1> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d10> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d11> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d12> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d13> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d14> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d15> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d16> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d17> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d18> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d19> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d2> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d20> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d21> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d22> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d23> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d24> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d25> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d26> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d27> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d28> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d29> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d3> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d30> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d31> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d4> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d5> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d6> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d7> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d8> in unit <DFF_32>.
-    Set user-defined property "KEEP =  TRUE" for instance <d9> in unit <DFF_32>.
-Analyzing module <DFF.1> in library <work>.
-Module <DFF.1> is correct for synthesis.
- 
-Analyzing module <DFF.2> in library <work>.
-Module <DFF.2> is correct for synthesis.
- 
-Analyzing module <DFF.3> in library <work>.
-Module <DFF.3> is correct for synthesis.
- 
-Analyzing module <DFF.4> in library <work>.
-Module <DFF.4> is correct for synthesis.
- 
-Analyzing module <DFF.5> in library <work>.
-Module <DFF.5> is correct for synthesis.
- 
-Analyzing module <DFF.6> in library <work>.
-Module <DFF.6> is correct for synthesis.
- 
-Analyzing module <DFF.7> in library <work>.
-Module <DFF.7> is correct for synthesis.
- 
-Analyzing module <DFF.8> in library <work>.
-Module <DFF.8> is correct for synthesis.
- 
-Analyzing module <DFF.9> in library <work>.
-Module <DFF.9> is correct for synthesis.
- 
-Analyzing module <DFF.10> in library <work>.
-Module <DFF.10> is correct for synthesis.
- 
-Analyzing module <DFF.11> in library <work>.
-Module <DFF.11> is correct for synthesis.
- 
-Analyzing module <DFF.12> in library <work>.
-Module <DFF.12> is correct for synthesis.
- 
-Analyzing module <DFF.13> in library <work>.
-Module <DFF.13> is correct for synthesis.
- 
-Analyzing module <DFF.14> in library <work>.
-Module <DFF.14> is correct for synthesis.
- 
-Analyzing module <DFF.15> in library <work>.
-Module <DFF.15> is correct for synthesis.
- 
-Analyzing module <DFF.16> in library <work>.
-Module <DFF.16> is correct for synthesis.
- 
-Analyzing module <DFF.17> in library <work>.
-Module <DFF.17> is correct for synthesis.
- 
-Analyzing module <DFF.18> in library <work>.
-Module <DFF.18> is correct for synthesis.
- 
-Analyzing module <DFF.19> in library <work>.
-Module <DFF.19> is correct for synthesis.
- 
-Analyzing module <DFF.20> in library <work>.
-Module <DFF.20> is correct for synthesis.
- 
-Analyzing module <DFF.21> in library <work>.
-Module <DFF.21> is correct for synthesis.
- 
-Analyzing module <DFF.22> in library <work>.
-Module <DFF.22> is correct for synthesis.
- 
-Analyzing module <DFF.23> in library <work>.
-Module <DFF.23> is correct for synthesis.
- 
-Analyzing module <DFF.24> in library <work>.
-Module <DFF.24> is correct for synthesis.
- 
-Analyzing module <DFF.25> in library <work>.
-Module <DFF.25> is correct for synthesis.
- 
-Analyzing module <DFF.26> in library <work>.
-Module <DFF.26> is correct for synthesis.
- 
-Analyzing module <DFF.27> in library <work>.
-Module <DFF.27> is correct for synthesis.
- 
-Analyzing module <DFF.28> in library <work>.
-Module <DFF.28> is correct for synthesis.
- 
-Analyzing module <DFF.29> in library <work>.
-Module <DFF.29> is correct for synthesis.
- 
-Analyzing module <DFF.30> in library <work>.
-Module <DFF.30> is correct for synthesis.
- 
-Analyzing module <DFF.31> in library <work>.
-Module <DFF.31> is correct for synthesis.
- 
-Analyzing module <DFF.32> in library <work>.
-Module <DFF.32> is correct for synthesis.
+    Set user-defined property "KEEP =  TRUE" for instance <dff_inst> in unit <DFF_32>.
+Analyzing module <DFF> in library <work>.
+Module <DFF> is correct for synthesis.
  
 
 =========================================================================
@@ -1452,7 +1269,6 @@ Module <DFF.32> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <outputMemoryWriteAdd> in unit <simpleTestModuleOne> has a constant value of 0000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LED<7>> in unit <simpleTestModuleOne> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LED<6>> in unit <simpleTestModuleOne> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LED<5>> in unit <simpleTestModuleOne> has a constant value of 0 during circuit operation. The register is replaced by logic.
@@ -1466,7 +1282,8 @@ INFO:Xst:2679 - Register <PUFExDoneReg> in unit <simpleTestModuleOne> has a cons
 
 Synthesizing Unit <adder_32_1>.
     Related source file is "adder_32.v".
-    Found 32-bit adder for signal <c>.
+WARNING:Xst:737 - Found 1-bit latch for signal <c>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit adder for signal <c$add0000> created at line 37.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <adder_32_1> synthesized.
@@ -1474,266 +1291,19 @@ Unit <adder_32_1> synthesized.
 
 Synthesizing Unit <adder_32_2>.
     Related source file is "adder_32.v".
-    Found 32-bit adder for signal <c>.
+WARNING:Xst:737 - Found 1-bit latch for signal <c>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit adder for signal <c$add0000> created at line 37.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <adder_32_2> synthesized.
 
 
-Synthesizing Unit <DFF_1>.
+Synthesizing Unit <DFF>.
     Related source file is "DLatch.v".
     Found 1-bit register for signal <q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
-Unit <DFF_1> synthesized.
-
-
-Synthesizing Unit <DFF_2>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_2> synthesized.
-
-
-Synthesizing Unit <DFF_3>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_3> synthesized.
-
-
-Synthesizing Unit <DFF_4>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_4> synthesized.
-
-
-Synthesizing Unit <DFF_5>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_5> synthesized.
-
-
-Synthesizing Unit <DFF_6>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_6> synthesized.
-
-
-Synthesizing Unit <DFF_7>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_7> synthesized.
-
-
-Synthesizing Unit <DFF_8>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_8> synthesized.
-
-
-Synthesizing Unit <DFF_9>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_9> synthesized.
-
-
-Synthesizing Unit <DFF_10>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_10> synthesized.
-
-
-Synthesizing Unit <DFF_11>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_11> synthesized.
-
-
-Synthesizing Unit <DFF_12>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_12> synthesized.
-
-
-Synthesizing Unit <DFF_13>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_13> synthesized.
-
-
-Synthesizing Unit <DFF_14>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_14> synthesized.
-
-
-Synthesizing Unit <DFF_15>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_15> synthesized.
-
-
-Synthesizing Unit <DFF_16>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_16> synthesized.
-
-
-Synthesizing Unit <DFF_17>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_17> synthesized.
-
-
-Synthesizing Unit <DFF_18>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_18> synthesized.
-
-
-Synthesizing Unit <DFF_19>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_19> synthesized.
-
-
-Synthesizing Unit <DFF_20>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_20> synthesized.
-
-
-Synthesizing Unit <DFF_21>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_21> synthesized.
-
-
-Synthesizing Unit <DFF_22>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_22> synthesized.
-
-
-Synthesizing Unit <DFF_23>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_23> synthesized.
-
-
-Synthesizing Unit <DFF_24>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_24> synthesized.
-
-
-Synthesizing Unit <DFF_25>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_25> synthesized.
-
-
-Synthesizing Unit <DFF_26>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_26> synthesized.
-
-
-Synthesizing Unit <DFF_27>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_27> synthesized.
-
-
-Synthesizing Unit <DFF_28>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_28> synthesized.
-
-
-Synthesizing Unit <DFF_29>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_29> synthesized.
-
-
-Synthesizing Unit <DFF_30>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_30> synthesized.
-
-
-Synthesizing Unit <DFF_31>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_31> synthesized.
-
-
-Synthesizing Unit <DFF_33>.
-    Related source file is "DLatch.v".
-    Found 1-bit register for signal <q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <DFF_33> synthesized.
+Unit <DFF> synthesized.
 
 
 Synthesizing Unit <gmii_if>.
@@ -2105,27 +1675,31 @@ Synthesizing Unit <top_PUF>.
     Related source file is "top_PUF.v".
 WARNING:Xst:647 - Input <config1<127:125>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <config2<127:125>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1580 - Signal <c_1<31:1>> with a "KEEP" property is assigned but never used. Related logic will not be removed.
-WARNING:Xst:1580 - Signal <c_0<31:1>> with a "KEEP" property is assigned but never used. Related logic will not be removed.
-    Found 32-bit register for signal <a_0>.
-    Found 32-bit register for signal <a_1>.
-    Found 32-bit register for signal <b_0>.
-    Found 32-bit register for signal <b_1>.
+WARNING:Xst:653 - Signal <trig> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found 1-bit register for signal <a_0>.
+    Found 1-bit register for signal <a_1>.
+    Found 1-bit register for signal <b_0>.
+    Found 1-bit register for signal <b_1>.
     Summary:
-	inferred 128 D-type flip-flop(s).
+	inferred   4 D-type flip-flop(s).
 Unit <top_PUF> synthesized.
 
 
 Synthesizing Unit <simpleTestModuleOne>.
     Related source file is "simpleTestModuleOne.v".
-WARNING:Xst:646 - Signal <results<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wlength<31:13>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <wlength<12:0>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000011111.
+WARNING:Xst:653 - Signal <test<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:1780 - Signal <rlength<31:17>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <rlength<16:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000111111111.
+WARNING:Xst:646 - Signal <resultsReg<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <regCount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <length<31:17>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <length<16:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000011111111.
+WARNING:Xst:646 - Signal <a<31:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PUFExStart> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PUFExDone> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <userRunClear>.
     Found 1-bit register for signal <register32CmdReq>.
+    Found 13-bit register for signal <outputMemoryWriteAdd>.
     Found 17-bit register for signal <inputMemoryReadAdd>.
     Found 1-bit register for signal <outputMemoryWriteReq>.
     Found 1-bit register for signal <inputMemoryReadReq>.
@@ -2136,18 +1710,20 @@ WARNING:Xst:1780 - Signal <PUFExDone> is never used or assigned. This unconnecte
     Found 32-bit register for signal <b>.
     Found 8-bit up counter for signal <bitCount>.
     Found 3-bit register for signal <currState>.
-    Found 8-bit comparator lessequal for signal <currState$cmp_le0002> created at line 235.
-    Found 8-bit comparator lessequal for signal <currState$cmp_le0003> created at line 256.
+    Found 8-bit comparator lessequal for signal <currState$cmp_le0001> created at line 240.
     Found 1-bit register for signal <inputDone>.
-    Found 17-bit adder for signal <inputMemoryReadAdd$addsub0000> created at line 221.
+    Found 17-bit adder for signal <inputMemoryReadAdd$addsub0000> created at line 226.
+    Found 13-bit adder for signal <outputMemoryWriteAdd$addsub0000> created at line 320.
+    Found 13-bit comparator greater for signal <outputMemoryWriteData$cmp_gt0000> created at line 309.
     Found 1-bit register for signal <paramCount>.
-    Found 8-bit adder for signal <register32Address$addsub0000> created at line 184.
-    Found 32-bit register for signal <test>.
-    Found 8-bit comparator greater for signal <test$cmp_gt0000> created at line 256.
+    Found 8-bit adder for signal <register32Address$addsub0000> created at line 189.
+    Found 32-bit register for signal <resultsReg>.
+    Found 8-bit register for signal <test<7:0>>.
+    Found 8-bit comparator greater for signal <test_7$cmp_gt0000> created at line 240.
     Summary:
 	inferred   1 Counter(s).
-	inferred 139 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
+	inferred 160 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
 	inferred   3 Comparator(s).
 Unit <simpleTestModuleOne> synthesized.
 
@@ -2185,16 +1761,18 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 24
+# Adders/Subtractors                                   : 25
+ 1-bit adder                                           : 2
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
+ 13-bit adder                                          : 1
  13-bit adder carry out                                : 1
  16-bit adder                                          : 1
  16-bit subtractor                                     : 1
  17-bit adder                                          : 1
  18-bit subtractor                                     : 1
  3-bit subtractor                                      : 2
- 32-bit adder                                          : 4
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 2
  33-bit subtractor                                     : 1
  4-bit subtractor                                      : 1
@@ -2209,29 +1787,31 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 324
- 1-bit register                                        : 249
+# Registers                                            : 302
+ 1-bit register                                        : 230
  12-bit register                                       : 12
- 13-bit register                                       : 3
+ 13-bit register                                       : 4
  16-bit register                                       : 5
  17-bit register                                       : 1
  2-bit register                                        : 4
  3-bit register                                        : 5
- 32-bit register                                       : 14
+ 32-bit register                                       : 10
  4-bit register                                        : 1
  40-bit register                                       : 1
  48-bit register                                       : 4
  5-bit register                                        : 2
  7-bit register                                        : 3
  8-bit register                                        : 20
+# Latches                                              : 2
+ 1-bit latch                                           : 2
 # Comparators                                          : 14
- 13-bit comparator greater                             : 1
+ 13-bit comparator greater                             : 2
  16-bit comparator greatequal                          : 1
  18-bit comparator not equal                           : 1
  32-bit comparator greater                             : 3
  33-bit comparator greater                             : 2
  8-bit comparator greater                              : 4
- 8-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 1
 # Xors                                                 : 29
  1-bit xor2                                            : 29
 
@@ -2308,255 +1888,195 @@ Reading core <ipcore_dir/blk_mem_gen_paramReg.ngc>.
 Loading core <blk_mem_gen_inputMem> for timing and area information for instance <memInputData>.
 Loading core <blk_mem_gen_outputMem> for timing and area information for instance <memOutputData>.
 Loading core <blk_mem_gen_paramReg> for timing and area information for instance <register32File>.
-WARNING:Xst:1290 - Hierarchical block <d8> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d9> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d10> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d11> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d12> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d13> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d14> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d15> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d16> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d17> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d18> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d19> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d20> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d21> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d22> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d23> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d24> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d25> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d26> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d27> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d28> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d29> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d30> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d31> is unconnected in block <d32>.
-   It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <a_0_12> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_12> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<12> and a_1<12> a_1<12> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_0> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_0> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<0> and a_1<0> a_1<0> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_13> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_13> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<13> and a_1<13> a_1<13> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_1> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_1> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<1> and a_1<1> a_1<1> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_14> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_14> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<14> and a_1<14> a_1<14> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_2> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_2> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<2> and a_1<2> a_1<2> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_15> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_15> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<15> and a_1<15> a_1<15> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_20> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_20> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<20> and a_1<20> a_1<20> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_3> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_3> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<3> and a_1<3> a_1<3> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_16> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_16> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<16> and a_1<16> a_1<16> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_21> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_21> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<21> and a_1<21> a_1<21> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_4> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_4> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<4> and a_1<4> a_1<4> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_17> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_17> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<17> and a_1<17> a_1<17> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_22> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_22> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<22> and a_1<22> a_1<22> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_5> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_5> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<5> and a_1<5> a_1<5> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_18> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_18> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<18> and a_1<18> a_1<18> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_23> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_23> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<23> and a_1<23> a_1<23> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_6> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_6> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<6> and a_1<6> a_1<6> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_19> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_19> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<19> and a_1<19> a_1<19> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_24> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_24> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<24> and a_1<24> a_1<24> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_10> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_10> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<10> and b_1<10> b_1<10> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_7> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_7> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<7> and a_1<7> a_1<7> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_25> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_25> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<25> and a_1<25> a_1<25> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_30> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_30> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<30> and a_1<30> a_1<30> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_11> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_11> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<11> and b_1<11> b_1<11> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_8> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_8> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<8> and a_1<8> a_1<8> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_26> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_26> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<26> and a_1<26> a_1<26> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_31> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_31> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<31> and a_1<31> a_1<31> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_12> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_12> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<12> and b_1<12> b_1<12> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_9> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_9> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<9> and a_1<9> a_1<9> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_27> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_27> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<27> and a_1<27> a_1<27> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_13> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_13> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<13> and b_1<13> b_1<13> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_28> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_28> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<28> and a_1<28> a_1<28> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_14> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_14> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<14> and b_1<14> b_1<14> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_29> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_29> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<29> and a_1<29> a_1<29> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_15> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_15> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<15> and b_1<15> b_1<15> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_20> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_20> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<20> and b_1<20> b_1<20> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_16> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_16> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<16> and b_1<16> b_1<16> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_21> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_21> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<21> and b_1<21> b_1<21> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_17> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_17> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<17> and b_1<17> b_1<17> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_22> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_22> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<22> and b_1<22> b_1<22> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_18> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_18> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<18> and b_1<18> b_1<18> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_23> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_23> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<23> and b_1<23> b_1<23> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_19> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_19> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<19> and b_1<19> b_1<19> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_24> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_24> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<24> and b_1<24> b_1<24> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_25> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_25> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<25> and b_1<25> b_1<25> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_30> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_30> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<30> and b_1<30> b_1<30> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_26> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_26> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<26> and b_1<26> b_1<26> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_31> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_31> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<31> and b_1<31> b_1<31> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_27> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_27> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<27> and b_1<27> b_1<27> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_28> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_28> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<28> and b_1<28> b_1<28> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_29> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_29> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<29> and b_1<29> b_1<29> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_0> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_0> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<0> and b_1<0> b_1<0> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_1> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_1> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<1> and b_1<1> b_1<1> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_2> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_2> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<2> and b_1<2> b_1<2> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_3> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_3> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<3> and b_1<3> b_1<3> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_4> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_4> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<4> and b_1<4> b_1<4> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_5> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_5> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<5> and b_1<5> b_1<5> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_6> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_6> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<6> and b_1<6> b_1<6> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_7> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_7> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<7> and b_1<7> b_1<7> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_8> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_8> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<8> and b_1<8> b_1<8> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_9> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_9> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0<9> and b_1<9> b_1<9> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_10> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_10> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<10> and a_1<10> a_1<10> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_11> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_11> 
-WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0<11> and a_1<11> a_1<11> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <test_8> in Unit <tm> is equivalent to the following 23 FFs/Latches, which will be removed : <test_9> <test_10> <test_11> <test_12> <test_13> <test_14> <test_15> <test_16> <test_17> <test_18> <test_19> <test_20> <test_21> <test_22> <test_23> <test_24> <test_25> <test_26> <test_27> <test_28> <test_29> <test_30> <test_31> 
-WARNING:Xst:1710 - FF/Latch <test_8> (without init value) has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_7> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_6> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_5> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_4> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_3> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_2> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_1> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_12> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_11> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_10> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_9> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_8> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_7> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_6> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_5> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_4> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_3> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_2> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_1> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tx_max_output_address_0> has a constant value of 0 in block <EC>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <a_0> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <a_1> 
+WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal a_0 and a_1 a_1 signal will be lost.
+INFO:Xst:2261 - The FF/Latch <b_0> in Unit <PUF> is equivalent to the following FF/Latch, which will be removed : <b_1> 
+WARNING:Xst:638 - in unit tm/PUF Conflict on KEEP property on signal b_0 and b_1 b_1 signal will be lost.
+INFO:Xst:2261 - The FF/Latch <resultsReg_1> in Unit <tm> is equivalent to the following 6 FFs/Latches, which will be removed : <resultsReg_2> <resultsReg_3> <resultsReg_4> <resultsReg_5> <resultsReg_6> <resultsReg_7> 
+INFO:Xst:2261 - The FF/Latch <outputMemoryWriteData_1> in Unit <tm> is equivalent to the following 6 FFs/Latches, which will be removed : <outputMemoryWriteData_2> <outputMemoryWriteData_3> <outputMemoryWriteData_4> <outputMemoryWriteData_5> <outputMemoryWriteData_6> <outputMemoryWriteData_7> 
 WARNING:Xst:1710 - FF/Latch <rd_enable_delay> (without init value) has a constant value of 1 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <c>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <resultsReg_1> (without init value) has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (without init value) has a constant value of 1 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_1> has a constant value of 0 in block <tm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <tx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <tx_fifo_i>.
 WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <rx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <resetMaxOutputAddress> of sequential type is unconnected in block <EC>.
-WARNING:Xst:1290 - Hierarchical block <d1> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d2> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d3> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d4> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d5> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d6> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d7> is unconnected in block <d32>.
-   It will be removed from the design.
-WARNING:Xst:2404 -  FFs/Latches <test<31:8>> (without init value) have a constant value of 0 in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_1> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_2> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_3> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_4> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_5> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_6> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_7> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_8> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_9> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_10> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_11> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_12> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_13> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_14> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_15> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_16> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_17> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_18> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_19> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_20> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_21> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_22> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_23> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_24> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_25> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_26> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_27> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_28> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_29> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_30> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <b_31> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_8> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_9> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_10> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_11> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_12> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_13> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_14> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_15> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_16> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_17> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_18> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_19> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_20> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_21> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_22> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_23> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_24> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_25> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_26> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_27> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_28> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_29> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_30> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <resultsReg_31> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_1> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_2> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_3> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_4> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_5> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_6> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_7> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_8> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_9> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_10> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_11> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_12> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_13> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_14> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_15> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_16> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_17> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_18> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_19> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_20> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_21> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_22> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_23> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_24> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_25> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_26> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_27> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_28> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_29> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_30> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <a_31> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2404 -  FFs/Latches <resultsReg<31:1>> (without init value) have a constant value of 0 in block <simpleTestModuleOne>.
 
 Synthesizing (advanced) Unit <tx_client_fifo_8>.
 INFO:Xst:2774 - HDL ADVISOR - ASYNC_REG property attached to signal wr_rd_addr may hinder XST clustering optimizations.
 Unit <tx_client_fifo_8> synthesized (advanced).
 WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_client_fifo_8>.
+WARNING:Xst:2677 - Node <b_1> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_2> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_3> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_4> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_5> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_6> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_7> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_8> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_9> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_10> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_11> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_12> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_13> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_14> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_15> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_16> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_17> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_18> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_19> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_20> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_21> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_22> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_23> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_24> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_25> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_26> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_27> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_28> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_29> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_30> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <b_31> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_1> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_2> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_3> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_4> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_5> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_6> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_7> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_8> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_9> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_10> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_11> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_12> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_13> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_14> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_15> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_16> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_17> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_18> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_19> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_20> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_21> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_22> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_23> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_24> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_25> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_26> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_27> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_28> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_29> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_30> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <a_31> of sequential type is unconnected in block <simpleTestModuleOne>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 5
-# Adders/Subtractors                                   : 24
+# Adders/Subtractors                                   : 25
+ 1-bit adder                                           : 2
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
+ 13-bit adder                                          : 1
  13-bit adder carry out                                : 1
  16-bit adder                                          : 1
  16-bit subtractor                                     : 1
  17-bit adder                                          : 1
  18-bit subtractor                                     : 1
  3-bit subtractor                                      : 2
- 32-bit adder                                          : 4
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 2
  33-bit subtractor                                     : 1
  4-bit subtractor                                      : 1
@@ -2571,16 +2091,18 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 1402
- Flip-Flops                                            : 1402
+# Registers                                            : 1199
+ Flip-Flops                                            : 1199
+# Latches                                              : 2
+ 1-bit latch                                           : 2
 # Comparators                                          : 14
- 13-bit comparator greater                             : 1
+ 13-bit comparator greater                             : 2
  16-bit comparator greatequal                          : 1
  18-bit comparator not equal                           : 1
  32-bit comparator greater                             : 3
  33-bit comparator greater                             : 2
  8-bit comparator greater                              : 4
- 8-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 1
 # Xors                                                 : 29
  1-bit xor2                                            : 29
 
@@ -2591,134 +2113,17 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <rd_enable_delay> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <a_0_12> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_12> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<12> and a_1<12> a_1<12> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_0> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_0> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<0> and a_1<0> a_1<0> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_13> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_13> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<13> and a_1<13> a_1<13> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_1> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_1> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<1> and a_1<1> a_1<1> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_14> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_14> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<14> and a_1<14> a_1<14> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_2> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_2> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<2> and a_1<2> a_1<2> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_15> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_15> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<15> and a_1<15> a_1<15> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_20> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_20> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<20> and a_1<20> a_1<20> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_3> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_3> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<3> and a_1<3> a_1<3> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_16> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_16> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<16> and a_1<16> a_1<16> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_21> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_21> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<21> and a_1<21> a_1<21> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_4> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_4> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<4> and a_1<4> a_1<4> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_17> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_17> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<17> and a_1<17> a_1<17> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_22> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_22> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<22> and a_1<22> a_1<22> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_5> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_5> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<5> and a_1<5> a_1<5> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_18> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_18> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<18> and a_1<18> a_1<18> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_23> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_23> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<23> and a_1<23> a_1<23> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_6> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_6> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<6> and a_1<6> a_1<6> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_19> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_19> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<19> and a_1<19> a_1<19> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_24> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_24> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<24> and a_1<24> a_1<24> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_10> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_10> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<10> and b_1<10> b_1<10> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_7> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_7> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<7> and a_1<7> a_1<7> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_25> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_25> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<25> and a_1<25> a_1<25> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_30> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_30> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<30> and a_1<30> a_1<30> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_11> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_11> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<11> and b_1<11> b_1<11> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_8> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_8> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<8> and a_1<8> a_1<8> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_26> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_26> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<26> and a_1<26> a_1<26> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_31> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_31> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<31> and a_1<31> a_1<31> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_12> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_12> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<12> and b_1<12> b_1<12> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_9> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_9> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<9> and a_1<9> a_1<9> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_27> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_27> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<27> and a_1<27> a_1<27> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_13> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_13> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<13> and b_1<13> b_1<13> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_28> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_28> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<28> and a_1<28> a_1<28> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_14> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_14> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<14> and b_1<14> b_1<14> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_29> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_29> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<29> and a_1<29> a_1<29> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_15> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_15> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<15> and b_1<15> b_1<15> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_20> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_20> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<20> and b_1<20> b_1<20> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_16> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_16> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<16> and b_1<16> b_1<16> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_21> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_21> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<21> and b_1<21> b_1<21> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_17> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_17> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<17> and b_1<17> b_1<17> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_22> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_22> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<22> and b_1<22> b_1<22> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_18> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_18> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<18> and b_1<18> b_1<18> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_23> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_23> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<23> and b_1<23> b_1<23> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_19> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_19> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<19> and b_1<19> b_1<19> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_24> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_24> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<24> and b_1<24> b_1<24> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_25> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_25> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<25> and b_1<25> b_1<25> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_30> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_30> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<30> and b_1<30> b_1<30> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_26> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_26> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<26> and b_1<26> b_1<26> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_31> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_31> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<31> and b_1<31> b_1<31> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_27> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_27> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<27> and b_1<27> b_1<27> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_28> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_28> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<28> and b_1<28> b_1<28> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_29> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_29> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<29> and b_1<29> b_1<29> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_0> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_0> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<0> and b_1<0> b_1<0> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_1> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_1> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<1> and b_1<1> b_1<1> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_2> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_2> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<2> and b_1<2> b_1<2> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_3> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_3> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<3> and b_1<3> b_1<3> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_4> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_4> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<4> and b_1<4> b_1<4> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_5> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_5> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<5> and b_1<5> b_1<5> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_6> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_6> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<6> and b_1<6> b_1<6> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_7> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_7> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<7> and b_1<7> b_1<7> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_8> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_8> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<8> and b_1<8> b_1<8> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b_0_9> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1_9> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0<9> and b_1<9> b_1<9> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_10> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_10> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<10> and a_1<10> a_1<10> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <a_0_11> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1_11> 
-WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0<11> and a_1<11> a_1<11> signal will be lost.
+WARNING:Xst:1293 - FF/Latch <outputMemoryWriteData_1> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_2> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_3> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_4> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_5> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_6> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <outputMemoryWriteData_7> has a constant value of 0 in block <simpleTestModuleOne>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <a_0> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <a_1> 
+WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal a_0 and a_1 a_1 signal will be lost.
+INFO:Xst:2261 - The FF/Latch <b_0> in Unit <top_PUF> is equivalent to the following FF/Latch, which will be removed : <b_1> 
+WARNING:Xst:638 - in unit top_PUF Conflict on KEEP property on signal b_0 and b_1 b_1 signal will be lost.
 INFO:Xst:1901 - Instance ideld0 in unit gmii_if of type IDELAY has been replaced by IODELAY
 INFO:Xst:1901 - Instance ideld1 in unit gmii_if of type IDELAY has been replaced by IODELAY
 INFO:Xst:1901 - Instance ideld2 in unit gmii_if of type IDELAY has been replaced by IODELAY
@@ -2743,69 +2148,7 @@ Optimizing unit <adder_32_1> ...
 
 Optimizing unit <adder_32_2> ...
 
-Optimizing unit <DFF_1> ...
-
-Optimizing unit <DFF_2> ...
-
-Optimizing unit <DFF_3> ...
-
-Optimizing unit <DFF_4> ...
-
-Optimizing unit <DFF_5> ...
-
-Optimizing unit <DFF_6> ...
-
-Optimizing unit <DFF_7> ...
-
-Optimizing unit <DFF_8> ...
-
-Optimizing unit <DFF_9> ...
-
-Optimizing unit <DFF_10> ...
-
-Optimizing unit <DFF_11> ...
-
-Optimizing unit <DFF_12> ...
-
-Optimizing unit <DFF_13> ...
-
-Optimizing unit <DFF_14> ...
-
-Optimizing unit <DFF_15> ...
-
-Optimizing unit <DFF_16> ...
-
-Optimizing unit <DFF_17> ...
-
-Optimizing unit <DFF_18> ...
-
-Optimizing unit <DFF_19> ...
-
-Optimizing unit <DFF_20> ...
-
-Optimizing unit <DFF_21> ...
-
-Optimizing unit <DFF_22> ...
-
-Optimizing unit <DFF_23> ...
-
-Optimizing unit <DFF_24> ...
-
-Optimizing unit <DFF_25> ...
-
-Optimizing unit <DFF_26> ...
-
-Optimizing unit <DFF_27> ...
-
-Optimizing unit <DFF_28> ...
-
-Optimizing unit <DFF_29> ...
-
-Optimizing unit <DFF_30> ...
-
-Optimizing unit <DFF_31> ...
-
-Optimizing unit <DFF_33> ...
+Optimizing unit <DFF> ...
 
 Optimizing unit <gmii_if> ...
 
@@ -2823,88 +2166,13 @@ Optimizing unit <DFF_32> ...
 
 Optimizing unit <ethernetController> ...
 
-Optimizing unit <top_PUF> ...
-
 Optimizing unit <emac_single_locallink> ...
 
 Optimizing unit <simpleTestModuleOne> ...
 
 Optimizing unit <ethernet2BlockMem> ...
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_9> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_8> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_4> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_3> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_2> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_1> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <E2M/EC/tx_max_output_address_0> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_1> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_2> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_3> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_4> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tm/outputMemoryWriteData_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <d1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <d8> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d9> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d10> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d11> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d12> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d13> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d14> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d15> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d16> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d17> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d18> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d19> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d20> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d21> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d22> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d23> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d24> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d25> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d26> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d27> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d28> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d29> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d30> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d31> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <c> (without init value) has a constant value of 0 in block <tm/PUF/adder2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c> (without init value) has a constant value of 0 in block <tm/PUF/adder1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_1> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_0> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_0> of sequential type is unconnected in block <system>.
@@ -2917,29 +2185,11 @@ WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_st
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_1> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_2> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_3> of sequential type is unconnected in block <system>.
-WARNING:Xst:1290 - Hierarchical block <d1> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d2> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d3> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d4> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d5> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d6> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <d7> is unconnected in block <tm/PUF/d32>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <E2M/EC/resetMaxOutputAddress> of sequential type is unconnected in block <system>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block system, actual ratio is 4.
-FlipFlop E2M/EC/rx_state_1 has been replicated 1 time(s)
-FlipFlop E2M/EC/rx_state_2 has been replicated 1 time(s)
-FlipFlop E2M/EC/tx_state_1 has been replicated 1 time(s)
-FlipFlop E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_3 has been replicated 1 time(s)
+FlipFlop E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_7 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2962,8 +2212,8 @@ Unit <system> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1346
- Flip-Flops                                            : 1346
+# Registers                                            : 1247
+ Flip-Flops                                            : 1247
 # Shift Registers                                      : 11
  2-bit shift register                                  : 3
  3-bit shift register                                  : 8
@@ -2995,27 +2245,28 @@ Design Statistics
 # IOs                              : 60
 
 Cell Usage :
-# BELS                             : 3391
+# BELS                             : 3262
 #      GND                         : 6
-#      INV                         : 150
-#      LUT1                        : 123
-#      LUT2                        : 173
-#      LUT3                        : 177
-#      LUT4                        : 412
-#      LUT5                        : 453
-#      LUT6                        : 1008
-#      MUXCY                       : 443
-#      MUXF7                       : 23
+#      INV                         : 153
+#      LUT1                        : 147
+#      LUT2                        : 84
+#      LUT3                        : 161
+#      LUT4                        : 431
+#      LUT5                        : 444
+#      LUT6                        : 1006
+#      MUXCY                       : 413
+#      MUXF7                       : 32
 #      VCC                         : 4
-#      XORCY                       : 419
-# FlipFlops/Latches                : 1367
-#      FD                          : 106
+#      XORCY                       : 381
+# FlipFlops/Latches                : 1268
+#      FD                          : 44
 #      FDC                         : 31
-#      FDE                         : 830
+#      FDCE                        : 13
+#      FDE                         : 769
 #      FDP                         : 27
-#      FDR                         : 160
+#      FDR                         : 169
 #      FDRE                        : 187
-#      FDRS                        : 9
+#      FDRS                        : 11
 #      FDS                         : 13
 #      FDSE                        : 3
 #      ODDR                        : 1
@@ -3045,18 +2296,18 @@ Selected Device : 5vlx110tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1357  out of  69120     1%  
- Number of Slice LUTs:                 2507  out of  69120     3%  
-    Number used as Logic:              2496  out of  69120     3%  
+ Number of Slice Registers:            1258  out of  69120     1%  
+ Number of Slice LUTs:                 2437  out of  69120     3%  
+    Number used as Logic:              2426  out of  69120     3%  
     Number used as Memory:               11  out of  17920     0%  
        Number used as SRL:               11
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2968
-   Number with an unused Flip Flop:    1611  out of   2968    54%  
-   Number with an unused LUT:           461  out of   2968    15%  
-   Number of fully used LUT-FF pairs:   896  out of   2968    30%  
-   Number of unique control sets:        87
+ Number of LUT Flip Flop pairs used:   2822
+   Number with an unused Flip Flop:    1564  out of   2822    55%  
+   Number with an unused LUT:           385  out of   2822    13%  
+   Number of fully used LUT-FF pairs:   873  out of   2822    30%  
+   Number of unique control sets:        92
 
 IO Utilization: 
  Number of IOs:                          60
@@ -3088,16 +2339,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------+-------------------------+-------+
-Clock Signal                               | Clock buffer(FF name)   | Load  |
--------------------------------------------+-------------------------+-------+
-clk_user_interface_i                       | BUFG                    | 236   |
-tm/PUF/pdl_2/O(tm/PUF/pdl_2/LUT6_inst_24:O)| NONE(*)(tm/PUF/d32/d0/q)| 1     |
-clk_125_eth_i                              | BUFG                    | 1058  |
-GMII_RX_CLK_0                              | IBUF+IODELAY+BUFG       | 116   |
-E2M/EC/sysACE_delay_clk                    | BUFG                    | 34    |
-clk_200_i                                  | BUFG                    | 13    |
--------------------------------------------+-------------------------+-------+
+-------------------------------------------+-------------------------------+-------+
+Clock Signal                               | Clock buffer(FF name)         | Load  |
+-------------------------------------------+-------------------------------+-------+
+tm/PUF/pdl_2/O(tm/PUF/pdl_2/LUT6_inst_24:O)| NONE(*)(tm/PUF/d32/dff_inst/q)| 1     |
+clk_user_interface_i                       | BUFG                          | 139   |
+clk_125_eth_i                              | BUFG                          | 1056  |
+GMII_RX_CLK_0                              | IBUF+IODELAY+BUFG             | 116   |
+E2M/EC/sysACE_delay_clk                    | BUFG                          | 34    |
+clk_200_i                                  | BUFG                          | 13    |
+-------------------------------------------+-------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -3111,6 +2362,7 @@ Control Signal                                                                  
 E2M/EC/memInputData/N0(E2M/EC/memInputData/XST_GND:G)                                                                                                                                                                                                                                                | NONE(E2M/EC/memInputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B)  | 128   |
 E2M/delayCtrl0Reset_12(E2M/delayCtrl0Reset_12:Q)                                                                                                                                                                                                                                                     | NONE(E2M/emac_ll/rx_bad_frame_0_r)                                                                                                                    | 45    |
 E2M/EC/memOutputData/N0(E2M/EC/memOutputData/XST_GND:G)                                                                                                                                                                                                                                              | NONE(E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP)     | 16    |
+E2M/EC/resetMaxOutputAddress(E2M/EC/resetMaxOutputAddress:Q)                                                                                                                                                                                                                                         | NONE(E2M/EC/tx_max_output_address_0)                                                                                                                  | 13    |
 E2M/hardResetClockLockLow_inv(E2M/hardResetClockLockLow_inv1:O)                                                                                                                                                                                                                                      | NONE(E2M/delayCtrl0Reset_0)                                                                                                                           | 13    |
 E2M/EC/register32File/N0(E2M/EC/register32File/XST_GND:G)                                                                                                                                                                                                                                            | NONE(E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP)| 8     |
 E2M/EC/memInputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/cascadelata_tmp(E2M/EC/memInputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_B:CASCADEOUTLATA)  | NONE(E2M/EC/memInputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.CASCADED_PRIM36.TDP_T)  | 2     |
@@ -3183,7 +2435,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 5.626ns (Maximum Frequency: 177.746MHz)
+   Minimum period: 5.876ns (Maximum Frequency: 170.184MHz)
    Minimum input arrival time before clock: 2.698ns
    Maximum output required time after clock: 3.920ns
    Maximum combinational path delay: 3.617ns
@@ -3194,82 +2446,57 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_user_interface_i'
-  Clock period: 4.229ns (frequency: 236.475MHz)
-  Total number of paths / destination ports: 3204 / 1415
+  Clock period: 4.296ns (frequency: 232.775MHz)
+  Total number of paths / destination ports: 4179 / 1336
 -------------------------------------------------------------------------
-Delay:               4.229ns (Levels of Logic = 4)
-  Source:            tm/inputMemoryReadAdd_4 (FF)
-  Destination:       tm/inputMemoryReadAdd_16 (FF)
+Delay:               4.296ns (Levels of Logic = 5)
+  Source:            tm/outputMemoryWriteAdd_9 (FF)
+  Destination:       tm/outputMemoryWriteAdd_12 (FF)
   Source Clock:      clk_user_interface_i rising
   Destination Clock: clk_user_interface_i rising
 
-  Data Path: tm/inputMemoryReadAdd_4 to tm/inputMemoryReadAdd_16
+  Data Path: tm/outputMemoryWriteAdd_9 to tm/outputMemoryWriteAdd_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             67   0.471   1.203  tm/inputMemoryReadAdd_4 (tm/inputMemoryReadAdd_4)
-     LUT6:I0->O            3   0.094   0.721  tm/currState_cmp_eq000410 (tm/currState_cmp_eq000410)
-     LUT3:I0->O            2   0.094   0.794  tm/currState_cmp_eq000484 (tm/currState_cmp_eq0004)
-     LUT6:I2->O           17   0.094   0.664  tm/inputMemoryReadAdd_mux0000<0>21 (tm/N14)
-     LUT4:I2->O            1   0.094   0.000  tm/inputMemoryReadAdd_mux0000<9>1 (tm/inputMemoryReadAdd_mux0000<9>)
-     FDR:D                    -0.018          tm/inputMemoryReadAdd_7
+     FDR:C->Q             10   0.471   0.759  tm/outputMemoryWriteAdd_9 (tm/outputMemoryWriteAdd_9)
+     LUT3:I0->O            1   0.094   0.480  tm/outputMemoryWriteData_not00011_SW0 (N96)
+     LUT6:I5->O            2   0.094   0.485  tm/outputMemoryWriteData_not00011 (tm/N21)
+     LUT6:I5->O            4   0.094   0.989  tm/currState_cmp_eq00081 (tm/currState_cmp_eq0008)
+     LUT6:I1->O           13   0.094   0.642  tm/outputMemoryWriteAdd_mux0000<0>21 (tm/N16)
+     LUT4:I2->O            1   0.094   0.000  tm/outputMemoryWriteAdd_mux0000<9>1 (tm/outputMemoryWriteAdd_mux0000<9>)
+     FDR:D                    -0.018          tm/outputMemoryWriteAdd_3
     ----------------------------------------
-    Total                      4.229ns (0.847ns logic, 3.382ns route)
-                                       (20.0% logic, 80.0% route)
+    Total                      4.296ns (0.941ns logic, 3.355ns route)
+                                       (21.9% logic, 78.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_125_eth_i'
-  Clock period: 5.626ns (frequency: 177.746MHz)
-  Total number of paths / destination ports: 185616 / 3566
+  Clock period: 5.876ns (frequency: 170.184MHz)
+  Total number of paths / destination ports: 185951 / 3563
 -------------------------------------------------------------------------
-Delay:               5.626ns (Levels of Logic = 33)
-  Source:            E2M/EC/tx_curr_bytes_left_0 (FF)
-  Destination:       E2M/EC/tx_header_buffer_len_1 (FF)
+Delay:               5.876ns (Levels of Logic = 7)
+  Source:            E2M/EC/tx_curr_bytes_left_23 (FF)
+  Destination:       E2M/EC/tx_packet_payload_55 (FF)
   Source Clock:      clk_125_eth_i rising
   Destination Clock: clk_125_eth_i rising
 
-  Data Path: E2M/EC/tx_curr_bytes_left_0 to E2M/EC/tx_header_buffer_len_1
+  Data Path: E2M/EC/tx_curr_bytes_left_23 to E2M/EC/tx_packet_payload_55
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              6   0.471   0.507  E2M/EC/tx_curr_bytes_left_0 (E2M/EC/tx_curr_bytes_left_0)
-     LUT1:I0->O            1   0.094   0.000  E2M/EC/Msub__sub0001_cy<0>_rt (E2M/EC/Msub__sub0001_cy<0>_rt)
-     MUXCY:S->O            1   0.372   0.000  E2M/EC/Msub__sub0001_cy<0> (E2M/EC/Msub__sub0001_cy<0>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<1> (E2M/EC/Msub__sub0001_cy<1>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<2> (E2M/EC/Msub__sub0001_cy<2>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<3> (E2M/EC/Msub__sub0001_cy<3>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<4> (E2M/EC/Msub__sub0001_cy<4>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<5> (E2M/EC/Msub__sub0001_cy<5>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<6> (E2M/EC/Msub__sub0001_cy<6>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<7> (E2M/EC/Msub__sub0001_cy<7>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<8> (E2M/EC/Msub__sub0001_cy<8>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<9> (E2M/EC/Msub__sub0001_cy<9>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<10> (E2M/EC/Msub__sub0001_cy<10>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<11> (E2M/EC/Msub__sub0001_cy<11>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<12> (E2M/EC/Msub__sub0001_cy<12>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<13> (E2M/EC/Msub__sub0001_cy<13>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<14> (E2M/EC/Msub__sub0001_cy<14>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<15> (E2M/EC/Msub__sub0001_cy<15>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<16> (E2M/EC/Msub__sub0001_cy<16>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<17> (E2M/EC/Msub__sub0001_cy<17>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<18> (E2M/EC/Msub__sub0001_cy<18>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<19> (E2M/EC/Msub__sub0001_cy<19>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<20> (E2M/EC/Msub__sub0001_cy<20>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<21> (E2M/EC/Msub__sub0001_cy<21>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<22> (E2M/EC/Msub__sub0001_cy<22>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<23> (E2M/EC/Msub__sub0001_cy<23>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<24> (E2M/EC/Msub__sub0001_cy<24>)
-     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<25> (E2M/EC/Msub__sub0001_cy<25>)
-     XORCY:CI->O           2   0.357   0.978  E2M/EC/Msub__sub0001_xor<26> (E2M/EC/_sub0001<26>)
-     LUT5:I0->O            1   0.094   0.000  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_lut<5>1 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_lut<5>1)
-     MUXCY:S->O            1   0.372   0.000  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<5>_0 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<5>1)
-     MUXCY:CI->O          19   0.254   0.809  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<6>_0 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<6>1)
-     LUT6:I3->O            1   0.094   0.480  E2M/EC/tx_header_buffer_len_mux0000<1>30 (E2M/EC/tx_header_buffer_len_mux0000<1>30)
-     LUT6:I5->O            1   0.094   0.000  E2M/EC/tx_header_buffer_len_mux0000<1>118 (E2M/EC/tx_header_buffer_len_mux0000<1>)
-     FDE:D                    -0.018          E2M/EC/tx_header_buffer_len_1
+     FDE:C->Q              4   0.471   0.989  E2M/EC/tx_curr_bytes_left_23 (E2M/EC/tx_curr_bytes_left_23)
+     LUT5:I0->O            2   0.094   0.978  E2M/EC/tx_state_cmp_eq0027247_SW1 (N542)
+     LUT6:I1->O            1   0.094   0.480  E2M/EC/tx_state_cmp_eq0027260_1 (E2M/EC/tx_state_cmp_eq0027260)
+     LUT5:I4->O            6   0.094   0.507  E2M/EC/tx_packet_payload_68_mux000021 (E2M/EC/N97)
+     LUT6:I5->O            2   0.094   1.074  E2M/EC/tx_packet_payload_56_mux00002165_SW0 (N650)
+     LUT6:I0->O            1   0.094   0.000  E2M/EC/tx_packet_payload_40_mux000031_F (N1055)
+     MUXF7:I0->O          16   0.251   0.562  E2M/EC/tx_packet_payload_40_mux000031 (E2M/EC/N43)
+     LUT4:I3->O            1   0.094   0.000  E2M/EC/tx_packet_payload_55_mux000065 (E2M/EC/tx_packet_payload_55_mux0000)
+     FDE:D                    -0.018          E2M/EC/tx_packet_payload_55
     ----------------------------------------
-    Total                      5.626ns (2.852ns logic, 2.774ns route)
-                                       (50.7% logic, 49.3% route)
+    Total                      5.876ns (1.286ns logic, 4.590ns route)
+                                       (21.9% logic, 78.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GMII_RX_CLK_0'
@@ -3324,7 +2551,7 @@ Delay:               3.392ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      FDE:C->Q              6   0.471   0.737  E2M/EC/sysACECounter_1 (E2M/EC/sysACECounter_1)
      LUT3:I0->O            9   0.094   0.833  E2M/EC/sysACE_MPDATA_In_cmp_eq00001 (E2M/EC/sysACE_MPDATA_In_cmp_eq0000)
-     LUT6:I2->O            1   0.094   1.069  E2M/EC/sysACE_MPDATA_In_mux0000<15>1_SW0 (N61)
+     LUT6:I2->O            1   0.094   1.069  E2M/EC/sysACE_MPDATA_In_mux0000<15>1_SW0 (N51)
      LUT6:I0->O            1   0.094   0.000  E2M/EC/sysACE_MPDATA_In_mux0000<15>1 (E2M/EC/sysACE_MPDATA_In_mux0000<15>1)
      FD:D                     -0.018          E2M/EC/sysACE_MPDATA_In_15
     ----------------------------------------
@@ -3385,7 +2612,7 @@ Offset:              2.626ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
     TEMAC:EMAC0CLIENTTXACK   12   0.000   0.849  E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac (E2M/emac_ll/tx_ack_0_i)
-     LUT5:I1->O            1   0.094   0.710  E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en_SW3 (N79)
+     LUT5:I1->O            1   0.094   0.710  E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en_SW3 (N71)
      LUT6:I3->O           43   0.094   0.465  E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en (E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en)
      RAMB16:ENB                0.414          E2M/emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u
     ----------------------------------------
@@ -3530,14 +2757,14 @@ Delay:               3.617ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 115.00 secs
-Total CPU time to Xst completion: 114.47 secs
+Total REAL time to Xst completion: 111.00 secs
+Total CPU time to Xst completion: 110.65 secs
  
 --> 
 
-Total memory usage is 480904 kilobytes
+Total memory usage is 477824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  368 (   0 filtered)
-Number of infos    :  163 (   0 filtered)
+Number of warnings :  290 (   0 filtered)
+Number of infos    :   39 (   0 filtered)
 

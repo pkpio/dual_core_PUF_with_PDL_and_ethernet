@@ -74,11 +74,13 @@ module simpleTestModuleOne #(
 	localparam  COMPUTE = 4;				// Sending operands to PUF and recording delays
 	localparam  WRITE = 5;					// Write back the results to PC
 
-	//Length (# of addresses) to which data has to be read
-	//Calculation of LENGTH:
-	//Size of each read = 32-bits; # of bits config bits for each bit = 128 (125 but last 3 will be ignored after read) => 32*4 (4 reads for each bits config);
-	//So total reads = 64*4 = 256. Addressing starts from 0 so length will 255
-	localparam LENGTH = 255;
+	//READ_LENGTH (# of addresses) to which data has to be read
+	//WRITE_LENGTH (# of address) to which data has to written back. Usually this is 32-bit
+	//Calculation of READ_LENGTH:
+	//Size of each read = 8-bits; # of bits config bits for each bit = 128 (125 but last 3 will be ignored after read) => 8*32 (32 reads for each bits config);
+	//So total reads = 16(total # bits) * 32(# reads/bit) = 512. Addressing starts from 0 so length will 511 : Currently using only 8-bits
+	localparam READ_LENGTH = 511;
+	localparam WRITE_LENGTH = 31;
 
 	//Signal declarations
 	//State registers
@@ -97,10 +99,12 @@ module simpleTestModuleOne #(
 
 	//Outputs register
 	wire [31:0] results;
+	reg [31:0] resultsReg;
 
 	//Counter
 	reg paramCount;
-	reg [31:0] length;
+	reg [31:0] rlength;
+	reg [31:0] wlength;
 
 	// We don't write to the register file and we only write whole bytes to the output memory
 	assign register32WriteData = 32'd0;
@@ -121,7 +125,8 @@ module simpleTestModuleOne #(
 
 	initial begin
 		currState = IDLE;
-		length = LENGTH;
+		rlength = READ_LENGTH;
+		wlength = WRITE_LENGTH;
 
 		userRunClear = 0;
 
@@ -217,11 +222,11 @@ module simpleTestModuleOne #(
 					end
 
 					//If the input memory accepted the last read, we can increment the address
-					if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd != length[(INMEM_ADDRESS_WIDTH - 1):0])begin
+					if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd != rlength[(INMEM_ADDRESS_WIDTH - 1):0])begin
 						inputMemoryReadAdd <= inputMemoryReadAdd + 1;
 						currState <= WAIT_READ;
 					end
-					else if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd == length[(INMEM_ADDRESS_WIDTH - 1):0])begin
+					else if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd == rlength[(INMEM_ADDRESS_WIDTH - 1):0])begin
 						inputDone <= 1;
 						LED[0] <= 1;
 						currState <= WAIT_READ;
@@ -232,7 +237,7 @@ module simpleTestModuleOne #(
 					if (inputMemoryReadDataValid == 1) begin
 
 						//Change core after reading for 32 bits in core0
-						if(bitCount <= 31) begin
+						if(bitCount <= 3) begin
 							/*
 							config_core0[bitCount][127:96] <= inputMemoryReadData;
 							config_core0[bitCount][95:64]	<= config_core0[bitCount][127:96];
@@ -248,11 +253,12 @@ module simpleTestModuleOne #(
 								regCount <= regCount+1;
 							end
 							*/
-							test <= inputMemoryReadData;
+							test[7:0] <= inputMemoryReadData;
 							bitCount <= bitCount+1;
 
 							currState <= READ;
 						end
+						/*
 						else if(bitCount <= 63) begin
 							//An offset for bitCount is needed as we are not resetting it after reading for core0
 							/*
@@ -269,13 +275,15 @@ module simpleTestModuleOne #(
 							else begin
 								regCount <= regCount+1;
 							end
-							*/
+
 
 							test <= inputMemoryReadData;
 							bitCount <= bitCount+1;
 
 							currState <= READ;
 						end
+						*/
+
 						else begin
 							currState <= COMPUTE;
 							regCount <= 0;
@@ -290,17 +298,31 @@ module simpleTestModuleOne #(
 					if(PUFExDoneReg == 1) begin
 						currState <= WRITE;
 						outputMemoryWriteAdd <= 0;
+						resultsReg <= results;
 					end
 
 				end
 
 				WRITE: begin
-					//We shall be writing back just one block of memory of 32-bits
 					outputMemoryWriteReq <= 1;
-					outputMemoryWriteData <= results;
 
-					//Stop writing and go back to IDLE state
-					if(outputMemoryWriteReq == 1  && outputMemoryWriteAck == 1) begin
+					if(outputMemoryWriteAdd <= 3) begin
+						//resultsReg[16:23] <= resultsReg[24:31];
+						//resultsReg[8:15] <= resultsReg[16:23];
+						//resultsReg[0:7] <= resultsReg[8:15];
+						outputMemoryWriteData <= resultsReg[7:0];
+
+					end
+
+					//If we just wrote a value to the output memory this cycle, increment the address
+					//NOTE : Due to bug described above we write on bit more by using length instead of lengthMinus1 (Needed here ?)
+					if(outputMemoryWriteReq == 1  && outputMemoryWriteAck == 1 && outputMemoryWriteAdd != wlength[(OUTMEM_ADDRESS_WIDTH - 1):0]) begin
+						outputMemoryWriteAdd <= outputMemoryWriteAdd + 1;
+						currState <= WRITE;
+					end
+
+					//Stop writing and go back to IDLE state if writing reached length of data
+					if(outputMemoryWriteReq == 1  && outputMemoryWriteAck == 1 && outputMemoryWriteAdd == wlength[(OUTMEM_ADDRESS_WIDTH - 1):0]) begin
 						outputMemoryWriteReq <= 0;
 						currState <= IDLE;
 						userRunClear <= 1;

@@ -26,13 +26,17 @@ module top_PUF(
     input wire	[127:0]	config2,
 
     //Operands and output
-    input  wire [31:0] a,
-    input  wire [31:0] b,
-    output wire [31:0] c
+    input  wire a,//[31:0] a,
+    input  wire b,//[31:0] b,
+    output wire c //[31:0] c
     );
 
 
-(* KEEP = "TRUE" *)reg [31:0] a_0, b_0, a_1, b_1;
+//To trigger the addition operation. This is to ensure that operands have reached regs a_0, a_1, b_0, b_1 before the addition process started.
+(* KEEP = "TRUE" *) reg trig;   //Analyse again if this is actually needed.
+
+(* KEEP = "TRUE" *)reg a_0, b_0, a_1, b_1;
+//(* KEEP = "TRUE" *)reg [31:0] a_0, b_0, a_1, b_1;
 
 always @(posedge clk) begin
     a_0 <= a;
@@ -41,20 +45,21 @@ always @(posedge clk) begin
     b_1 <= b;
 end
 
-(* KEEP = "TRUE" *) wire [31:0] c_0;
-(* KEEP = "TRUE" *) wire [31:0] c_1;
+(* KEEP = "TRUE" *) wire c_0;//[31:0] c_0;
+(* KEEP = "TRUE" *) wire c_1;//[31:0] c_1;
 
 //PDL output NETS
 (* KEEP = "TRUE" *) wire out1, out2;
 
-
 (* KEEP = "TRUE" *) adder_32 adder1(
+        .trig(trig),
 		.a(a_0),
 		.b(b_0),
 		.c(c_0)//result
 	);
 
 (* KEEP = "TRUE" *) adder_32 adder2(
+        .trig(trig),
 		.a(a_1),
 		.b(b_1),
 		.c(c_1)//result
