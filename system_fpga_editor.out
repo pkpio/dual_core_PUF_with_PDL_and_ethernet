@@ -1,1099 +1,159 @@
-#:C513   
+#:C69    
 #Xilinx FPGA Editor Command Log File
 #Editor Version:
 #:V   NT M2.1 O.76xd
 #Current Working Directory:
-#:D   E:\Dropbox\Works and collections\Elec\Rice\Joonho\PUF\Ethernet
+#:D   E:\Dropbox\Works and collections\Elec\Rice\Joonho\codes\dual_core_PUF_with_PDL_and_ethernet
 #Date/Time:
-#:T   Fri Nov 08 19:19:36 2013
+#:T   Tue Nov 12 07:46:18 2013
 #------------------------------
 	#Reading system.ncd...
 	#Loading device for application Rf_Device from file '5vlx110t.nph' in environment C:\Xilinx\13.3\ISE_DS\ISE\.
 	#   "system" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -1
-	#Design creation date: 2013.06.29.02.30.39
+	#Design creation date: 2013.11.12.02.08.04
 	#Building chip graphics...
 	#Loading speed info...
 	#1
 setattr main edit-mode no-logic-changes
 	#2
-select -k comp 'sysACE_MPADD<0>'
+select -k comp 'tm/results<1>'
 	#3
-unselect comp 'sysACE_MPADD<0>'
+unselect comp 'tm/results<1>'
 	#4
-select -k comp 'tm/PUF/adder1/Madd_c_cy<3>'
+select -k comp 'tm/results<7>'
 	#5
-unselect comp 'tm/PUF/adder1/Madd_c_cy<3>'
+unselect comp 'tm/results<7>'
 	#6
-select -k comp 'tm/register32Address<1>'
+select -k comp 'tm/userRunClear'
 	#7
-unselect comp 'tm/register32Address<1>'
+unselect comp 'tm/userRunClear'
 	#8
-select -k comp 'tm/register32WriteData_not0001'
+select -k comp 'tm/PUF/b_0<7>'
 	#9
-unselect comp 'tm/register32WriteData_not0001'
+unselect comp 'tm/PUF/b_0<7>'
 	#10
-select -k comp 'tm/PUF/adder1/Madd_c_cy<3>'
+select -k comp 'tm/PUF/b_0<3>'
 	#11
-select -k comp 'tm/PUF/adder1/Madd_c_cy<7>'
+unselect comp 'tm/PUF/b_0<3>'
 	#12
-select -k comp 'tm/PUF/adder1/Madd_c_cy<11>'
+select -k comp 'tm/PUF/b_0<11>'
 	#13
-select -k comp 'tm/PUF/adder1/Madd_c_cy<15>'
+unselect comp 'tm/PUF/b_0<11>'
 	#14
-select -k comp 'tm/PUF/adder1/Madd_c_cy<19>'
-	#15
-select -k comp 'tm/PUF/adder1/Madd_c_cy<23>'
-	#16
-select -k comp 'tm/PUF/adder1/Madd_c_cy<27>'
-	#17
-select -k comp 'tm/PUF/adder2/Madd_c_cy<3>'
-	#18
-select -k comp 'tm/PUF/adder2/Madd_c_cy<7>'
-	#19
-select -k comp 'tm/PUF/adder2/Madd_c_cy<11>'
-	#20
-select -k comp 'tm/PUF/adder2/Madd_c_cy<15>'
-	#21
-select -k comp 'tm/PUF/adder2/Madd_c_cy<19>'
-	#22
-select -k comp 'tm/PUF/adder2/Madd_c_cy<23>'
-	#23
 select -k comp 'tm/PUF/adder2/Madd_c_cy<27>'
+	#15
+unselect comp 'tm/PUF/adder2/Madd_c_cy<27>'
+	#16
+select -k comp 'tm/PUF/adder1/Madd_c_cy<3>'
+	#17
+unselect -all
+	#18
+select -k comp 'tm/PUF/adder1/Madd_c_cy<7>'
+	#19
+unselect comp 'tm/PUF/adder1/Madd_c_cy<7>'
+	#20
+select -k comp 'tm/PUF/b_0<11>'
+	#21
+unselect comp 'tm/PUF/b_0<11>'
+	#22
+select -k comp 'tm/PUF/b_0<15>'
+	#23
+unselect comp 'tm/PUF/b_0<15>'
 	#24
-select -k comp 'tm/PUF/c_1<31>'
+select -k net 'E2M/EC/tx_curr_bytes_left<21>'
 	#25
-select -k comp 'tm/PUF/c_2<31>'
+unselect net 'E2M/EC/tx_curr_bytes_left<21>'
 	#26
-select -k comp 'tm/PUF_result<0>'
+select -k net 'tm/PUF/b_0<19>'
 	#27
-select -k comp 'tm/PUF_result<1>'
+unselect net 'tm/PUF/b_0<19>'
 	#28
-select -k comp 'tm/PUF_result<2>'
+select -k net 'tm/PUF/b_0<18>'
 	#29
-select -k comp 'tm/PUF_result<3>'
+unselect net 'tm/PUF/b_0<18>'
 	#30
-select -k comp 'tm/PUF_result<4>'
+select -k net 'tm/PUF/b_0<20>'
 	#31
-select -k comp 'tm/PUF_result<5>'
+unselect net 'tm/PUF/b_0<20>'
 	#32
-select -k comp 'tm/PUF_result<6>'
+select -k net 'tm/PUF/c_1<13>'
 	#33
-select -k comp 'tm/PUF_result<7>'
+unselect net 'tm/PUF/c_1<13>'
 	#34
-select -k comp 'tm/PUF_result<8>'
+select -k net 'tm/PUF/c_1<14>'
 	#35
-select -k comp 'tm/PUF_result<9>'
+unselect net 'tm/PUF/c_1<14>'
 	#36
-select -k comp 'tm/PUF_result<10>'
+select -k net 'tm/PUF/c_0<31>'
 	#37
-select -k comp 'tm/PUF_result<11>'
+select net 'tm/PUF/c_1<31>'
 	#38
-select -k comp 'tm/PUF_result<12>'
-	#39
-select -k comp 'tm/PUF_result<13>'
-	#40
-select -k comp 'tm/PUF_result<14>'
-	#41
-select -k comp 'tm/PUF_result<15>'
-	#42
-select -k comp 'tm/PUF_result<16>'
-	#43
-select -k comp 'tm/PUF_result<17>'
-	#44
-select -k comp 'tm/PUF_result<18>'
-	#45
-select -k comp 'tm/PUF_result<19>'
-	#46
-select -k comp 'tm/PUF_result<20>'
-	#47
-select -k comp 'tm/PUF_result<21>'
-	#48
-select -k comp 'tm/PUF_result<22>'
-	#49
-select -k comp 'tm/PUF_result<23>'
-	#50
-select -k comp 'tm/PUF_result<24>'
-	#51
-select -k comp 'tm/PUF_result<25>'
-	#52
-select -k comp 'tm/PUF_result<26>'
-	#53
-select -k comp 'tm/PUF_result<27>'
-	#54
-select -k comp 'tm/PUF_result<28>'
-	#55
-select -k comp 'tm/PUF_result<29>'
-	#56
-select -k comp 'tm/PUF_result<30>'
-	#57
-select -k comp 'tm/PUF_result<31>'
-	#58
-select -k comp 'tm/register32Address<1>'
-	#59
-unselect comp 'tm/register32Address<1>'
-	#60
-unselect -all
-	#61
-select rpm 'Shape_5'
-	#RPM Shape_5, type CARRY
-	#62
-unselect -all
-	#63
-select rpm 'Shape_5'
-	#RPM Shape_5, type CARRY
-	#64
-unselect -all
-	#65
-select rpm 'Shape_10'
-	#RPM Shape_10, type CARRY
-	#66
-unselect -all
-	#67
-select comp 'tm/opt_b<31>'
-	#comp "tm/opt_b<31>",  site "SLICE_X10Y107",  type = SLICEL  (RPM grid X33Y214)
-	#68
-unselect -all
-	#69
-select comp 'tm/opt_a<31>'
-	#comp "tm/opt_a<31>",  site "SLICE_X11Y107",  type = SLICEL  (RPM grid X35Y214)
-	#70
-unselect -all
-	#71
-select comp 'tm/opt_a<27>'
-	#comp "tm/opt_a<27>",  site "SLICE_X11Y106",  type = SLICEL  (RPM grid X35Y212)
-	#72
-unselect -all
-	#73
-select comp 'tm/opt_b<27>'
-	#comp "tm/opt_b<27>",  site "SLICE_X10Y106",  type = SLICEL  (RPM grid X33Y212)
-	#74
-unselect -all
-	#75
-select comp 'tm/opt_a<23>'
-	#comp "tm/opt_a<23>",  site "SLICE_X11Y105",  type = SLICEL  (RPM grid X35Y210)
-	#76
-unselect -all
-	#77
-select comp 'tm/opt_b<23>'
-	#comp "tm/opt_b<23>",  site "SLICE_X10Y105",  type = SLICEL  (RPM grid X33Y210)
-	#78
-unselect -all
-	#79
-select comp 'tm/opt_a<15>'
-	#comp "tm/opt_a<15>",  site "SLICE_X11Y103",  type = SLICEL  (RPM grid X35Y206)
-	#80
-unselect -all
-	#81
-select comp 'tm/opt_b<15>'
-	#comp "tm/opt_b<15>",  site "SLICE_X10Y103",  type = SLICEL  (RPM grid X33Y206)
-	#82
-unselect -all
-	#83
-unselect -all
-	#84
-select comp 'tm/opt_a<11>'
-	#comp "tm/opt_a<11>",  site "SLICE_X11Y102",  type = SLICEL  (RPM grid X35Y204)
-	#85
-unselect -all
-	#86
-select -k comp 'tm/opt_b<11>'
-	#87
-unselect -all
-	#88
-select comp 'tm/opt_a<7>'
-	#comp "tm/opt_a<7>",  site "SLICE_X11Y101",  type = SLICEL  (RPM grid X35Y202)
-	#89
-unselect -all
-	#90
-select comp 'tm/opt_b<7>'
-	#comp "tm/opt_b<7>",  site "SLICE_X10Y101",  type = SLICEL  (RPM grid X33Y202)
-	#91
-unselect -all
-	#92
-select comp 'tm/opt_a<3>'
-	#comp "tm/opt_a<3>",  site "SLICE_X11Y100",  type = SLICEL  (RPM grid X35Y200)
-	#93
-unselect -all
-	#94
-select comp 'tm/opt_b<3>'
-	#comp "tm/opt_b<3>",  site "SLICE_X10Y100",  type = SLICEL  (RPM grid X33Y200)
-	#95
-unselect comp 'tm/opt_b<3>'
-	#96
-select -k comp 'tm/register32WriteData<19>'
-	#97
-unselect comp 'tm/register32WriteData<19>'
-	#98
-select -k bel 'E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2'
-	#99
-unselect bel 'E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2'
-	#100
-select -k bel 'tm/PUF/adder1/Madd_c_cy<3>'
-	#101
-unselect bel 'tm/PUF/adder1/Madd_c_cy<3>'
-	#102
-select -k bel 'tm/PUF/adder1/Madd_c_cy<7>'
-	#103
-unselect bel 'tm/PUF/adder1/Madd_c_cy<7>'
-	#104
-select -k bel 'tm/PUF/adder1/Madd_c_cy<3>'
-	#105
-unselect bel 'tm/PUF/adder1/Madd_c_cy<3>'
-	#106
-select -k bel 'tm/PUF/adder1/Madd_c_lut<0>'
-	#107
-unselect bel 'tm/PUF/adder1/Madd_c_lut<0>'
-	#108
-select -k bel 'tm/PUF/adder1/Madd_c_lut<1>'
-	#109
-unselect bel 'tm/PUF/adder1/Madd_c_lut<1>'
-	#110
-select -k bel 'tm/PUF/adder1/Madd_c_lut<4>'
-	#111
-unselect bel 'tm/PUF/adder1/Madd_c_lut<4>'
-	#112
-select -k net 'E2M/EC/rx_mem_start_length<28>'
-	#113
-unselect -all
-	#114
-select -k net 'clk_user_interface_i'
-	#115
-unselect net 'clk_user_interface_i'
-	#116
-select -k net 'E2M/delayCtrl0Reset<11>'
-	#117
-unselect net 'E2M/delayCtrl0Reset<11>'
-	#118
-select -k net 'E2M/delayCtrl0Reset<12>'
-	#119
-unselect net 'E2M/delayCtrl0Reset<12>'
-	#120
-select -k net 'tm/opt_a<0>'
-	#121
-unselect net 'tm/opt_a<0>'
-	#122
-select -k net 'tm/PUF/c_1<0>'
-	#123
-select net 'tm/PUF/c_2<0>'
-	#124
-refresh
-	#125
-getattr
-	#+++ Attributes for net 'tm/PUF/c_1<0>'
-	#name = tm/PUF/c_1<0>
-	#route_status = FULLY ROUTED
-	#number_of_pins = 2
+post attr
 	#Building the delay mediator...
 	#Hint: to automatically load delays when design is loaded, setattr main auto_load_delays true
-	#pin_list = 
-	#   Comp Pin Name                    Comp Pin Type  Site Pin Name       Delays (ns)  
-	#   tm/PUF/adder1/Madd_c_cy<3>.AMUX  BLOCK_OUTPUT   SLICE_X12Y100.AMUX  Driver
-	#   tm/PUF_result<0>.DX              BLOCK_INPUT    SLICE_X16Y100.DX     0.465ns
-	#lock = OFF
-	#lock_status = UNLOCKED
-	#tig = OFF
-	#prioritize = 
-	#maxdelay = 0.850:
-	#maxskew = 
-	#period = :::::
-	#+++ Attributes for net 'tm/PUF/c_2<0>'
-	#name = tm/PUF/c_2<0>
-	#route_status = FULLY ROUTED
-	#number_of_pins = 2
-	#pin_list = 
-	#   Comp Pin Name                    Comp Pin Type  Site Pin Name       Delays (ns)  
-	#   tm/PUF/adder2/Madd_c_cy<3>.AMUX  BLOCK_OUTPUT   SLICE_X14Y100.AMUX  Driver
-	#   tm/PUF_result<0>.CLK             BLOCK_INPUT    SLICE_X16Y100.CLK    0.461ns
-	#lock = OFF
-	#lock_status = UNLOCKED
-	#tig = OFF
-	#prioritize = 
-	#maxdelay = 0.850:
-	#maxskew = 
-	#period = :::::
-	#126
-unselect -all
-	#127
-select net 'tm/PUF/c_2<0>'
-	#net "tm/PUF/c_2<0>"
-	#128
-unselect -all
-	#129
-select net 'tm/PUF/c_1<0>'
-	#net "tm/PUF/c_1<0>"
-	#130
-select net 'tm/PUF/c_2<0>'
-	#net "tm/PUF/c_2<0>"
-	#131
-post attr
-	#132
-select pin "SLICE_X16Y100.DX"
-	#133
-unselect pin "SLICE_X16Y100.DX"
-	#134
-unpost net "tm/PUF/c_1<0>"
-	#135
-unpost net "tm/PUF/c_2<0>"
-	#136
-unselect net 'tm/PUF/c_1<0>'
-	#137
-unselect net 'tm/PUF/c_2<0>'
-	#138
-select -k net 'tm/PUF/c_1<20>'
-	#139
-unselect net 'tm/PUF/c_1<20>'
-	#140
-select -k net 'tm/PUF/c_1<1>'
-	#141
-select net 'tm/PUF/c_1<2>'
-	#142
-select net 'tm/PUF/c_1<3>'
-	#143
-select net 'tm/PUF/c_1<4>'
-	#144
-select net 'tm/PUF/c_1<5>'
-	#145
-select net 'tm/PUF/c_1<6>'
-	#146
-select net 'tm/PUF/c_1<7>'
-	#147
-select net 'tm/PUF/c_1<8>'
-	#148
-select net 'tm/PUF/c_1<9>'
-	#149
-select net 'tm/PUF/c_1<10>'
-	#150
-select net 'tm/PUF/c_1<11>'
-	#151
-post attr
-	#152
-select pin "SLICE_X20Y100.DX"
-	#153
-unselect pin "SLICE_X20Y100.DX"
-	#154
-select pin "SLICE_X18Y100.DX"
-	#155
-unpost net "tm/PUF/c_1<5>"
-	#156
-unpost net "tm/PUF/c_1<9>"
-	#157
-unpost net "tm/PUF/c_1<6>"
-	#158
-unpost net "tm/PUF/c_1<3>"
-	#159
-unpost net "tm/PUF/c_1<1>"
-	#160
-unpost net "tm/PUF/c_1<4>"
-	#161
-unpost net "tm/PUF/c_1<7>"
-	#162
-unpost net "tm/PUF/c_1<10>"
-	#163
-unpost net "tm/PUF/c_1<8>"
-	#164
-unpost net "tm/PUF/c_1<11>"
-	#165
-unpost net "tm/PUF/c_1<2>"
-	#166
-unselect net 'tm/PUF/c_1<1>'
-	#167
-unselect net 'tm/PUF/c_1<2>'
-	#168
-unselect net 'tm/PUF/c_1<3>'
-	#169
-unselect net 'tm/PUF/c_1<4>'
-	#170
-unselect net 'tm/PUF/c_1<6>'
-	#171
-unselect net 'tm/PUF/c_1<7>'
-	#172
-unselect net 'tm/PUF/c_1<8>'
-	#173
-unselect net 'tm/PUF/c_1<9>'
-	#174
-unselect net 'tm/PUF/c_1<10>'
-	#175
-unselect net 'tm/PUF/c_1<11>'
-	#176
-unselect pin 'SLICE_X18Y100.DX'
-	#177
-unselect net 'tm/PUF/c_1<5>'
-	#178
-select -k net 'tm/PUF/c_1<6>'
-	#179
-unselect net 'tm/PUF/c_1<6>'
-	#180
-select -k net 'tm/PUF/c_1<7>'
-	#181
-unselect net 'tm/PUF/c_1<7>'
-	#182
-select -k net 'tm/PUF/c_1<1>'
-	#183
-post attr
-	#184
-unselect -all
-	#185
-unselect -all
-	#186
-select pin "SLICE_X18Y100.DX"
-	#187
-unselect -all
-	#188
-select -k pin "SLICE_X18Y100.DX"
-	#189
-unselect pin "SLICE_X18Y100.DX"
-	#190
-select pin "SLICE_X12Y100.BMUX"
-	#191
-unselect -all
-	#192
-select -k pin "SLICE_X12Y100.BMUX"
-	#193
-select pin "SLICE_X18Y100.DX"
-	#194
-unselect -all
-	#195
-select -k pin "SLICE_X12Y100.BMUX"
-	#196
-select -k pin "SLICE_X18Y100.DX"
-	#197
-unselect pin "SLICE_X18Y100.DX"
-	#198
-unselect pin "SLICE_X12Y100.BMUX"
-	#199
-select pin "SLICE_X18Y100.DX"
-	#200
-unpost net "tm/PUF/c_1<1>"
-	#201
-unselect pin 'SLICE_X18Y100.DX'
-	#202
-select -k net 'tm/PUF/c_1<2>'
-	#203
-select -k net 'tm/PUF/c_1<3>'
-	#204
-select -k net 'tm/PUF/c_1<4>'
-	#205
-select -k net 'tm/PUF/c_1<5>'
-	#206
-select -k net 'tm/PUF/c_1<6>'
-	#207
-select -k net 'tm/PUF/c_1<7>'
-	#208
-select -k net 'tm/PUF/c_1<8>'
-	#209
-select -k net 'tm/PUF/c_1<9>'
-	#210
-select -k net 'tm/PUF/c_1<10>'
-	#211
-select -k net 'tm/PUF/c_1<11>'
-	#212
-select -k net 'tm/PUF/c_1<12>'
-	#213
-select -k net 'tm/PUF/c_1<13>'
-	#214
-select -k net 'tm/PUF/c_1<14>'
-	#215
-select -k net 'tm/PUF/c_1<15>'
-	#216
-select -k net 'tm/PUF/c_1<16>'
-	#217
-select -k net 'tm/PUF/c_1<17>'
-	#218
-select -k net 'tm/PUF/c_1<18>'
-	#219
-select -k net 'tm/PUF/c_1<19>'
-	#220
-select -k net 'tm/PUF/c_1<20>'
-	#221
-select -k net 'tm/PUF/c_1<21>'
-	#222
-select -k net 'tm/PUF/c_1<22>'
-	#223
-select -k net 'tm/PUF/c_1<23>'
-	#224
-select -k net 'tm/PUF/c_1<24>'
-	#225
-select -k net 'tm/PUF/c_1<25>'
-	#226
-select -k net 'tm/PUF/c_1<26>'
-	#227
-select -k net 'tm/PUF/c_1<27>'
-	#228
-select -k net 'tm/PUF/c_1<28>'
-	#229
-select -k net 'tm/PUF/c_1<29>'
-	#230
-select -k net 'tm/PUF/c_1<30>'
-	#231
-select -k net 'tm/PUF/c_1<31>'
-	#232
-select -k net 'tm/PUF/c_2<0>'
-	#233
-unselect net 'tm/PUF/c_2<0>'
-	#234
-post attr
-	#ERROR:FPGAEditor:518 - Only 25 property sheets may be displayed at one time.
-	#Close one or more of them and try again.
-	#235
-unpost net "tm/PUF/c_1<27>"
-	#236
-unpost net "tm/PUF/c_1<26>"
-	#237
-unpost net "tm/PUF/c_1<15>"
-	#238
-unpost net "tm/PUF/c_1<5>"
-	#239
-unpost net "tm/PUF/c_1<22>"
-	#240
-unpost net "tm/PUF/c_1<12>"
-	#241
-unpost net "tm/PUF/c_1<2>"
-	#242
-unpost net "tm/PUF/c_1<19>"
-	#243
-unpost net "tm/PUF/c_1<9>"
-	#244
-unpost net "tm/PUF/c_1<16>"
-	#245
-unpost net "tm/PUF/c_1<6>"
-	#246
-unpost net "tm/PUF/c_1<23>"
-	#247
-unpost net "tm/PUF/c_1<13>"
-	#248
-unpost net "tm/PUF/c_1<3>"
-	#249
-unpost net "tm/PUF/c_1<20>"
-	#250
-unpost net "tm/PUF/c_1<10>"
-	#251
-unpost net "tm/PUF/c_1<17>"
-	#252
-unpost net "tm/PUF/c_1<7>"
-	#253
-unpost net "tm/PUF/c_1<24>"
-	#254
-unpost net "tm/PUF/c_1<14>"
-	#255
-unpost net "tm/PUF/c_1<4>"
-	#256
-unpost net "tm/PUF/c_1<21>"
-	#257
-unpost net "tm/PUF/c_1<11>"
-	#258
-unpost net "tm/PUF/c_1<18>"
-	#259
-unpost net "tm/PUF/c_1<8>"
-	#260
-unpost net "tm/PUF/c_1<25>"
-	#261
-unselect net 'tm/PUF/c_1<2>'
-	#262
-unselect net 'tm/PUF/c_1<3>'
-	#263
-unselect net 'tm/PUF/c_1<4>'
-	#264
-unselect net 'tm/PUF/c_1<5>'
-	#265
-unselect net 'tm/PUF/c_1<6>'
-	#266
-unselect net 'tm/PUF/c_1<7>'
-	#267
-unselect net 'tm/PUF/c_1<8>'
-	#268
-unselect net 'tm/PUF/c_1<9>'
-	#269
-unselect net 'tm/PUF/c_1<10>'
-	#270
-unselect net 'tm/PUF/c_1<11>'
-	#271
-unselect net 'tm/PUF/c_1<12>'
-	#272
-unselect net 'tm/PUF/c_1<13>'
-	#273
-unselect net 'tm/PUF/c_1<14>'
-	#274
-unselect net 'tm/PUF/c_1<15>'
-	#275
-unselect net 'tm/PUF/c_1<16>'
-	#276
-unselect net 'tm/PUF/c_1<17>'
-	#277
-unselect net 'tm/PUF/c_1<18>'
-	#278
-unselect net 'tm/PUF/c_1<19>'
-	#279
-unselect net 'tm/PUF/c_1<20>'
-	#280
-unselect net 'tm/PUF/c_1<21>'
-	#281
-unselect net 'tm/PUF/c_1<22>'
-	#282
-unselect net 'tm/PUF/c_1<23>'
-	#283
-unselect net 'tm/PUF/c_1<24>'
-	#284
-unselect net 'tm/PUF/c_1<25>'
-	#285
-unselect net 'tm/PUF/c_1<26>'
-	#286
-unselect net 'tm/PUF/c_1<27>'
-	#287
-unselect net 'tm/PUF/c_1<29>'
-	#288
-unselect net 'tm/PUF/c_1<30>'
-	#289
-unselect net 'tm/PUF/c_1<31>'
-	#290
-select -k net 'tm/PUF/c_1<29>'
-	#291
-select -k net 'tm/PUF/c_1<30>'
-	#292
-select -k net 'tm/PUF/c_1<31>'
-	#293
-post attr
-	#294
+	#39
+unpost net "tm/PUF/c_0<31>"
+	#40
 unpost net "tm/PUF/c_1<31>"
-	#295
-unpost net "tm/PUF/c_1<30>"
-	#296
-unpost net "tm/PUF/c_1<29>"
-	#297
-unpost net "tm/PUF/c_1<28>"
-	#298
-unselect net 'tm/PUF/c_1<29>'
-	#299
-unselect net 'tm/PUF/c_1<30>'
-	#300
+	#41
 unselect net 'tm/PUF/c_1<31>'
-	#301
-unselect net 'tm/PUF/c_1<28>'
-	#302
-select -k net 'tm/PUF/c_2<0>'
-	#303
-select -k net 'tm/PUF/c_2<1>'
-	#304
-select -k net 'tm/PUF/c_2<2>'
-	#305
-select -k net 'tm/PUF/c_2<3>'
-	#306
-select -k net 'tm/PUF/c_2<4>'
-	#307
-select -k net 'tm/PUF/c_2<5>'
-	#308
-select -k net 'tm/PUF/c_2<6>'
-	#309
-select -k net 'tm/PUF/c_2<7>'
-	#310
-select -k net 'tm/PUF/c_2<8>'
-	#311
-select -k net 'tm/PUF/c_2<9>'
-	#312
-select -k net 'tm/PUF/c_2<10>'
-	#313
-select -k net 'tm/PUF/c_2<11>'
-	#314
-select -k net 'tm/PUF/c_2<12>'
-	#315
-select -k net 'tm/PUF/c_2<13>'
-	#316
-select -k net 'tm/PUF/c_2<14>'
-	#317
-select -k net 'tm/PUF/c_2<15>'
-	#318
-select -k net 'tm/PUF/c_2<16>'
-	#319
-select -k net 'tm/PUF/c_2<17>'
-	#320
-select -k net 'tm/PUF/c_2<18>'
-	#321
-select -k net 'tm/PUF/c_2<19>'
-	#322
-select -k net 'tm/PUF/c_2<20>'
-	#323
-select -k net 'tm/PUF/c_2<21>'
-	#324
-select -k net 'tm/PUF/c_2<22>'
-	#325
-select -k net 'tm/PUF/c_2<23>'
-	#326
-select -k net 'tm/PUF/c_2<24>'
-	#327
-select -k net 'tm/PUF/c_2<25>'
-	#328
-select -k net 'tm/PUF/c_2<26>'
-	#329
-select -k net 'tm/PUF/c_2<27>'
-	#330
-select -k net 'tm/PUF/c_2<28>'
-	#331
-select -k net 'tm/PUF/c_2<29>'
-	#332
-select -k net 'tm/PUF/c_2<30>'
-	#333
-select -k net 'tm/PUF/c_2<31>'
-	#334
-select -k net 'tm/PUF_result<0>'
-	#335
-select -k net 'tm/PUF_result<1>'
-	#336
-unselect net 'tm/PUF_result<1>'
-	#337
-unselect net 'tm/PUF_result<0>'
-	#338
-post attr
-	#ERROR:FPGAEditor:518 - Only 25 property sheets may be displayed at one time.
-	#Close one or more of them and try again.
-	#339
-unpost net "tm/PUF/c_2<25>"
-	#340
-unpost net "tm/PUF/c_2<24>"
-	#341
-unpost net "tm/PUF/c_2<0>"
-	#342
-unpost net "tm/PUF/c_2<14>"
-	#343
-unpost net "tm/PUF/c_2<17>"
-	#344
-unpost net "tm/PUF/c_2<7>"
-	#345
-unpost net "tm/PUF/c_2<4>"
-	#346
-unpost net "tm/PUF/c_2<21>"
-	#347
-unpost net "tm/PUF/c_2<11>"
-	#348
-unpost net "tm/PUF/c_2<1>"
-	#349
-unpost net "tm/PUF/c_2<18>"
-	#350
-unpost net "tm/PUF/c_2<8>"
-	#351
-unpost net "tm/PUF/c_2<15>"
-	#352
-unpost net "tm/PUF/c_2<5>"
-	#353
-unpost net "tm/PUF/c_2<22>"
-	#354
-unpost net "tm/PUF/c_2<12>"
-	#355
-unpost net "tm/PUF/c_2<2>"
-	#356
-unpost net "tm/PUF/c_2<19>"
-	#357
-unpost net "tm/PUF/c_2<9>"
-	#358
-unpost net "tm/PUF/c_2<16>"
-	#359
-unpost net "tm/PUF/c_2<6>"
-	#360
-unpost net "tm/PUF/c_2<23>"
-	#361
-unpost net "tm/PUF/c_2<13>"
-	#362
-unpost net "tm/PUF/c_2<3>"
-	#363
-unpost net "tm/PUF/c_2<20>"
-	#364
-unpost net "tm/PUF/c_2<10>"
-	#365
-unselect net 'tm/PUF/c_2<0>'
-	#366
-unselect net 'tm/PUF/c_2<1>'
-	#367
-unselect net 'tm/PUF/c_2<2>'
-	#368
-unselect net 'tm/PUF/c_2<3>'
-	#369
-unselect net 'tm/PUF/c_2<4>'
-	#370
-unselect net 'tm/PUF/c_2<5>'
-	#371
-unselect net 'tm/PUF/c_2<6>'
-	#372
-unselect net 'tm/PUF/c_2<7>'
-	#373
-unselect net 'tm/PUF/c_2<8>'
-	#374
-unselect net 'tm/PUF/c_2<9>'
-	#375
-unselect net 'tm/PUF/c_2<10>'
-	#376
-unselect net 'tm/PUF/c_2<11>'
-	#377
-unselect net 'tm/PUF/c_2<12>'
-	#378
-unselect net 'tm/PUF/c_2<13>'
-	#379
-unselect net 'tm/PUF/c_2<14>'
-	#380
-unselect net 'tm/PUF/c_2<15>'
-	#381
-unselect net 'tm/PUF/c_2<16>'
-	#382
-unselect net 'tm/PUF/c_2<17>'
-	#383
-unselect net 'tm/PUF/c_2<18>'
-	#384
-unselect net 'tm/PUF/c_2<19>'
-	#385
-unselect net 'tm/PUF/c_2<21>'
-	#386
-unselect net 'tm/PUF/c_2<22>'
-	#387
-unselect net 'tm/PUF/c_2<23>'
-	#388
-unselect net 'tm/PUF/c_2<24>'
-	#389
-unselect net 'tm/PUF/c_2<25>'
-	#390
-unselect net 'tm/PUF/c_2<26>'
-	#391
-unselect net 'tm/PUF/c_2<27>'
-	#392
-unselect net 'tm/PUF/c_2<28>'
-	#393
-unselect net 'tm/PUF/c_2<29>'
-	#394
-unselect net 'tm/PUF/c_2<30>'
-	#395
-unselect net 'tm/PUF/c_2<31>'
-	#396
-unselect net 'tm/PUF/c_2<20>'
-	#397
-select -k net 'tm/PUF/c_2<15>'
-	#398
-post attr
-	#399
-unpost net "tm/PUF/c_2<15>"
-	#400
-unselect net 'tm/PUF/c_2<15>'
-	#401
-select -k net 'tm/PUF/c_2<13>'
-	#402
-post attr
-	#403
-unpost net "tm/PUF/c_2<13>"
-	#404
-unselect net 'tm/PUF/c_2<13>'
-	#405
-select -k net 'tm/PUF/c_2<20>'
-	#406
-unselect net 'tm/PUF/c_2<20>'
-	#407
-select -k net 'tm/PUF/c_2<21>'
-	#408
-unselect net 'tm/PUF/c_2<21>'
-	#409
-select -k net 'tm/PUF/c_2<22>'
-	#410
-unselect net 'tm/PUF/c_2<22>'
-	#411
-select -k net 'tm/PUF/c_2<23>'
-	#412
-unselect net 'tm/PUF/c_2<23>'
-	#413
-select -k net 'tm/PUF/c_2<24>'
-	#414
-unselect net 'tm/PUF/c_2<24>'
-	#415
-select -k net 'tm/PUF/c_2<25>'
-	#416
-unselect net 'tm/PUF/c_2<25>'
-	#417
-select -k net 'tm/PUF/c_2<26>'
-	#418
-unselect net 'tm/PUF/c_2<26>'
-	#419
-select -k net 'tm/PUF/c_2<27>'
-	#420
-unselect net 'tm/PUF/c_2<27>'
-	#421
-select -k net 'tm/PUF/c_2<28>'
-	#422
-unselect net 'tm/PUF/c_2<28>'
-	#423
-select -k net 'tm/PUF/c_2<27>'
-	#424
-unselect net 'tm/PUF/c_2<27>'
-	#425
-select -k net 'tm/PUF/c_2<26>'
-	#426
-unselect net 'tm/PUF/c_2<26>'
-	#427
-select -k net 'tm/PUF/c_2<25>'
-	#428
-unselect net 'tm/PUF/c_2<25>'
-	#429
-select -k net 'tm/PUF/c_2<26>'
-	#430
-select -k net 'tm/PUF/c_2<27>'
-	#431
-select -k net 'tm/PUF/c_2<28>'
-	#432
-select -k net 'tm/PUF/c_2<29>'
-	#433
-select -k net 'tm/PUF/c_2<30>'
-	#434
-select -k net 'tm/PUF/c_2<31>'
-	#435
-post attr
-	#436
-unpost net "tm/PUF/c_2<31>"
-	#437
-unpost net "tm/PUF/c_2<30>"
-	#438
-unpost net "tm/PUF/c_2<28>"
-	#439
-unpost net "tm/PUF/c_2<29>"
-	#440
-unpost net "tm/PUF/c_2<26>"
-	#441
-unselect net 'tm/PUF/c_2<26>'
-	#442
-unselect net 'tm/PUF/c_2<27>'
-	#443
-unselect net 'tm/PUF/c_2<28>'
-	#444
-unselect net 'tm/PUF/c_2<29>'
-	#445
-unselect net 'tm/PUF/c_2<30>'
-	#446
-unselect net 'tm/PUF/c_2<31>'
-	#447
-select -k net 'tm/PUF/c_2<16>'
-	#448
-unselect net 'tm/PUF/c_2<16>'
-	#449
+	#42
+unselect -all
+	#43
+select net 'tm/a_not0001'
+	#net "tm/a_not0001"
+	#44
+unselect -all
+	#45
+select net 'tm/b<1>'
+	#net "tm/b<1>"
+	#46
+unselect net 'tm/b<1>'
+	#47
+select -k net 'tm/PUF/c_0<31>'
+	#48
+unselect net 'tm/PUF/c_0<31>'
+	#49
+select -k net 'tm/PUF/c_1<3>'
+	#50
+unselect net 'tm/PUF/c_1<3>'
+	#51
 select -k net 'tm/PUF/c_1<2>'
-	#450
-unpost net "tm/PUF/c_2<27>"
-	#451
-post attr
-	#452
-unpost net "tm/PUF/c_1<2>"
-	#453
+	#52
 unselect net 'tm/PUF/c_1<2>'
-	#454
-select -k net 'tm/PUF/c_1<8>'
-	#455
-unselect net 'tm/PUF/c_1<8>'
-	#456
-select -k net 'tm/PUF/c_2<2>'
-	#457
-post attr
-	#458
-unpost net "tm/PUF/c_2<2>"
-	#459
-unselect net 'tm/PUF/c_2<2>'
-	#460
-select -k net 'tm/PUF/c_2<4>'
-	#461
-unselect net 'tm/PUF/c_2<4>'
-	#462
-select -k net 'tm/PUF/c_2<30>'
-	#463
-post attr
-	#464
-unpost net "tm/PUF/c_2<30>"
-	#465
-post attr
-	#466
-unpost net "tm/PUF/c_2<30>"
-	#467
-unselect net 'tm/PUF/c_2<30>'
-	#468
-select -k net 'tm/PUF/c_2<29>'
-	#469
-post attr
-	#470
-unpost net "tm/PUF/c_2<29>"
-	#471
-unselect net 'tm/PUF/c_2<29>'
-	#472
-select -k net 'tm/PUF/c_1<29>'
-	#473
-post attr
-	#474
-select pin "SLICE_X18Y107.DX"
-	#475
-unpost net "tm/PUF/c_1<29>"
-	#476
-unselect net 'tm/PUF/c_1<29>'
-	#477
-unselect pin 'SLICE_X18Y107.DX'
-	#478
-select -k net 'tm/PUF/c_2<1>'
-	#479
-unselect -all
-	#480
-unselect -all
-	#481
-unselect -all
-	#482
-unselect -all
-	#483
-unselect -all
-	#484
-unselect -all
-	#485
-select net 'tm/PUF/c_1<31>'
-	#net "tm/PUF/c_1<31>"
-	#486
-unselect net 'tm/PUF/c_1<31>'
-	#487
-select -k net 'tm/PUF/c_2<0>'
-	#488
-unselect net 'tm/PUF/c_2<0>'
-	#489
-select -k net 'tm/PUF/c_2<1>'
-	#490
-post attr
-	#491
-select pin "SLICE_X18Y100.CLK"
-	#492
-unselect pin "SLICE_X18Y100.CLK"
-	#493
-select pin "SLICE_X18Y100.CLK"
-	#494
-unselect pin "SLICE_X18Y100.CLK"
-	#495
-select pin "SLICE_X18Y100.CLK"
-	#496
-unselect pin "SLICE_X18Y100.CLK"
-	#497
-select pin "SLICE_X18Y100.CLK"
-	#498
-unselect pin 'SLICE_X18Y100.CLK'
-	#499
-unpost net "tm/PUF/c_2<1>"
-	#500
-post attr
-	#501
-select pin "SLICE_X18Y100.CLK"
-	#502
-unselect -all
-	#503
-select -k pin "SLICE_X18Y100.CLK"
-	#504
-unselect pin "SLICE_X18Y100.CLK"
-	#505
-select pin "SLICE_X18Y100.CLK"
-	#506
-unselect pin "SLICE_X18Y100.CLK"
-	#507
-select pin "SLICE_X14Y100.BMUX"
-	#508
-unselect -all
-	#509
-select -k pin "SLICE_X14Y100.BMUX"
-	#510
-unpost net "tm/PUF/c_2<1>"
-	#511
-unselect pin 'SLICE_X14Y100.BMUX'
-	#512
-select -k net 'tm/PUF/c_1<30>'
-	#513
-select net 'tm/PUF/c_1<31>'
-	#514
-select net 'tm/PUF/c_1<31>'
+	#53
+select -k net 'tm/PUF/c_1<3>'
+	#54
+unselect net 'tm/PUF/c_1<3>'
+	#55
+select -k net 'tm/PUF/c_1<4>'
+	#56
+unselect net 'tm/PUF/c_1<4>'
+	#57
+select -k net 'tm/PUF/c_1<2>'
+	#58
+unselect net 'tm/PUF/c_1<2>'
+	#59
+select -k net 'tm/PUF/c_1<1>'
+	#60
+unselect net 'tm/PUF/c_1<1>'
+	#61
+select -k net 'tm/PUF/c_1<0>'
+	#62
+unselect net 'tm/PUF/c_1<0>'
+	#63
+select -k net 'tm/PUF/c_0<30>'
+	#64
+unselect net 'tm/PUF/c_0<30>'
+	#65
+select -k net 'tm/PUF/c_0<29>'
+	#66
+unselect net 'tm/PUF/c_0<29>'
+	#67
+select -k net 'tm/PUF/c_0<28>'
+	#68
+unselect net 'tm/PUF/c_0<28>'
+	#69
+select -k net 'tm/PUF/c_0<27>'
+	#70
+unselect net 'tm/PUF/c_0<27>'

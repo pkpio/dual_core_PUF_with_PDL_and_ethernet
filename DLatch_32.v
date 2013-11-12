@@ -30,131 +30,131 @@ q        // Q output
 input [DATA_WIDTH-1:0] data, clk;
 output [DATA_WIDTH-1:0] q;
 
-DFF d0 (
+(* KEEP = "TRUE" *) DFF d0 (
  data[0],
  clk[0],
  q[0] );
-DFF d1 (
+(* KEEP = "TRUE" *) DFF d1 (
  data[1],
  clk[1],
  q[1] );
-DFF d2 (
+(* KEEP = "TRUE" *) DFF d2 (
  data[2],
  clk[2],
  q[2] );
-DFF d3 (
+(* KEEP = "TRUE" *) DFF d3 (
  data[3],
  clk[3],
  q[3] );
-DFF d4 (
+(* KEEP = "TRUE" *) DFF d4 (
  data[4],
  clk[4],
  q[4] );
-DFF d5 (
+(* KEEP = "TRUE" *) DFF d5 (
  data[5],
  clk[5],
  q[5] );
-DFF d6 (
+(* KEEP = "TRUE" *) DFF d6 (
  data[6],
  clk[6],
  q[6] );
-DFF d7 (
+(* KEEP = "TRUE" *) DFF d7 (
  data[7],
  clk[7],
  q[7] );
-DFF d8 (
+(* KEEP = "TRUE" *) DFF d8 (
  data[8],
  clk[8],
  q[8] );
-DFF d9 (
+(* KEEP = "TRUE" *) DFF d9 (
  data[9],
  clk[9],
  q[9] );
-DFF d10 (
+(* KEEP = "TRUE" *) DFF d10 (
  data[10],
  clk[10],
  q[10] );
-DFF d11 (
+(* KEEP = "TRUE" *) DFF d11 (
  data[11],
  clk[11],
  q[11] );
-DFF d12 (
+(* KEEP = "TRUE" *) DFF d12 (
  data[12],
  clk[12],
  q[12] );
-DFF d13 (
+(* KEEP = "TRUE" *) DFF d13 (
  data[13],
  clk[13],
  q[13] );
-DFF d14 (
+(* KEEP = "TRUE" *) DFF d14 (
  data[14],
  clk[14],
  q[14] );
-DFF d15 (
+(* KEEP = "TRUE" *) DFF d15 (
  data[15],
  clk[15],
  q[15] );
-DFF d16 (
+(* KEEP = "TRUE" *) DFF d16 (
  data[16],
  clk[16],
  q[16] );
-DFF d17 (
+(* KEEP = "TRUE" *) DFF d17 (
  data[17],
  clk[17],
  q[17] );
-DFF d18 (
+(* KEEP = "TRUE" *) DFF d18 (
  data[18],
  clk[18],
  q[18] );
-DFF d19 (
+(* KEEP = "TRUE" *) DFF d19 (
  data[19],
  clk[19],
  q[19] );
-DFF d20 (
+(* KEEP = "TRUE" *) DFF d20 (
  data[20],
  clk[20],
  q[20] );
-DFF d21 (
+(* KEEP = "TRUE" *) DFF d21 (
  data[21],
  clk[21],
  q[21] );
-DFF d22 (
+(* KEEP = "TRUE" *) DFF d22 (
  data[22],
  clk[22],
  q[22] );
-DFF d23 (
+(* KEEP = "TRUE" *) DFF d23 (
  data[23],
  clk[23],
  q[23] );
-DFF d24 (
+(* KEEP = "TRUE" *) DFF d24 (
  data[24],
  clk[24],
  q[24] );
-DFF d25 (
+(* KEEP = "TRUE" *) DFF d25 (
  data[25],
  clk[25],
  q[25] );
-DFF d26 (
+(* KEEP = "TRUE" *) DFF d26 (
  data[26],
  clk[26],
  q[26] );
-DFF d27 (
+(* KEEP = "TRUE" *) DFF d27 (
  data[27],
  clk[27],
  q[27] );
-DFF d28 (
+(* KEEP = "TRUE" *) DFF d28 (
  data[28],
  clk[28],
  q[28] );
-DFF d29 (
+(* KEEP = "TRUE" *) DFF d29 (
  data[29],
  clk[29],
  q[29] );
-DFF d30 (
+(* KEEP = "TRUE" *) DFF d30 (
  data[30],
  clk[30],
  q[30] );
-DFF d31 (
+(* KEEP = "TRUE" *) DFF d31 (
  data[31],
  clk[31],
  q[31] );

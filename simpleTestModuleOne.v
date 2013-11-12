@@ -4,7 +4,7 @@
 // **Modified the code from HW example for SIRC by Ken Eguro
 //
 // Create Date		:  10/11/13
-// Modify Date		:  10/11/13
+// Modify Date		:  11/11/13
 // Module Name		:  simpleTestModuleOne
 // Project Name     :  SIRC_HW
 // Target Devices	: 	Xilinx Vertix 5, XUPV5 110T
@@ -91,8 +91,9 @@ module simpleTestModuleOne #(
 	//32 two-dimensional arrays to hold the configuration values of each bit
 	//We only need 125-bits. 128-bit declaration is because we get configuration values from PC
 	//in 32-bit registers and so, a multiple of 32 will make it easy to read values by looping
-	reg [127:0]	config_core0 [0:31];
-	reg [127:0]	config_core1 [0:31];
+	//reg [127:0]	config_core0 [0:31];
+	//reg [127:0]	config_core1 [0:31];
+	reg [31:0] test;
 
 	//Outputs register
 	wire [31:0] results;
@@ -108,13 +109,14 @@ module simpleTestModuleOne #(
 
 	//Variables for execution
 	reg inputDone;
-	reg [6:0] memCount;	//Will be used while reading from memory to 128 bit challenge regs. Similarly while writing back from response regs
-	reg [5:0] regCount;
-	reg [7:0] bitCount;
+	reg [2:0] regCount;	//For reading in 128 config-bits for a bit in a loop
+	reg [7:0] bitCount;	//For looping through bits
 
 	//PUF execution variables
 	reg PUFExStart;
 	wire PUFExDone;
+
+	reg PUFExDoneReg; // Temporary reg for inital testing. Remove later
 
 
 	initial begin
@@ -202,7 +204,6 @@ module simpleTestModuleOne #(
 								inputMemoryReadAdd <= 0;
 								outputMemoryWriteAdd <= 0;
 								inputDone <= 0;
-								memCount <= 0;
 							end
 					end
 				end
@@ -232,6 +233,7 @@ module simpleTestModuleOne #(
 
 						//Change core after reading for 32 bits in core0
 						if(bitCount <= 31) begin
+							/*
 							config_core0[bitCount][127:96] <= inputMemoryReadData;
 							config_core0[bitCount][95:64]	<= config_core0[bitCount][127:96];
 							config_core0[bitCount][63:32]	<= config_core0[bitCount][95:64];
@@ -245,11 +247,15 @@ module simpleTestModuleOne #(
 							else begin
 								regCount <= regCount+1;
 							end
+							*/
+							test <= inputMemoryReadData;
+							bitCount <= bitCount+1;
 
 							currState <= READ;
 						end
 						else if(bitCount <= 63) begin
 							//An offset for bitCount is needed as we are not resetting it after reading for core0
+							/*
 							config_core1[bitCount-32][127:96] <= inputMemoryReadData;
 							config_core1[bitCount-32][95:64]	<= config_core1[bitCount-32][127:96];
 							config_core1[bitCount-32][63:32]	<= config_core1[bitCount-32][95:64];
@@ -263,6 +269,10 @@ module simpleTestModuleOne #(
 							else begin
 								regCount <= regCount+1;
 							end
+							*/
+
+							test <= inputMemoryReadData;
+							bitCount <= bitCount+1;
 
 							currState <= READ;
 						end
@@ -276,7 +286,8 @@ module simpleTestModuleOne #(
 
 				COMPUTE: begin
 					PUFExStart <= 1;
-					if(PUFExDone == 1) begin
+					PUFExDoneReg <= 1;
+					if(PUFExDoneReg == 1) begin
 						currState <= WRITE;
 						outputMemoryWriteAdd <= 0;
 					end
@@ -303,11 +314,12 @@ module simpleTestModuleOne #(
 
    //PUF module
 	top_PUF PUF(
+		.clk(clk),
 		.a(a),
 		.b(b),
 		.c(results),
-		.config1(config_core0[0]),
-		.config2(config_core1[0])
+		.config1(test),		//config_core0[0]),	//For testing just one bit's config data is used
+		.config2(test)		//config_core1[0])	//For testing just one bit's config data is used
     );
 
 endmodule

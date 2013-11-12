@@ -99,54 +99,6 @@ WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_userRunClearToggle = FROM
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<16>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<17>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<18>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<19>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<20>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<21>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<22>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<23>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<24>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<25>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<26>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<27>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<28>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<29>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<30>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<31>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_1<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<16>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<17>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<18>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<19>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<20>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<21>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<22>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<23>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<24>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<25>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<26>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<27>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<28>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<29>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<30>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<31>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'tm/PUF/c_2<9>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -157,12 +109,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  61
+  Number of warnings:  13
 
-Total memory usage is 204296 kilobytes
+Total memory usage is 198400 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  14 sec
-Total CPU time to NGDBUILD completion:   12 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   9 sec
 
 Writing NGDBUILD log file "system.bld"...

@@ -22,8 +22,8 @@ module top_PUF(
     input wire clk,
 
     //Configuration bits for PDL
-    input wire	[124:0]	config1,
-    input wire	[124:0]	config2,
+    input wire	[127:0]	config1,
+    input wire	[127:0]	config2,
 
     //Operands and output
     input  wire [31:0] a,
@@ -31,40 +31,52 @@ module top_PUF(
     output wire [31:0] c
     );
 
-wire [31:0] c_1;
-wire [31:0] c_2;
+
+(* KEEP = "TRUE" *)reg [31:0] a_0, b_0, a_1, b_1;
+
+always @(posedge clk) begin
+    a_0 <= a;
+    a_1 <= a;
+    b_0 <= b;
+    b_1 <= b;
+end
+
+(* KEEP = "TRUE" *) wire [31:0] c_0;
+(* KEEP = "TRUE" *) wire [31:0] c_1;
 
 //PDL output NETS
 (* KEEP = "TRUE" *) wire out1, out2;
 
 
 (* KEEP = "TRUE" *) adder_32 adder1(
-		.a(a),
-		.b(b),
-		.c(c_1)//result
+		.a(a_0),
+		.b(b_0),
+		.c(c_0)//result
 	);
 
 (* KEEP = "TRUE" *) adder_32 adder2(
-		.a(a),
-		.b(b),
-		.c(c_2)//result
+		.a(a_1),
+		.b(b_1),
+		.c(c_1)//result
 	);
 
-PDL pdl_1(
-         .I(c_1),       //Input signal to the PDL module
+
+(* KEEP = "TRUE" *) PDL pdl_1(
+         .I(c_0),       //Input signal to the PDL module
          .C(config1),   //Control bits for each LUT in the PDL
          .O(out1)        //Output of the PDL line
      );
 
-PDL pdl_2(
-         .I(c_2),       //Input signal to the PDL module
+(* KEEP = "TRUE" *) PDL pdl_2(
+         .I(c_1),       //Input signal to the PDL module
          .C(config2),   //Control bits for each LUT in the PDL
          .O(out2)        //Output of the PDL line
      );
 
-DFF_32 d32(
-		c_1, // Data Input
-		c_2, // LatchInput
+
+(* KEEP = "TRUE" *) DFF_32 d32(
+		out1, // Data Input
+		out2, // LatchInput
 		c        // Q output
 	);
 

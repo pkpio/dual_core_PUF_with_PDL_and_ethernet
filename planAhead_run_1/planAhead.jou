@@ -1,12 +1,17 @@
 #-----------------------------------------------------------
 # PlanAhead v13.3 (64-bit)
 # Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
-# Start of session at: Mon Nov 11 09:31:20 2013
-# Process ID: 3612
+# Start of session at: Tue Nov 12 07:42:41 2013
+# Process ID: 1900
 # Log file: E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/planAhead_run_1/planAhead.log
 # Journal file: E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
 source {E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/pa.fromNetlist.tcl}
-exit
-stop_gui
+startgroup
+set_property loc SLICE_X36Y58 [get_cells tm/PUF/d32/d0/q]
+set_property bel AFF [get_cells tm/PUF/d32/d0/q]
+endgroup
+refresh_design
+refresh_design
+refresh_design
