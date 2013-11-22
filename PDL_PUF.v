@@ -37,9 +37,6 @@ module PDL_PUF(s_tp, s_btm, s1, s2, reset, o);
 	 
 	 wire [PUFlength:0] i1,i2;
 	 wire puf_out;//q_buf, puf_out;
-	 wire oT;
-	 
-	 assign o = s_tp[0];
 
 
 /*	 
@@ -66,7 +63,7 @@ FDC FDC1 (.Q (puf_out),
 LUT1 #(
 	.INIT(2'b10) // Specify LUT Contents
 ) LUT1_inst_2 (
-	.O(oT), // LUT general output
+	.O(o), // LUT general output
 	.I0(puf_out) // LUT input
 );			 
 			 

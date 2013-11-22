@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Reading design: system.prj
 
@@ -2514,13 +2514,11 @@ Unit <emac_single_locallink> synthesized.
 
 Synthesizing Unit <PDL_PUF_1>.
     Related source file is "PDL_PUF.v".
-WARNING:Xst:646 - Signal <oT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <PDL_PUF_1> synthesized.
 
 
 Synthesizing Unit <PDL_PUF_2>.
     Related source file is "PDL_PUF.v".
-WARNING:Xst:646 - Signal <oT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <PDL_PUF_2> synthesized.
 
 
@@ -3074,7 +3072,6 @@ INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_12> in Unit <system> is equivalen
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_13> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_13> 
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_14> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_14> 
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_15> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_15> 
-INFO:Xst:2260 - The FF/Latch <tm/mp/dataOut_1> in Unit <system> is equivalent to the following 14 FFs/Latches : <tm/mp/dataOut_2> <tm/mp/dataOut_3> <tm/mp/dataOut_4> <tm/mp/dataOut_5> <tm/mp/dataOut_6> <tm/mp/dataOut_7> <tm/mp/dataOut_8> <tm/mp/dataOut_9> <tm/mp/dataOut_10> <tm/mp/dataOut_11> <tm/mp/dataOut_12> <tm/mp/dataOut_13> <tm/mp/dataOut_14> <tm/mp/dataOut_15> 
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_0> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_0> 
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_1> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_1> 
 INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_2> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_2> 
@@ -3466,7 +3463,7 @@ Delay:               3.663ns (Levels of Logic = 15)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_user_interface_i'
   Clock period: 4.439ns (frequency: 225.276MHz)
-  Total number of paths / destination ports: 7020 / 1974
+  Total number of paths / destination ports: 7004 / 1958
 -------------------------------------------------------------------------
 Delay:               4.439ns (Levels of Logic = 6)
   Source:            tm/outputMemoryWriteAdd_7 (FF)
@@ -3752,14 +3749,14 @@ Delay:               3.617ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 158.00 secs
-Total CPU time to Xst completion: 157.24 secs
+Total REAL time to Xst completion: 177.00 secs
+Total CPU time to Xst completion: 176.72 secs
  
 --> 
 
-Total memory usage is 553840 kilobytes
+Total memory usage is 552176 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  175 (   0 filtered)
-Number of infos    :   68 (   0 filtered)
+Number of warnings :  173 (   0 filtered)
+Number of infos    :   67 (   0 filtered)
 

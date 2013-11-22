@@ -1,44 +1,9 @@
 Release 13.3 - par O.76xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Fri Nov 22 10:57:57 2013
+Fri Nov 22 11:39:26 2013
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 32 loadless signals in this design. This design will cause Bitgen to issue DRC
-   warnings.
-
-   tm/mp/pufCore/puf1/sarray[0]/o1
-   tm/mp/pufCore/puf1/sarray[0]/o2
-   tm/mp/pufCore/puf10/sarray[0]/o1
-   tm/mp/pufCore/puf10/sarray[0]/o2
-   tm/mp/pufCore/puf11/sarray[0]/o1
-   tm/mp/pufCore/puf11/sarray[0]/o2
-   tm/mp/pufCore/puf12/sarray[0]/o1
-   tm/mp/pufCore/puf12/sarray[0]/o2
-   tm/mp/pufCore/puf13/sarray[0]/o1
-   tm/mp/pufCore/puf13/sarray[0]/o2
-   tm/mp/pufCore/puf14/sarray[0]/o1
-   tm/mp/pufCore/puf14/sarray[0]/o2
-   tm/mp/pufCore/puf15/sarray[0]/o1
-   tm/mp/pufCore/puf15/sarray[0]/o2
-   tm/mp/pufCore/puf16/sarray[0]/o1
-   tm/mp/pufCore/puf16/sarray[0]/o2
-   tm/mp/pufCore/puf2/sarray[0]/o1
-   tm/mp/pufCore/puf2/sarray[0]/o2
-   tm/mp/pufCore/puf3/sarray[0]/o1
-   tm/mp/pufCore/puf3/sarray[0]/o2
-   tm/mp/pufCore/puf4/sarray[0]/o1
-   tm/mp/pufCore/puf4/sarray[0]/o2
-   tm/mp/pufCore/puf5/sarray[0]/o1
-   tm/mp/pufCore/puf5/sarray[0]/o2
-   tm/mp/pufCore/puf6/sarray[0]/o1
-   tm/mp/pufCore/puf6/sarray[0]/o2
-   tm/mp/pufCore/puf7/sarray[0]/o1
-   tm/mp/pufCore/puf7/sarray[0]/o2
-   tm/mp/pufCore/puf8/sarray[0]/o1
-   tm/mp/pufCore/puf8/sarray[0]/o2
-   tm/mp/pufCore/puf9/sarray[0]/o1
-   tm/mp/pufCore/puf9/sarray[0]/o2
 
 

@@ -288,12 +288,6 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rx_client_clk_out_0_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">oT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">oT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">sum</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
@@ -652,9 +646,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">tm/mp/pufCore/b1_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;tm/mp/pufCore/b2_15&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tm/mp/dataOut_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;tm/mp/dataOut_2&gt; &lt;tm/mp/dataOut_3&gt; &lt;tm/mp/dataOut_4&gt; &lt;tm/mp/dataOut_5&gt; &lt;tm/mp/dataOut_6&gt; &lt;tm/mp/dataOut_7&gt; &lt;tm/mp/dataOut_8&gt; &lt;tm/mp/dataOut_9&gt; &lt;tm/mp/dataOut_10&gt; &lt;tm/mp/dataOut_11&gt; &lt;tm/mp/dataOut_12&gt; &lt;tm/mp/dataOut_13&gt; &lt;tm/mp/dataOut_14&gt; &lt;tm/mp/dataOut_15&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">tm/mp/pufCore/a2_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;tm/mp/pufCore/a1_0&gt; </arg>

@@ -10,7 +10,7 @@ Target Device  : xc5vlx110t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Fri Nov 22 10:54:56 2013
+Mapped Date    : Fri Nov 22 11:35:35 2013
 
 Mapping design into LUTs...
 WARNING:MapLib:1073 - This design has 3073 KEEP_HIERARCHY constraints specified
@@ -1074,11 +1074,11 @@ WARNING:Timing:3223 - Timing constraint TS_rx_fifo_rd_to_wr_0 = MAXDELAY FROM
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 34 secs 
-Total CPU  time at the beginning of Placer: 33 secs 
+Total REAL time at the beginning of Placer: 43 secs 
+Total CPU  time at the beginning of Placer: 37 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4a0a0fb0) REAL time: 41 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:93ed32f5) REAL time: 51 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:838 - An IO Bus with more than one IO standard is found.
@@ -1093,79 +1093,125 @@ WARNING:Place:838 - An IO Bus with more than one IO standard is found.
    	 Comp: LED<7>   IOSTANDARD = LVCMOS12
 
 
-Phase 2.7  Design Feasibility Check (Checksum:4a0a0fb0) REAL time: 41 secs 
+Phase 2.7  Design Feasibility Check (Checksum:93ed32f5) REAL time: 51 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:db3d7a58) REAL time: 41 secs 
+Phase 3.31  Local Placement Optimization (Checksum:6c428815) REAL time: 51 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:db3d7a58) REAL time: 41 secs 
+Phase 4.37  Local Placement Optimization (Checksum:6c428815) REAL time: 51 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:db3d7a58) REAL time: 1 mins 8 secs 
+Phase 5.33  Local Placement Optimization (Checksum:6c428815) REAL time: 1 mins 30 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:db3d7a58) REAL time: 1 mins 8 secs 
+Phase 6.32  Local Placement Optimization (Checksum:6c428815) REAL time: 1 mins 31 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:39746152) REAL time: 1 mins 10 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:e0e98f11) REAL time: 1 mins 32 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:39746152) REAL time: 1 mins 10 secs 
+Phase 8.36  Local Placement Optimization (Checksum:e0e98f11) REAL time: 1 mins 32 secs 
 
 Phase 9.30  Global Clock Region Assignment
-Phase 9.30  Global Clock Region Assignment (Checksum:39746152) REAL time: 1 mins 10 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:e0e98f11) REAL time: 1 mins 32 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:39746152) REAL time: 1 mins 10 secs 
+Phase 10.3  Local Placement Optimization (Checksum:e0e98f11) REAL time: 1 mins 33 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:39746152) REAL time: 1 mins 10 secs 
+Phase 11.5  Local Placement Optimization (Checksum:e0e98f11) REAL time: 1 mins 33 secs 
 
 Phase 12.8  Global Placement
-................
-...
+........................
+......
 ............................................
 ................
 ................
-.....................................
-Phase 12.8  Global Placement (Checksum:fc41b32d) REAL time: 1 mins 22 secs 
+..........................................................
+Phase 12.8  Global Placement (Checksum:f7b2f080) REAL time: 1 mins 47 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:fc41b32d) REAL time: 1 mins 22 secs 
+Phase 13.29  Local Placement Optimization (Checksum:f7b2f080) REAL time: 1 mins 47 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:fc41b32d) REAL time: 1 mins 23 secs 
+Phase 14.5  Local Placement Optimization (Checksum:f7b2f080) REAL time: 1 mins 47 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:ee0a44b3) REAL time: 1 mins 45 secs 
+Phase 15.18  Placement Optimization (Checksum:5d1d6cfb) REAL time: 2 mins 26 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:ee0a44b3) REAL time: 1 mins 45 secs 
+Phase 16.5  Local Placement Optimization (Checksum:5d1d6cfb) REAL time: 2 mins 27 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:ee0a44b3) REAL time: 1 mins 45 secs 
+Phase 17.34  Placement Validation (Checksum:5d1d6cfb) REAL time: 2 mins 27 secs 
 
-Total REAL time to Placer completion: 1 mins 46 secs 
-Total CPU  time to Placer completion: 1 mins 44 secs 
+Total REAL time to Placer completion: 2 mins 28 secs 
+Total CPU  time to Placer completion: 2 mins 18 secs 
 Running post-placement packing...
 Writing output files...
-WARNING:PhysDesignRules:367 - The signal <tm/mp/response<0>> is incomplete. The
-   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf1/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf16/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf15/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf14/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf13/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf12/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf11/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf10/i2<0>
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf9/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf8/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf7/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf6/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf5/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf4/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf3/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tm/mp/pufCore/puf2/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:  161
+Number of warnings:  176
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,616 out of  69,120    2%
-    Number used as Flip Flops:               1,616
-  Number of Slice LUTs:                      6,632 out of  69,120    9%
-    Number used as logic:                    6,580 out of  69,120    9%
-      Number using O6 output only:           6,245
+  Number of Slice Registers:                 1,632 out of  69,120    2%
+    Number used as Flip Flops:               1,632
+  Number of Slice LUTs:                      6,648 out of  69,120    9%
+    Number used as logic:                    6,596 out of  69,120    9%
+      Number using O6 output only:           6,261
       Number using O5 output only:             132
       Number using O5 and O6:                  203
     Number used as Memory:                      11 out of  17,920    1%
@@ -1177,14 +1223,14 @@ Slice Logic Utilization:
     Number using O5 output only:                 3
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 5,185 out of  17,280   30%
-  Number of LUT Flip Flop pairs used:        7,268
-    Number with an unused Flip Flop:         5,652 out of   7,268   77%
-    Number with an unused LUT:                 636 out of   7,268    8%
-    Number of fully used LUT-FF pairs:         980 out of   7,268   13%
-    Number of unique control sets:              92
+  Number of occupied Slices:                 5,297 out of  17,280   30%
+  Number of LUT Flip Flop pairs used:        7,331
+    Number with an unused Flip Flop:         5,699 out of   7,331   77%
+    Number with an unused LUT:                 683 out of   7,331    9%
+    Number of fully used LUT-FF pairs:         949 out of   7,331   12%
+    Number of unique control sets:             108
     Number of slice register sites lost
-      to control set restrictions:             157 out of  69,120    1%
+      to control set restrictions:             205 out of  69,120    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -1216,9 +1262,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                5.34
 
-Peak Memory Usage:  716 MB
-Total REAL time to MAP completion:  1 mins 53 secs 
-Total CPU time to MAP completion:   1 mins 51 secs 
+Peak Memory Usage:  712 MB
+Total REAL time to MAP completion:  2 mins 36 secs 
+Total CPU time to MAP completion:   2 mins 26 secs 
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.
