@@ -1,7 +1,7 @@
 Release 13.3 par O.76xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-PRAVEEN-PC::  Tue Nov 12 16:40:44 2013
+PRAVEEN-PC::  Tue Nov 12 20:56:57 2013
 
 par -w -intstyle ise -ol high -mt off system_map.ncd system.ncd system.pcf 
 

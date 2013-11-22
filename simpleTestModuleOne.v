@@ -337,8 +337,8 @@ module simpleTestModuleOne #(
    //PUF module
 	top_PUF PUF(
 		.clk(clk),
-		.a(a),
-		.b(b),
+		.a(a[0]),
+		.b(b[0]),
 		.c(results),
 		.config1(test),		//config_core0[0]),	//For testing just one bit's config data is used
 		.config2(test)		//config_core1[0])	//For testing just one bit's config data is used

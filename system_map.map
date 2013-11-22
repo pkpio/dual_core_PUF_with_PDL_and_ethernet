@@ -10,7 +10,7 @@ Target Device  : xc5vlx110t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 12 16:38:59 2013
+Mapped Date    : Tue Nov 12 20:55:15 2013
 
 Mapping design into LUTs...
 WARNING:Pack:2874 - Trimming timing constraints from pin
@@ -173,11 +173,11 @@ WARNING:Timing:3223 - Timing constraint TS_rx_fifo_rd_to_wr_0 = MAXDELAY FROM
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 21 secs 
-Total CPU  time at the beginning of Placer: 19 secs 
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 18 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4a603f82) REAL time: 24 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:4a603f82) REAL time: 21 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:838 - An IO Bus with more than one IO standard is found.
@@ -192,35 +192,35 @@ WARNING:Place:838 - An IO Bus with more than one IO standard is found.
    	 Comp: LED<7>   IOSTANDARD = LVCMOS25
 
 
-Phase 2.7  Design Feasibility Check (Checksum:4a603f82) REAL time: 24 secs 
+Phase 2.7  Design Feasibility Check (Checksum:4a603f82) REAL time: 21 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:67681012) REAL time: 24 secs 
+Phase 3.31  Local Placement Optimization (Checksum:67681012) REAL time: 21 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:67681012) REAL time: 24 secs 
+Phase 4.37  Local Placement Optimization (Checksum:67681012) REAL time: 21 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:67681012) REAL time: 48 secs 
+Phase 5.33  Local Placement Optimization (Checksum:67681012) REAL time: 45 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:67681012) REAL time: 48 secs 
+Phase 6.32  Local Placement Optimization (Checksum:67681012) REAL time: 45 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:8373921f) REAL time: 49 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:8373921f) REAL time: 46 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:8373921f) REAL time: 49 secs 
+Phase 8.36  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
 
 Phase 9.30  Global Clock Region Assignment
-Phase 9.30  Global Clock Region Assignment (Checksum:8373921f) REAL time: 49 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:8373921f) REAL time: 46 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:8373921f) REAL time: 49 secs 
+Phase 10.3  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:8373921f) REAL time: 49 secs 
+Phase 11.5  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
 
 Phase 12.8  Global Placement
 ....................................................
@@ -229,24 +229,24 @@ Phase 12.8  Global Placement
 ................
 ................
 ................
-Phase 12.8  Global Placement (Checksum:1e2291df) REAL time: 57 secs 
+Phase 12.8  Global Placement (Checksum:1e2291df) REAL time: 54 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:1e2291df) REAL time: 57 secs 
+Phase 13.29  Local Placement Optimization (Checksum:1e2291df) REAL time: 54 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:1e2291df) REAL time: 57 secs 
+Phase 14.5  Local Placement Optimization (Checksum:1e2291df) REAL time: 55 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 36 secs 
+Phase 15.18  Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 34 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 36 secs 
+Phase 16.5  Local Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 34 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:b5ce6e44) REAL time: 1 mins 37 secs 
+Phase 17.34  Placement Validation (Checksum:b5ce6e44) REAL time: 1 mins 35 secs 
 
-Total REAL time to Placer completion: 1 mins 37 secs 
+Total REAL time to Placer completion: 1 mins 35 secs 
 Total CPU  time to Placer completion: 1 mins 33 secs 
 Running post-placement packing...
 Writing output files...
@@ -313,8 +313,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.32
 
-Peak Memory Usage:  658 MB
-Total REAL time to MAP completion:  1 mins 40 secs 
+Peak Memory Usage:  657 MB
+Total REAL time to MAP completion:  1 mins 38 secs 
 Total CPU time to MAP completion:   1 mins 36 secs 
 
 Mapping completed.

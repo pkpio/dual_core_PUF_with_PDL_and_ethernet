@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">tm/PUF/a_0</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">tm/PUF/a_0</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">32</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">32</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">tm/PUF/b_0,
 E2M/EC/register32File/doutb&lt;31&gt;,
 E2M/EC/register32File/doutb&lt;30&gt;,
@@ -45,7 +45,7 @@ IODELAY symbol &quot;E2M/delayRXClk&quot; (output signal=E2M/gmii_rx_clk_delay1)
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="warning" file="Pack" num="2874" delta="new" >Trimming timing constraints from pin <arg fmt="%s" index="1">E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac</arg>
+<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac</arg>
 of frag <arg fmt="%s" index="2">HOSTCLK</arg> connected to power/ground net <arg fmt="%s" index="3">N0</arg>
 </msg>
 

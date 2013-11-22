@@ -10,7 +10,7 @@ Target Device  : xc5vlx110t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 12 16:38:59 2013
+Mapped Date    : Tue Nov 12 20:55:15 2013
 
 Design Summary
 --------------
@@ -72,8 +72,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.32
 
-Peak Memory Usage:  658 MB
-Total REAL time to MAP completion:  1 mins 40 secs 
+Peak Memory Usage:  657 MB
+Total REAL time to MAP completion:  1 mins 38 secs 
 Total CPU time to MAP completion:   1 mins 36 secs 
 
 Table of Contents
