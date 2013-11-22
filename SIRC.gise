@@ -33,6 +33,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="system.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="system.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="system.bld"/>
@@ -57,6 +58,7 @@
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="system.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="system.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="system_envsettings.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="system_fpga_editor.log"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="system_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="system_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="system_map.mrp" xil_pn:subbranch="Map"/>
@@ -113,7 +115,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1384974096" xil_pn:in_ck="-4354948931318522185" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="8195193951734679639" xil_pn:start_ts="1384973946">
+    <transform xil_pn:end_ts="1385097859" xil_pn:in_ck="-4354948931318522185" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="7207397093015962562" xil_pn:start_ts="1385097696">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -131,11 +133,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1384976713" xil_pn:in_ck="-2155046920077824839" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202362021998791" xil_pn:start_ts="1384976713">
+    <transform xil_pn:end_ts="1385045541" xil_pn:in_ck="-2155046920077824839" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202362021998791" xil_pn:start_ts="1385045540">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1384976760" xil_pn:in_ck="-2732017873374180578" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6991986314939685926" xil_pn:start_ts="1384976713">
+    <transform xil_pn:end_ts="1385097893" xil_pn:in_ck="-2732017873374180578" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6991986314939685926" xil_pn:start_ts="1385097859">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -145,12 +147,10 @@
       <outfile xil_pn:name="system.ngd"/>
       <outfile xil_pn:name="system_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1384976923" xil_pn:in_ck="7428778177734606149" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="6733564432430981316" xil_pn:start_ts="1384976760">
+    <transform xil_pn:end_ts="1385098012" xil_pn:in_ck="7428778177734606149" xil_pn:name="TRANEXT_map_virtex5" xil_pn:prop_ck="6733564432430981316" xil_pn:start_ts="1385097893">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="system.pcf"/>
       <outfile xil_pn:name="system_map.map"/>
@@ -161,7 +161,7 @@
       <outfile xil_pn:name="system_summary.xml"/>
       <outfile xil_pn:name="system_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1384977025" xil_pn:in_ck="436644491315078878" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-4097515898943074650" xil_pn:start_ts="1384976923">
+    <transform xil_pn:end_ts="1385098103" xil_pn:in_ck="436644491315078878" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-4097515898943074650" xil_pn:start_ts="1385098012">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -176,7 +176,7 @@
       <outfile xil_pn:name="system_pad.txt"/>
       <outfile xil_pn:name="system_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1384977119" xil_pn:in_ck="5512551163974856" xil_pn:name="TRANEXT_bitFile_virtex5" xil_pn:prop_ck="-4008143788065839743" xil_pn:start_ts="1384977025">
+    <transform xil_pn:end_ts="1385098183" xil_pn:in_ck="5512551163974856" xil_pn:name="TRANEXT_bitFile_virtex5" xil_pn:prop_ck="-4008143788065839743" xil_pn:start_ts="1385098103">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -199,7 +199,7 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1384977025" xil_pn:in_ck="7428778177734606017" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1384976998">
+    <transform xil_pn:end_ts="1385098103" xil_pn:in_ck="7428778177734606017" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1385098081">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

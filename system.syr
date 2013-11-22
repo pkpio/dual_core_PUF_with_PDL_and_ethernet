@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: system.prj
 
@@ -79,7 +79,7 @@ Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
 Pack IO Registers into IOBs        : Auto
-Equivalent register Removal        : YES
+Equivalent register Removal        : NO
 
 ---- General Options
 Optimization Goal                  : Speed
@@ -1312,13 +1312,11 @@ Analyzing module <pufMapping> in library <work>.
 Module <pufMapping> is correct for synthesis.
  
     Set user-defined property "KEEP_HIERARCHY =  TRUE" for instance <puf1> in unit <pufMapping>.
+    Set user-defined property "KEEP =  TRUE" for signal <a1>.
 Analyzing module <PDL_PUF.1> in library <work>.
 	PUFlength = 32'sb00000000000000000000000000111111
 Module <PDL_PUF.1> is correct for synthesis.
  
-    Set user-defined property "BEL =  D6LUT" for instance <LUT1_inst_1> in unit <PDL_PUF.1>.
-    Set user-defined property "INIT =  2" for instance <LUT1_inst_1> in unit <PDL_PUF.1>.
-    Set user-defined property "LOCK_PINS =  all" for instance <LUT1_inst_1> in unit <PDL_PUF.1>.
     Set user-defined property "INIT =  0" for instance <FDC1> in unit <PDL_PUF.1>.
     Set user-defined property "BEL =  D6LUT" for instance <LUT1_inst_2> in unit <PDL_PUF.1>.
     Set user-defined property "INIT =  2" for instance <LUT1_inst_2> in unit <PDL_PUF.1>.
@@ -1735,9 +1733,6 @@ Analyzing module <PDL_PUF.2> in library <work>.
 	PUFlength = 32'sb00000000000000000000000000111111
 Module <PDL_PUF.2> is correct for synthesis.
  
-    Set user-defined property "BEL =  D6LUT" for instance <LUT1_inst_1> in unit <PDL_PUF.2>.
-    Set user-defined property "INIT =  2" for instance <LUT1_inst_1> in unit <PDL_PUF.2>.
-    Set user-defined property "LOCK_PINS =  all" for instance <LUT1_inst_1> in unit <PDL_PUF.2>.
     Set user-defined property "INIT =  0" for instance <FDC1> in unit <PDL_PUF.2>.
     Set user-defined property "BEL =  D6LUT" for instance <LUT1_inst_2> in unit <PDL_PUF.2>.
     Set user-defined property "INIT =  2" for instance <LUT1_inst_2> in unit <PDL_PUF.2>.
@@ -2519,11 +2514,13 @@ Unit <emac_single_locallink> synthesized.
 
 Synthesizing Unit <PDL_PUF_1>.
     Related source file is "PDL_PUF.v".
+WARNING:Xst:646 - Signal <oT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <PDL_PUF_1> synthesized.
 
 
 Synthesizing Unit <PDL_PUF_2>.
     Related source file is "PDL_PUF.v".
+WARNING:Xst:646 - Signal <oT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <PDL_PUF_2> synthesized.
 
 
@@ -2537,6 +2534,15 @@ Unit <ethernet2BlockMem> synthesized.
 
 Synthesizing Unit <pufMapping>.
     Related source file is "pufMapping.v".
+    Found 16-bit register for signal <a1>.
+    Found 16-bit register for signal <a2>.
+    Found 16-bit register for signal <b1>.
+    Found 16-bit register for signal <b2>.
+    Found 16-bit adder for signal <c1$addsub0000> created at line 49.
+    Found 16-bit adder for signal <c2$addsub0000> created at line 50.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
 Unit <pufMapping> synthesized.
 
 
@@ -2548,7 +2554,7 @@ WARNING:Xst:1872 - Variable <ind> is used but never assigned.
     Found 1-bit register for signal <done>.
     Found 128-bit register for signal <buffer>.
     Found 5-bit register for signal <countWait>.
-    Found 5-bit adder for signal <countWait$addsub0000> created at line 59.
+    Found 5-bit adder for signal <countWait$addsub0000> created at line 61.
     Found 1-bit register for signal <mp_state>.
     Found 1-bit register for signal <PUFreset>.
     Found 1-bit register for signal <startPUF>.
@@ -2560,8 +2566,8 @@ Unit <mapping> synthesized.
 
 Synthesizing Unit <simpleTestModuleOne>.
     Related source file is "simpleTestModuleOne.v".
-WARNING:Xst:646 - Signal <lengthMinus1<31:17>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <bitCount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <A<31:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Using one-hot encoding for signal <regCount>.
     Found 1-bit register for signal <userRunClear>.
     Found 1-bit register for signal <register32CmdReq>.
@@ -2572,29 +2578,26 @@ WARNING:Xst:646 - Signal <bitCount> is assigned but never used. This unconnected
     Found 8-bit register for signal <register32Address>.
     Found 8-bit register for signal <outputMemoryWriteData>.
     Found 1-bit register for signal <LED<0>>.
+    Found 32-bit register for signal <A>.
+    Found 32-bit register for signal <B>.
     Found 128-bit register for signal <challenge>.
-    Found 6-bit comparator greater for signal <challenge_0$cmp_gt0000> created at line 243.
+    Found 6-bit comparator greater for signal <challenge_0$cmp_gt0000> created at line 240.
     Found 1-bit register for signal <challenge_ready>.
     Found 3-bit register for signal <currState>.
-    Found 17-bit comparator equal for signal <currState$cmp_eq0005> created at line 233.
-    Found 6-bit comparator lessequal for signal <currState$cmp_le0001> created at line 243.
-    Found 17-bit comparator not equal for signal <currState$cmp_ne0002> created at line 229.
+    Found 6-bit comparator lessequal for signal <currState$cmp_le0001> created at line 240.
     Found 1-bit register for signal <inputDone>.
-    Found 17-bit adder for signal <inputMemoryReadAdd$addsub0000> created at line 230.
-    Found 32-bit register for signal <length>.
-    Found 32-bit subtractor for signal <lengthMinus1>.
+    Found 17-bit adder for signal <inputMemoryReadAdd$addsub0000> created at line 227.
     Found 6-bit register for signal <memCount>.
-    Found 6-bit adder for signal <memCount$share0000> created at line 173.
-    Found 32-bit register for signal <multiplier>.
-    Found 13-bit adder for signal <outputMemoryWriteAdd$addsub0000> created at line 294.
-    Found 13-bit comparator greater for signal <outputMemoryWriteData$cmp_gt0000> created at line 287.
+    Found 6-bit adder for signal <memCount$share0000> created at line 170.
+    Found 13-bit adder for signal <outputMemoryWriteAdd$addsub0000> created at line 291.
+    Found 13-bit comparator greater for signal <outputMemoryWriteData$cmp_gt0000> created at line 284.
     Found 1-bit register for signal <paramCount>.
     Found 2-bit register for signal <regCount>.
-    Found 8-bit adder for signal <register32Address$addsub0000> created at line 193.
+    Found 8-bit adder for signal <register32Address$addsub0000> created at line 190.
     Summary:
 	inferred 257 D-type flip-flop(s).
-	inferred   5 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
 Unit <simpleTestModuleOne> synthesized.
 
 
@@ -2611,18 +2614,18 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 26
+# Adders/Subtractors                                   : 27
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
  13-bit adder                                          : 1
  13-bit adder carry out                                : 1
- 16-bit adder                                          : 1
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 1
  17-bit adder                                          : 1
  18-bit subtractor                                     : 1
  3-bit subtractor                                      : 2
  32-bit adder                                          : 2
- 32-bit subtractor                                     : 3
+ 32-bit subtractor                                     : 2
  33-bit subtractor                                     : 1
  4-bit subtractor                                      : 1
  5-bit adder                                           : 1
@@ -2637,12 +2640,12 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 315
+# Registers                                            : 319
  1-bit register                                        : 223
  12-bit register                                       : 12
  128-bit register                                      : 1
  13-bit register                                       : 4
- 16-bit register                                       : 6
+ 16-bit register                                       : 10
  17-bit register                                       : 1
  2-bit register                                        : 5
  3-bit register                                        : 5
@@ -2654,11 +2657,9 @@ Macro Statistics
  6-bit register                                        : 1
  7-bit register                                        : 3
  8-bit register                                        : 36
-# Comparators                                          : 16
+# Comparators                                          : 14
  13-bit comparator greater                             : 2
  16-bit comparator greatequal                          : 1
- 17-bit comparator equal                               : 1
- 17-bit comparator not equal                           : 1
  18-bit comparator not equal                           : 1
  32-bit comparator greater                             : 3
  33-bit comparator greater                             : 2
@@ -2748,58 +2749,97 @@ WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <rx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <rx_fifo_i>.
+WARNING:Xst:2677 - Node <B_16> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_17> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_18> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_19> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_20> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_21> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_22> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_23> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_24> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_25> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_26> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_27> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_28> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_29> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_30> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <B_31> of sequential type is unconnected in block <tm>.
 WARNING:Xst:2677 - Node <regCount_1> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_16> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_17> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_18> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_19> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_20> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_21> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_22> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_23> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_24> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_25> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_26> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_27> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_28> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_29> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_30> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <A_31> of sequential type is unconnected in block <tm>.
+WARNING:Xst:2677 - Node <rd_enable_delay> of sequential type is unconnected in block <tx_fifo_i>.
+WARNING:Xst:2677 - Node <rd_enable_delay2> of sequential type is unconnected in block <tx_fifo_i>.
+
+Synthesizing (advanced) Unit <pufMapping>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal a1 may hinder XST clustering optimizations.
+Unit <pufMapping> synthesized (advanced).
 
 Synthesizing (advanced) Unit <tx_client_fifo_8>.
 INFO:Xst:2774 - HDL ADVISOR - ASYNC_REG property attached to signal wr_rd_addr may hinder XST clustering optimizations.
 Unit <tx_client_fifo_8> synthesized (advanced).
 WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_client_fifo_8>.
+WARNING:Xst:2677 - Node <B_16> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_17> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_18> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_19> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_20> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_21> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_22> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_23> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_24> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_25> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_26> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_27> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_28> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_29> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_30> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <B_31> of sequential type is unconnected in block <simpleTestModuleOne>.
 WARNING:Xst:2677 - Node <regCount_1> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_17> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_18> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_19> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_20> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_21> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_22> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_23> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_24> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_25> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_26> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_27> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_28> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_29> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_30> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <multiplier_31> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_17> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_18> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_19> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_20> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_21> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_22> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_23> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_24> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_25> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_26> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_27> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_28> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_29> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_30> of sequential type is unconnected in block <simpleTestModuleOne>.
-WARNING:Xst:2677 - Node <length_31> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_16> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_17> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_18> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_19> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_20> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_21> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_22> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_23> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_24> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_25> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_26> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_27> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_28> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_29> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_30> of sequential type is unconnected in block <simpleTestModuleOne>.
+WARNING:Xst:2677 - Node <A_31> of sequential type is unconnected in block <simpleTestModuleOne>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 5
-# Adders/Subtractors                                   : 26
+# Adders/Subtractors                                   : 27
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
  13-bit adder                                          : 1
  13-bit adder carry out                                : 1
- 16-bit adder                                          : 1
+ 16-bit adder                                          : 3
  16-bit subtractor                                     : 1
  17-bit adder                                          : 1
- 17-bit subtractor                                     : 1
  18-bit subtractor                                     : 1
  3-bit subtractor                                      : 2
  32-bit adder                                          : 2
@@ -2818,13 +2858,11 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 1523
- Flip-Flops                                            : 1523
-# Comparators                                          : 16
+# Registers                                            : 1585
+ Flip-Flops                                            : 1585
+# Comparators                                          : 14
  13-bit comparator greater                             : 2
  16-bit comparator greatequal                          : 1
- 17-bit comparator equal                               : 1
- 17-bit comparator not equal                           : 1
  18-bit comparator not equal                           : 1
  32-bit comparator greater                             : 3
  33-bit comparator greater                             : 2
@@ -3029,8 +3067,40 @@ WARNING:Xst:2677 - Node <E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_st
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block system, actual ratio is 7.
-FlipFlop E2M/emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_7 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block system, actual ratio is 8.
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_10> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_10> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_11> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_11> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_12> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_12> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_13> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_13> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_14> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_14> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_15> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_15> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/dataOut_1> in Unit <system> is equivalent to the following 14 FFs/Latches : <tm/mp/dataOut_2> <tm/mp/dataOut_3> <tm/mp/dataOut_4> <tm/mp/dataOut_5> <tm/mp/dataOut_6> <tm/mp/dataOut_7> <tm/mp/dataOut_8> <tm/mp/dataOut_9> <tm/mp/dataOut_10> <tm/mp/dataOut_11> <tm/mp/dataOut_12> <tm/mp/dataOut_13> <tm/mp/dataOut_14> <tm/mp/dataOut_15> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_0> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_0> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_1> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_1> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_2> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_2> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_3> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_3> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_4> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_4> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_5> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_5> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_6> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_6> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_7> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_7> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_8> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_8> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_9> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_9> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_0> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_0> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_1> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_1> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_2> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_2> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_3> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_3> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_4> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_4> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_5> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_5> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_6> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_6> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_7> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_7> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_8> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_8> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/b1_9> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/b2_9> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_10> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_10> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_11> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_11> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_12> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_12> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_13> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_13> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_14> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_14> 
+INFO:Xst:2260 - The FF/Latch <tm/mp/pufCore/a2_15> in Unit <system> is equivalent to the following FF/Latch : <tm/mp/pufCore/a1_15> 
 
 Final Macro Processing ...
 
@@ -3053,8 +3123,8 @@ Unit <system> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1572
- Flip-Flops                                            : 1572
+# Registers                                            : 1633
+ Flip-Flops                                            : 1633
 # Shift Registers                                      : 11
  2-bit shift register                                  : 3
  3-bit shift register                                  : 8
@@ -3086,29 +3156,28 @@ Design Statistics
 # IOs                              : 62
 
 Cell Usage :
-# BELS                             : 7440
+# BELS                             : 7493
 #      GND                         : 4
-#      INV                         : 168
-#      LUT1                        : 173
-#      LUT2                        : 88
-#      LUT3                        : 185
-#      LUT4                        : 437
-#      LUT5                        : 466
-#      LUT6                        : 5061
-#      MUXCY                       : 428
-#      MUXF7                       : 36
+#      INV                         : 151
+#      LUT1                        : 156
+#      LUT2                        : 151
+#      LUT3                        : 175
+#      LUT4                        : 434
+#      LUT5                        : 485
+#      LUT6                        : 5067
+#      MUXCY                       : 436
+#      MUXF7                       : 25
 #      VCC                         : 4
-#      XORCY                       : 390
-# FlipFlops/Latches                : 1593
-#      FD                          : 42
+#      XORCY                       : 405
+# FlipFlops/Latches                : 1654
+#      FD                          : 112
 #      FDC                         : 47
 #      FDCE                        : 13
-#      FDE                         : 1039
+#      FDE                         : 1053
 #      FDP                         : 27
-#      FDR                         : 177
-#      FDRE                        : 219
-#      FDRS                        : 11
-#      FDS                         : 14
+#      FDR                         : 188
+#      FDRE                        : 202
+#      FDS                         : 8
 #      FDSE                        : 3
 #      ODDR                        : 1
 # RAMS                             : 39
@@ -3116,8 +3185,8 @@ Cell Usage :
 #      RAMB36_EXP                  : 35
 # Shift Registers                  : 11
 #      SRLC16E                     : 11
-# Clock Buffers                    : 6
-#      BUFG                        : 5
+# Clock Buffers                    : 7
+#      BUFG                        : 6
 #      BUFGP                       : 1
 # IO Buffers                       : 61
 #      IBUF                        : 14
@@ -3138,18 +3207,18 @@ Selected Device : 5vlx110tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1582  out of  69120     2%  
- Number of Slice LUTs:                 6589  out of  69120     9%  
-    Number used as Logic:              6578  out of  69120     9%  
+ Number of Slice Registers:            1643  out of  69120     2%  
+ Number of Slice LUTs:                 6630  out of  69120     9%  
+    Number used as Logic:              6619  out of  69120     9%  
     Number used as Memory:               11  out of  17920     0%  
        Number used as SRL:               11
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   8171
-   Number with an unused Flip Flop:    6589  out of   8171    80%  
-   Number with an unused LUT:          1582  out of   8171    19%  
-   Number of fully used LUT-FF pairs:     0  out of   8171     0%  
-   Number of unique control sets:       125
+ Number of LUT Flip Flop pairs used:   8273
+   Number with an unused Flip Flop:    6630  out of   8273    80%  
+   Number with an unused LUT:          1643  out of   8273    19%  
+   Number of fully used LUT-FF pairs:     0  out of   8273     0%  
+   Number of unique control sets:       112
 
 IO Utilization: 
  Number of IOs:                          62
@@ -3160,7 +3229,7 @@ Specific Feature Utilization:
  Number of Block RAM/FIFO:               39  out of    148    26%  
     Number using Block RAM only:         37
     Number using FIFO only:               2
- Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+ Number of BUFG/BUFGCTRLs:                7  out of     32    21%  
  Number of PLL_ADVs:                      2  out of      6    33%  
 
 ---------------------------
@@ -3185,9 +3254,9 @@ Clock Information:
 Clock Signal                                                                                      | Clock buffer(FF name)            | Load  |
 --------------------------------------------------------------------------------------------------+----------------------------------+-------+
 CLK_100                                                                                           | BUFGP                            | 1     |
-clk_125_eth_i                                                                                     | BUFG                             | 1056  |
+clk_125_eth_i                                                                                     | BUFG                             | 1055  |
 GMII_RX_CLK_0                                                                                     | IBUF+IODELAY+BUFG                | 116   |
-clk_user_interface_i                                                                              | BUFG                             | 448   |
+clk_user_interface_i                                                                              | BUFG                             | 446   |
 E2M/EC/sysACE_delay_clk                                                                           | BUFG                             | 34    |
 clk_200_i                                                                                         | BUFG                             | 13    |
 tm/mp/pufCore/puf1/sarray[0]/pdl_bottom/o(tm/mp/pufCore/puf1/sarray[0]/pdl_bottom/LUT6_inst_0:O)  | NONE(*)(tm/mp/pufCore/puf1/FDC1) | 1     |
@@ -3206,6 +3275,7 @@ tm/mp/pufCore/puf13/sarray[0]/pdl_bottom/o(tm/mp/pufCore/puf13/sarray[0]/pdl_bot
 tm/mp/pufCore/puf14/sarray[0]/pdl_bottom/o(tm/mp/pufCore/puf14/sarray[0]/pdl_bottom/LUT6_inst_0:O)| NONE(*)(tm/mp/pufCore/puf14/FDC1)| 1     |
 tm/mp/pufCore/puf15/sarray[0]/pdl_bottom/o(tm/mp/pufCore/puf15/sarray[0]/pdl_bottom/LUT6_inst_0:O)| NONE(*)(tm/mp/pufCore/puf15/FDC1)| 1     |
 tm/mp/pufCore/puf16/sarray[0]/pdl_bottom/o(tm/mp/pufCore/puf16/sarray[0]/pdl_bottom/LUT6_inst_0:O)| NONE(*)(tm/mp/pufCore/puf16/FDC1)| 1     |
+tm/mp/startPUF1                                                                                   | BUFG                             | 64    |
 --------------------------------------------------------------------------------------------------+----------------------------------+-------+
 (*) These 16 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -3294,8 +3364,8 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 5.876ns (Maximum Frequency: 170.184MHz)
-   Minimum input arrival time before clock: 2.698ns
+   Minimum period: 5.604ns (Maximum Frequency: 178.444MHz)
+   Minimum input arrival time before clock: 2.856ns
    Maximum output required time after clock: 3.920ns
    Maximum combinational path delay: 3.617ns
 
@@ -3305,31 +3375,57 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_125_eth_i'
-  Clock period: 5.876ns (frequency: 170.184MHz)
-  Total number of paths / destination ports: 185951 / 3563
+  Clock period: 5.604ns (frequency: 178.444MHz)
+  Total number of paths / destination ports: 183470 / 3550
 -------------------------------------------------------------------------
-Delay:               5.876ns (Levels of Logic = 7)
-  Source:            E2M/EC/tx_curr_bytes_left_23 (FF)
-  Destination:       E2M/EC/tx_packet_payload_55 (FF)
+Delay:               5.604ns (Levels of Logic = 33)
+  Source:            E2M/EC/tx_curr_bytes_left_0 (FF)
+  Destination:       E2M/EC/tx_header_buffer_len_2 (FF)
   Source Clock:      clk_125_eth_i rising
   Destination Clock: clk_125_eth_i rising
 
-  Data Path: E2M/EC/tx_curr_bytes_left_23 to E2M/EC/tx_packet_payload_55
+  Data Path: E2M/EC/tx_curr_bytes_left_0 to E2M/EC/tx_header_buffer_len_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.471   0.989  E2M/EC/tx_curr_bytes_left_23 (E2M/EC/tx_curr_bytes_left_23)
-     LUT5:I0->O            2   0.094   0.978  E2M/EC/tx_state_cmp_eq0027247_SW1 (N540)
-     LUT6:I1->O            1   0.094   0.480  E2M/EC/tx_state_cmp_eq0027260_1 (E2M/EC/tx_state_cmp_eq0027260)
-     LUT5:I4->O            6   0.094   0.507  E2M/EC/tx_packet_payload_68_mux000021 (E2M/EC/N97)
-     LUT6:I5->O            2   0.094   1.074  E2M/EC/tx_packet_payload_56_mux00002165_SW0 (N648)
-     LUT6:I0->O            1   0.094   0.000  E2M/EC/tx_packet_payload_40_mux000031_F (N1053)
-     MUXF7:I0->O          16   0.251   0.562  E2M/EC/tx_packet_payload_40_mux000031 (E2M/EC/N43)
-     LUT4:I3->O            1   0.094   0.000  E2M/EC/tx_packet_payload_55_mux000065 (E2M/EC/tx_packet_payload_55_mux0000)
-     FDE:D                    -0.018          E2M/EC/tx_packet_payload_55
+     FDE:C->Q              6   0.471   0.507  E2M/EC/tx_curr_bytes_left_0 (E2M/EC/tx_curr_bytes_left_0)
+     LUT1:I0->O            1   0.094   0.000  E2M/EC/Msub__sub0001_cy<0>_rt (E2M/EC/Msub__sub0001_cy<0>_rt)
+     MUXCY:S->O            1   0.372   0.000  E2M/EC/Msub__sub0001_cy<0> (E2M/EC/Msub__sub0001_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<1> (E2M/EC/Msub__sub0001_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<2> (E2M/EC/Msub__sub0001_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<3> (E2M/EC/Msub__sub0001_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<4> (E2M/EC/Msub__sub0001_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<5> (E2M/EC/Msub__sub0001_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<6> (E2M/EC/Msub__sub0001_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<7> (E2M/EC/Msub__sub0001_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<8> (E2M/EC/Msub__sub0001_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<9> (E2M/EC/Msub__sub0001_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<10> (E2M/EC/Msub__sub0001_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<11> (E2M/EC/Msub__sub0001_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<12> (E2M/EC/Msub__sub0001_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<13> (E2M/EC/Msub__sub0001_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<14> (E2M/EC/Msub__sub0001_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<15> (E2M/EC/Msub__sub0001_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<16> (E2M/EC/Msub__sub0001_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<17> (E2M/EC/Msub__sub0001_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<18> (E2M/EC/Msub__sub0001_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<19> (E2M/EC/Msub__sub0001_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<20> (E2M/EC/Msub__sub0001_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<21> (E2M/EC/Msub__sub0001_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<22> (E2M/EC/Msub__sub0001_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<23> (E2M/EC/Msub__sub0001_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<24> (E2M/EC/Msub__sub0001_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  E2M/EC/Msub__sub0001_cy<25> (E2M/EC/Msub__sub0001_cy<25>)
+     XORCY:CI->O           2   0.357   0.978  E2M/EC/Msub__sub0001_xor<26> (E2M/EC/_sub0001<26>)
+     LUT5:I0->O            1   0.094   0.000  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_lut<5>1 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_lut<5>1)
+     MUXCY:S->O            1   0.372   0.000  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<5>_0 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<5>1)
+     MUXCY:CI->O          16   0.254   0.658  E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<6>_0 (E2M/EC/Mcompar_tx_header_buffer_len_cmp_gt0000_cy<6>1)
+     LUT6:I4->O            7   0.094   0.609  E2M/EC/tx_header_buffer_len_mux0000<2>21 (E2M/EC/N55)
+     LUT6:I4->O            1   0.094   0.000  E2M/EC/tx_header_buffer_len_mux0000<2>122 (E2M/EC/tx_header_buffer_len_mux0000<2>)
+     FDE:D                    -0.018          E2M/EC/tx_header_buffer_len_2
     ----------------------------------------
-    Total                      5.876ns (1.286ns logic, 4.590ns route)
-                                       (21.9% logic, 78.1% route)
+    Total                      5.604ns (2.852ns logic, 2.752ns route)
+                                       (50.9% logic, 49.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GMII_RX_CLK_0'
@@ -3369,68 +3465,54 @@ Delay:               3.663ns (Levels of Logic = 15)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_user_interface_i'
-  Clock period: 5.223ns (frequency: 191.461MHz)
-  Total number of paths / destination ports: 12485 / 1980
+  Clock period: 4.439ns (frequency: 225.276MHz)
+  Total number of paths / destination ports: 7020 / 1974
 -------------------------------------------------------------------------
-Delay:               5.223ns (Levels of Logic = 20)
-  Source:            tm/length_0 (FF)
-  Destination:       tm/inputMemoryReadAdd_16 (FF)
+Delay:               4.439ns (Levels of Logic = 6)
+  Source:            tm/outputMemoryWriteAdd_7 (FF)
+  Destination:       tm/memCount_5 (FF)
   Source Clock:      clk_user_interface_i rising
   Destination Clock: clk_user_interface_i rising
 
-  Data Path: tm/length_0 to tm/inputMemoryReadAdd_16
+  Data Path: tm/outputMemoryWriteAdd_7 to tm/memCount_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.471   0.480  tm/length_0 (tm/length_0)
-     LUT1:I0->O            1   0.094   0.000  tm/Msub_lengthMinus1_Madd_cy<0>_rt (tm/Msub_lengthMinus1_Madd_cy<0>_rt)
-     MUXCY:S->O            1   0.372   0.000  tm/Msub_lengthMinus1_Madd_cy<0> (tm/Msub_lengthMinus1_Madd_cy<0>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<1> (tm/Msub_lengthMinus1_Madd_cy<1>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<2> (tm/Msub_lengthMinus1_Madd_cy<2>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<3> (tm/Msub_lengthMinus1_Madd_cy<3>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<4> (tm/Msub_lengthMinus1_Madd_cy<4>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<5> (tm/Msub_lengthMinus1_Madd_cy<5>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<6> (tm/Msub_lengthMinus1_Madd_cy<6>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<7> (tm/Msub_lengthMinus1_Madd_cy<7>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<8> (tm/Msub_lengthMinus1_Madd_cy<8>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<9> (tm/Msub_lengthMinus1_Madd_cy<9>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<10> (tm/Msub_lengthMinus1_Madd_cy<10>)
-     MUXCY:CI->O           1   0.026   0.000  tm/Msub_lengthMinus1_Madd_cy<11> (tm/Msub_lengthMinus1_Madd_cy<11>)
-     XORCY:CI->O           1   0.357   0.710  tm/Msub_lengthMinus1_Madd_xor<12> (tm/lengthMinus1<12>)
-     LUT6:I3->O            1   0.094   0.000  tm/Mcompar_currState_cmp_ne0002_lut<4> (tm/Mcompar_currState_cmp_ne0002_lut<4>)
-     MUXCY:S->O            1   0.372   0.000  tm/Mcompar_currState_cmp_ne0002_cy<4> (tm/Mcompar_currState_cmp_ne0002_cy<4>)
-     MUXCY:CI->O           4   0.254   0.726  tm/Mcompar_currState_cmp_ne0002_cy<5> (tm/currState_cmp_ne0002)
-     LUT5:I2->O            1   0.094   0.000  tm/inputMemoryReadAdd_mux0000<0>1_F (N1049)
-     MUXF7:I0->O          17   0.251   0.568  tm/inputMemoryReadAdd_mux0000<0>1 (tm/N0)
-     LUT4:I3->O            1   0.094   0.000  tm/inputMemoryReadAdd_mux0000<9>1 (tm/inputMemoryReadAdd_mux0000<9>)
-     FDR:D                    -0.018          tm/inputMemoryReadAdd_7
+     FDR:C->Q             11   0.471   1.028  tm/outputMemoryWriteAdd_7 (tm/outputMemoryWriteAdd_7)
+     LUT5:I0->O            3   0.094   0.587  tm/currState_cmp_eq000823 (tm/currState_cmp_eq000823)
+     LUT4:I2->O            3   0.094   0.587  tm/currState_cmp_eq000887 (tm/currState_cmp_eq0008)
+     LUT6:I4->O            1   0.094   0.000  tm/memCount_mux0000<0>11_G (N1060)
+     MUXF7:I1->O           2   0.254   0.485  tm/memCount_mux0000<0>11 (tm/N8)
+     LUT4:I3->O           15   0.094   0.557  tm/outputMemoryWriteAdd_mux0000<0>11 (tm/N1)
+     LUT6:I5->O            1   0.094   0.000  tm/memCount_mux0000<1> (tm/memCount_mux0000<1>)
+     FDE:D                    -0.018          tm/memCount_4
     ----------------------------------------
-    Total                      5.223ns (2.739ns logic, 2.484ns route)
-                                       (52.4% logic, 47.6% route)
+    Total                      4.439ns (1.195ns logic, 3.244ns route)
+                                       (26.9% logic, 73.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'E2M/EC/sysACE_delay_clk'
-  Clock period: 3.392ns (frequency: 294.811MHz)
-  Total number of paths / destination ports: 222 / 53
+  Clock period: 3.627ns (frequency: 275.710MHz)
+  Total number of paths / destination ports: 222 / 48
 -------------------------------------------------------------------------
-Delay:               3.392ns (Levels of Logic = 3)
-  Source:            E2M/EC/sysACECounter_1 (FF)
-  Destination:       E2M/EC/sysACE_MPDATA_In_13 (FF)
+Delay:               3.627ns (Levels of Logic = 3)
+  Source:            E2M/EC/sysACE_state_FSM_FFd2 (FF)
+  Destination:       E2M/EC/sysACE_MPDATA_In_0 (FF)
   Source Clock:      E2M/EC/sysACE_delay_clk rising
   Destination Clock: E2M/EC/sysACE_delay_clk rising
 
-  Data Path: E2M/EC/sysACECounter_1 to E2M/EC/sysACE_MPDATA_In_13
+  Data Path: E2M/EC/sysACE_state_FSM_FFd2 to E2M/EC/sysACE_MPDATA_In_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              6   0.471   0.737  E2M/EC/sysACECounter_1 (E2M/EC/sysACECounter_1)
-     LUT3:I0->O            9   0.094   0.833  E2M/EC/sysACE_MPDATA_In_cmp_eq00001 (E2M/EC/sysACE_MPDATA_In_cmp_eq0000)
-     LUT6:I2->O            1   0.094   1.069  E2M/EC/sysACE_MPDATA_In_mux0000<15>1_SW0 (N50)
-     LUT6:I0->O            1   0.094   0.000  E2M/EC/sysACE_MPDATA_In_mux0000<15>1 (E2M/EC/sysACE_MPDATA_In_mux0000<15>1)
-     FD:D                     -0.018          E2M/EC/sysACE_MPDATA_In_15
+     FDR:C->Q             24   0.471   0.698  E2M/EC/sysACE_state_FSM_FFd2 (E2M/EC/sysACE_state_FSM_FFd2)
+     LUT3:I1->O            8   0.094   1.107  E2M/EC/sysACE_MPADD_not00011 (E2M/EC/sysACE_MPADD_not0001)
+     LUT6:I0->O            1   0.094   1.069  E2M/EC/sysACE_MPDATA_In_mux0000<0>1_SW0 (N26)
+     LUT6:I0->O            1   0.094   0.000  E2M/EC/sysACE_MPDATA_In_mux0000<0>1 (E2M/EC/sysACE_MPDATA_In_mux0000<0>1)
+     FD:D                     -0.018          E2M/EC/sysACE_MPDATA_In_0
     ----------------------------------------
-    Total                      3.392ns (0.753ns logic, 2.639ns route)
-                                       (22.2% logic, 77.8% route)
+    Total                      3.627ns (0.753ns logic, 2.874ns route)
+                                       (20.8% logic, 79.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_200_i'
@@ -3493,7 +3575,7 @@ Offset:              0.336ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_125_eth_i'
-  Total number of paths / destination ports: 161 / 106
+  Total number of paths / destination ports: 161 / 105
 -------------------------------------------------------------------------
 Offset:              2.626ns (Levels of Logic = 2)
   Source:            E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac:EMAC0CLIENTTXACK (PAD)
@@ -3514,24 +3596,25 @@ Offset:              2.626ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'E2M/EC/sysACE_delay_clk'
-  Total number of paths / destination ports: 68 / 53
+  Total number of paths / destination ports: 68 / 49
 -------------------------------------------------------------------------
-Offset:              2.698ns (Levels of Logic = 2)
+Offset:              2.856ns (Levels of Logic = 3)
   Source:            E2M/EC/clkBPLL:LOCKED (PAD)
-  Destination:       E2M/EC/sysACE_MPDATA_In_5 (FF)
+  Destination:       E2M/EC/sysACE_MPDATA_In_2 (FF)
   Destination Clock: E2M/EC/sysACE_delay_clk rising
 
-  Data Path: E2M/EC/clkBPLL:LOCKED to E2M/EC/sysACE_MPDATA_In_5
+  Data Path: E2M/EC/clkBPLL:LOCKED to E2M/EC/sysACE_MPDATA_In_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
     PLL_ADV:LOCKED         7   0.000   0.513  E2M/EC/clkBPLL (E2M/EC/sysACEPllLock)
      LUT2:I1->O           19   0.094   1.072  E2M/EC/sysACEreset1 (E2M/EC/sysACEreset)
-     LUT6:I1->O            4   0.094   0.352  E2M/EC/sysACE_MPDATA_In_mux0000<2>121 (E2M/EC/N73)
-     FDS:S                     0.573          E2M/EC/sysACE_MPDATA_In_5
+     LUT6:I1->O            4   0.094   0.989  E2M/EC/sysACE_MPDATA_In_mux0000<2>121 (E2M/EC/N73)
+     LUT5:I0->O            1   0.094   0.000  E2M/EC/sysACE_MPDATA_In_mux0000<5>11 (E2M/EC/sysACE_MPDATA_In_mux0000<5>1)
+     FD:D                     -0.018          E2M/EC/sysACE_MPDATA_In_5
     ----------------------------------------
-    Total                      2.698ns (0.761ns logic, 1.937ns route)
-                                       (28.2% logic, 71.8% route)
+    Total                      2.856ns (0.282ns logic, 2.574ns route)
+                                       (9.9% logic, 90.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'E2M/EC/sysACE_delay_clk'
@@ -3669,14 +3752,14 @@ Delay:               3.617ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 147.00 secs
-Total CPU time to Xst completion: 146.73 secs
+Total REAL time to Xst completion: 158.00 secs
+Total CPU time to Xst completion: 157.24 secs
  
 --> 
 
-Total memory usage is 558932 kilobytes
+Total memory usage is 553840 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  137 (   0 filtered)
-Number of infos    :   34 (   0 filtered)
+Number of warnings :  175 (   0 filtered)
+Number of infos    :   68 (   0 filtered)
 

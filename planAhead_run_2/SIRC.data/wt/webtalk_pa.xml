@@ -3,9 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Nov 21 03:22:10 2013">
+<application name="pa" timeStamp="Thu Nov 21 19:59:00 2013">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="eff0bec661b04c2a949f05d3cc314e1b" type="ProjectID"/>
+<property name="ProjectID" value="ddcf6e95d16a4a17934fccbb15673dc0" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
@@ -15,11 +15,20 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="DesignMode" value="GateLvl" type="DesignMode"/>
 <property name="ImplStrategy" value="ISE Defaults" type="ImplStrategy"/>
 </item>
+<item name="Java Command Handlers">
+<property name="EditProperties" value="3" type="JavaHandler"/>
+<property name="EditUndo" value="5" type="JavaHandler"/>
+<property name="EditUnplace" value="2" type="JavaHandler"/>
+<property name="RunSchematic" value="5" type="JavaHandler"/>
+<property name="ShowHierarchy" value="1" type="JavaHandler"/>
+<property name="ZoomIn" value="11" type="JavaHandler"/>
+<property name="ZoomOut" value="6" type="JavaHandler"/>
+</item>
 <item name="Other">
 <property name="GuiMode" value="7" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="0" type="TclMode"/>
-<property name="ISEMode" value="49" type="ISEMode"/>
+<property name="ISEMode" value="51" type="ISEMode"/>
 </item>
 </section>
 </application>

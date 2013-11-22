@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3 (64-bit)
+# Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
+# Start of session at: Thu Nov 21 20:03:45 2013
+# Process ID: 6484
+# Log file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_3/planAhead.log
+# Journal file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/pa.fromNetlist.tcl}
+startgroup
+place_cell tm/mp/pufCore/c1<0>1 SLICE_X5Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<0>1 SLICE_X7Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<0>1 SLICE_X7Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<1>1 SLICE_X9Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<1>1 SLICE_X9Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<1>1 SLICE_X11Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<1>1 SLICE_X11Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<2>1 SLICE_X13Y150/A5LUT
+endgroup
+undo
+startgroup
+place_cell tm/mp/pufCore/c1<2>1 SLICE_X13Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<2>1 SLICE_X13Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<2>1 SLICE_X15Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<3>1 SLICE_X17Y150/B5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<3>1 SLICE_X17Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<3>1 SLICE_X19Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<4>1 SLICE_X21Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<4>1 SLICE_X23Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<5>1 SLICE_X25Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<5>1 SLICE_X27Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<5>1 SLICE_X27Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<6>1 SLICE_X29Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<6>1 SLICE_X29Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<6>1 SLICE_X31Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<7>1 SLICE_X33Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<7>1 SLICE_X35Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/Madd_c1_addsub0000_lut<8> SLICE_X37Y150/A6LUT
+endgroup
+undo
+startgroup
+place_cell tm/mp/pufCore/c1<8>1 SLICE_X37Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<8>1 SLICE_X39Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<9>1 SLICE_X41Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/Madd_c1_addsub0000_xor<15> SLICE_X40Y155/CARRY4_DXOR
+endgroup
+startgroup
+place_cell tm/mp/pufCore/Madd_c2_addsub0000_xor<11> SLICE_X41Y154/CARRY4_DXOR
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<9>1 SLICE_X41Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<9>1 SLICE_X43Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<9>1 SLICE_X43Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<10>1 SLICE_X45Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<10>1 SLICE_X47Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<11>1 SLICE_X49Y150/A5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<11>1 SLICE_X49Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<11>1 SLICE_X51Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<12>1 SLICE_X53Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<12>1 SLICE_X55Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<13>1 SLICE_X57Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<13>1 SLICE_X59Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<14>1 SLICE_X61Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<14>1 SLICE_X63Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<15>1 SLICE_X65Y150/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<15>1 SLICE_X67Y150/A6LUT
+endgroup
+save_design
+refresh_design
+exit
+stop_gui

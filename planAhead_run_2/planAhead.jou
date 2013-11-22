@@ -1,13 +1,331 @@
 #-----------------------------------------------------------
 # PlanAhead v13.3 (64-bit)
 # Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
-# Start of session at: Thu Nov 21 01:07:48 2013
-# Process ID: 6428
+# Start of session at: Thu Nov 21 19:14:02 2013
+# Process ID: 6100
 # Log file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_2/planAhead.log
 # Journal file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_2/planAhead.jou
 #-----------------------------------------------------------
 start_gui
 source {E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/pa.fromNetlist.tcl}
-refresh_design
-exit
-stop_gui
+startgroup
+set_property loc SLICE_X5Y150 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_cy<0>]
+set_property bel CARRY4_AMUX [get_cells tm/mp/pufCore/Madd_c1_addsub0000_cy<0>]
+endgroup
+undo
+startgroup
+set_property loc SLICE_X5Y149 [get_cells tm/mp/pufCore/c1<0>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<0>1]
+endgroup
+startgroup
+set_property loc SLICE_X7Y149 [get_cells tm/mp/pufCore/c2<0>1]
+set_property bel D5LUT [get_cells tm/mp/pufCore/c2<0>1]
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<0>1 SLICE_X7Y149/D6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<0>1 SLICE_X5Y149/D5LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<0>1 SLICE_X5Y149/D6LUT
+endgroup
+startgroup
+set_property loc SLICE_X5Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<0>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<0>]
+endgroup
+startgroup
+set_property loc SLICE_X7Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<0>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<0>]
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<0>1 SLICE_X7Y149/D5LUT
+endgroup
+startgroup 
+set_property loc "" [get_cells [list  tm/mp/pufCore/c2<0>1] -filter {((is_primitive==true && primitive_level!="INTERNAL")  && (loc!=""))}]
+set_property bel "" [get_cells [list  tm/mp/pufCore/c2<0>1] -filter {((is_primitive==true && primitive_level!="INTERNAL")  && (bel!=""))}]
+endgroup
+startgroup 
+set_property loc "" [get_cells [list  tm/mp/pufCore/c1<0>1] -filter {((is_primitive==true && primitive_level!="INTERNAL")  && (loc!=""))}]
+set_property bel "" [get_cells [list  tm/mp/pufCore/c1<0>1] -filter {((is_primitive==true && primitive_level!="INTERNAL")  && (bel!=""))}]
+endgroup
+startgroup
+set_property loc SLICE_X9Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<1>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<1>]
+endgroup
+startgroup
+set_property loc SLICE_X11Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<1>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<1>]
+endgroup
+startgroup
+set_property loc SLICE_X15Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<2>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<2>]
+endgroup
+startgroup
+set_property loc SLICE_X13Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<2>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<2>]
+endgroup
+startgroup
+set_property loc SLICE_X17Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<3>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<3>]
+endgroup
+startgroup
+set_property loc SLICE_X19Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<3>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<3>]
+endgroup
+startgroup
+set_property loc SLICE_X21Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<4>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<4>]
+endgroup
+startgroup
+set_property loc SLICE_X25Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<5>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<5>]
+endgroup
+startgroup
+set_property loc SLICE_X23Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<4>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<4>]
+endgroup
+startgroup
+set_property loc SLICE_X27Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<5>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<5>]
+endgroup
+startgroup
+set_property loc SLICE_X29Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<6>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<6>]
+endgroup
+startgroup
+set_property loc SLICE_X33Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<7>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<7>]
+endgroup
+startgroup
+set_property loc SLICE_X37Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<8>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<8>]
+endgroup
+startgroup
+set_property loc SLICE_X31Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<6>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<6>]
+endgroup
+startgroup
+set_property loc SLICE_X35Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<7>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<7>]
+endgroup
+startgroup
+set_property loc SLICE_X39Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<8>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<8>]
+endgroup
+startgroup
+set_property loc SLICE_X41Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<9>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<9>]
+endgroup
+startgroup
+set_property loc SLICE_X45Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<10>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<10>]
+endgroup
+startgroup
+set_property loc SLICE_X49Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<11>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<11>]
+endgroup
+startgroup
+set_property loc SLICE_X43Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<9>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<9>]
+endgroup
+startgroup
+set_property loc SLICE_X47Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<10>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<10>]
+endgroup
+startgroup
+set_property loc SLICE_X51Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<11>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<11>]
+endgroup
+startgroup
+set_property loc SLICE_X53Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<12>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<12>]
+endgroup
+startgroup
+set_property loc SLICE_X57Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<13>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<13>]
+endgroup
+startgroup
+set_property loc SLICE_X61Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<14>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<14>]
+endgroup
+startgroup
+set_property loc SLICE_X65Y149 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<15>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c1_addsub0000_lut<15>]
+endgroup
+startgroup
+set_property loc SLICE_X55Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<12>]
+set_property bel A6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<12>]
+endgroup
+startgroup
+set_property loc SLICE_X59Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<13>]
+set_property bel B6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<13>]
+endgroup
+startgroup
+set_property loc SLICE_X63Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<14>]
+set_property bel C6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<14>]
+endgroup
+startgroup
+set_property loc SLICE_X67Y149 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<15>]
+set_property bel D6LUT [get_cells tm/mp/pufCore/Madd_c2_addsub0000_lut<15>]
+endgroup
+startgroup
+set_property loc SLICE_X65Y148 [get_cells tm/mp/pufCore/c1<15>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<15>1]
+endgroup
+startgroup
+set_property loc SLICE_X67Y148 [get_cells tm/mp/pufCore/c2<15>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<15>1]
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<15>1 SLICE_X65Y149/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<15>1 SLICE_X67Y149/A6LUT
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<15>1 SLICE_X65Y148/D5LUT
+endgroup
+undo
+undo
+undo
+startgroup
+set_property loc SLICE_X61Y148 [get_cells tm/mp/pufCore/c1<14>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<14>1]
+endgroup
+startgroup
+set_property loc SLICE_X63Y148 [get_cells tm/mp/pufCore/c2<14>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<14>1]
+endgroup
+startgroup
+set_property loc SLICE_X59Y148 [get_cells tm/mp/pufCore/c2<13>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<13>1]
+endgroup
+startgroup
+set_property loc SLICE_X57Y148 [get_cells tm/mp/pufCore/c1<13>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<13>1]
+endgroup
+startgroup
+set_property loc SLICE_X55Y148 [get_cells tm/mp/pufCore/c2<12>1]
+set_property bel D5LUT [get_cells tm/mp/pufCore/c2<12>1]
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c2<12>1 SLICE_X55Y148/D6LUT
+endgroup
+startgroup
+set_property loc SLICE_X53Y148 [get_cells tm/mp/pufCore/c1<12>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<12>1]
+endgroup
+startgroup
+set_property loc SLICE_X49Y148 [get_cells tm/mp/pufCore/c1<11>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<11>1]
+endgroup
+startgroup
+set_property loc SLICE_X51Y148 [get_cells tm/mp/pufCore/c2<11>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<11>1]
+endgroup
+startgroup
+set_property loc SLICE_X47Y148 [get_cells tm/mp/pufCore/c2<10>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<10>1]
+endgroup
+startgroup
+set_property loc SLICE_X45Y148 [get_cells tm/mp/pufCore/c1<10>1]
+set_property bel D5LUT [get_cells tm/mp/pufCore/c1<10>1]
+endgroup
+startgroup
+place_cell tm/mp/pufCore/c1<10>1 SLICE_X45Y148/D6LUT
+endgroup
+startgroup
+set_property loc SLICE_X43Y148 [get_cells tm/mp/pufCore/c2<9>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<9>1]
+endgroup
+startgroup
+set_property loc SLICE_X41Y148 [get_cells tm/mp/pufCore/c1<9>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<9>1]
+endgroup
+startgroup
+set_property loc SLICE_X39Y148 [get_cells tm/mp/pufCore/c2<8>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<8>1]
+endgroup
+startgroup
+set_property loc SLICE_X37Y148 [get_cells tm/mp/pufCore/c1<8>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<8>1]
+endgroup
+startgroup
+set_property loc SLICE_X35Y148 [get_cells tm/mp/pufCore/c2<7>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<7>1]
+endgroup
+startgroup
+set_property loc SLICE_X33Y148 [get_cells tm/mp/pufCore/c1<7>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<7>1]
+endgroup
+startgroup
+set_property loc SLICE_X31Y148 [get_cells tm/mp/pufCore/c2<6>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<6>1]
+endgroup
+startgroup
+set_property loc SLICE_X29Y148 [get_cells tm/mp/pufCore/c1<6>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<6>1]
+endgroup
+startgroup
+set_property loc SLICE_X27Y148 [get_cells tm/mp/pufCore/c2<5>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<5>1]
+endgroup
+startgroup
+set_property loc SLICE_X25Y148 [get_cells tm/mp/pufCore/c1<5>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<5>1]
+endgroup
+startgroup
+set_property loc SLICE_X23Y148 [get_cells tm/mp/pufCore/c2<4>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<4>1]
+endgroup
+startgroup
+set_property loc SLICE_X21Y148 [get_cells tm/mp/pufCore/c1<4>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<4>1]
+endgroup
+startgroup
+set_property loc SLICE_X19Y148 [get_cells tm/mp/pufCore/c2<3>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<3>1]
+endgroup
+startgroup
+set_property loc SLICE_X17Y148 [get_cells tm/mp/pufCore/c1<3>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<3>1]
+endgroup
+startgroup
+set_property loc SLICE_X15Y148 [get_cells tm/mp/pufCore/c2<2>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<2>1]
+endgroup
+startgroup
+set_property loc SLICE_X13Y148 [get_cells tm/mp/pufCore/c1<2>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<2>1]
+endgroup
+startgroup
+set_property loc SLICE_X9Y148 [get_cells tm/mp/pufCore/c1<1>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<1>1]
+endgroup
+startgroup
+set_property loc SLICE_X11Y148 [get_cells tm/mp/pufCore/c2<1>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<1>1]
+endgroup
+startgroup
+set_property loc SLICE_X5Y148 [get_cells tm/mp/pufCore/c1<0>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c1<0>1]
+endgroup
+startgroup
+set_property loc SLICE_X7Y148 [get_cells tm/mp/pufCore/c2<0>1]
+set_property bel D6LUT [get_cells tm/mp/pufCore/c2<0>1]
+endgroup
+startgroup
+set_property loc SLICE_X40Y150 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_cy<0>]
+set_property bel CARRY4_AMUX [get_cells tm/mp/pufCore/Madd_c2_addsub0000_cy<0>]
+endgroup
+undo
+startgroup
+set_property loc SLICE_X40Y150 [get_cells tm/mp/pufCore/Madd_c1_addsub0000_cy<0>]
+set_property bel CARRY4_AMUX [get_cells tm/mp/pufCore/Madd_c1_addsub0000_cy<0>]
+endgroup
+startgroup
+set_property loc SLICE_X41Y150 [get_cells tm/mp/pufCore/Madd_c2_addsub0000_cy<0>]
+set_property bel CARRY4_AMUX [get_cells tm/mp/pufCore/Madd_c2_addsub0000_cy<0>]
+endgroup
+save_design

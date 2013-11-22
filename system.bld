@@ -20,64 +20,74 @@ WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TX_EN
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TX_EN by the constraint <INST
-   "*gmii0?GMII_TX_EN"     IOB = true;> [XUPV5system.ucf(169)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TX_EN" IOB =TRUE;>
+   [XUPV5system.ucf(274)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TX_ER
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TX_ER by the constraint <INST
-   "*gmii0?GMII_TX_ER"     IOB = true;> [XUPV5system.ucf(170)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TX_ER" IOB =TRUE;>
+   [XUPV5system.ucf(275)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_0
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_0 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_0" IOB =TRUE;>
+   [XUPV5system.ucf(272)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_1
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_1 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_1" IOB =TRUE;>
+   [XUPV5system.ucf(271)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_2
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_2 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_2" IOB =TRUE;>
+   [XUPV5system.ucf(270)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_3
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_3 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_3" IOB =TRUE;>
+   [XUPV5system.ucf(269)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_4
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_4 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_4" IOB =TRUE;>
+   [XUPV5system.ucf(268)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_5
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_5 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_5" IOB =TRUE;>
+   [XUPV5system.ucf(267)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_6
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_6 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_6" IOB =TRUE;>
+   [XUPV5system.ucf(266)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /system/EXPANDED/system/E2M\/emac_ll\/v5_emac_block_inst\/gmii0\/GMII_TXD_7
    IOB = true> is overridden on the design object
    E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_7 by the constraint <INST
-   "*gmii0?GMII_TXD_?"     IOB = true;> [XUPV5system.ucf(168)].
-WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TS_userRunClearToggle" = FROM
-   "userRunClearTogUS" TO "userRunClearTogCS" 8000 ps DATAPATHONLY;>
-   [XUPV5system.ucf(228)] is overridden by the constraint <TIMESPEC
-   "TS_userRunClearToggle" = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
-   DATAPATHONLY;> [XUPV5system.ucf(231)]. The overriden constraint usually comes
+   "E2M/emac_ll/v5_emac_block_inst/gmii0/GMII_TXD_7" IOB =TRUE;>
+   [XUPV5system.ucf(273)].
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_userRunClearToggle = FROM
+   "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps DATAPATHONLY;>
+   [XUPV5system.ucf(338)] is overridden by the constraint <TIMESPEC
+   TS_userRunClearToggle = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
+   DATAPATHONLY;> [XUPV5system.ucf(339)]. The overriden constraint usually comes
    from the input netlist or ncf files. Please set
    XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
-WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TS_userRunClearToggle" = FROM
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_userRunClearToggle = FROM
    "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps DATAPATHONLY;>
-   [XUPV5system.ucf(231)] is overridden by the constraint <TIMESPEC
-   "TS_userRunClearToggle" = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
-   DATAPATHONLY;> [XUPV5system.ucf(235)]. The overriden constraint usually comes
+   [XUPV5system.ucf(339)] is overridden by the constraint <TIMESPEC
+   TS_userRunClearToggle = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
+   DATAPATHONLY;> [XUPV5system.ucf(340)]. The overriden constraint usually comes
    from the input netlist or ncf files. Please set
    XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
 Done...
@@ -95,10 +105,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  12
 
-Total memory usage is 257744 kilobytes
+Total memory usage is 253804 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  32 sec
-Total CPU time to NGDBUILD completion:   27 sec
+Total REAL time to NGDBUILD completion:  26 sec
+Total CPU time to NGDBUILD completion:   26 sec
 
 Writing NGDBUILD log file "system.bld"...

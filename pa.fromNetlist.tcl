@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Post-Synthesis floorplanning, created by Project Navigator
 
-create_project -name SIRC -dir "E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_2" -part xc5vlx110tff1136-1
+create_project -name SIRC -dir "E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_3" -part xc5vlx110tff1136-1
 set_property design_mode GateLvl [get_property srcset [current_run -impl]]
 set_property edif_top_file "E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/system.ngc" [ get_property srcset [ current_run ] ]
 add_files -norecurse { {E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3} {ipcore_dir} }

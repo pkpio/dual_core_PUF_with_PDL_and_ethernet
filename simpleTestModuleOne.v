@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // 
 // Author 			:	Praveen Kumar Pendyala
-// **Modified the code from HW example for SIRC from MSR written bu Ken Eguro
+// **Modified the code of HW example for SIRC from MSR written bu Ken Eguro
 //
 // Create Date		:  05/27/13
 // Modify Date		:	06/05/13
@@ -105,11 +105,8 @@ module simpleTestModuleOne #(
 	reg paramCount;
 	
 	//Message parameters
-	reg [31:0] length;
-	reg [31:0] multiplier;
-
-	wire [31:0] lengthMinus1;
-	assign lengthMinus1 = length - 1;
+	reg [31:0] A;
+	reg [31:0] B;
 
 	// We don't write to the register file and we only write whole bytes to the output memory
 	assign register32WriteData = 32'd0;
@@ -129,7 +126,8 @@ module simpleTestModuleOne #(
 
 	initial begin
 		currState = IDLE;
-		length = 0;
+		A = 0;
+		B = 0;
 		
 		userRunClear = 0;
 		
@@ -151,7 +149,6 @@ module simpleTestModuleOne #(
 	always @(posedge clk) begin
 		if(reset) begin
 			currState <= IDLE;
-			length <= 0;
 			
 			userRunClear <= 0;
 			
@@ -200,11 +197,11 @@ module simpleTestModuleOne #(
 	
 					//If a read came back, shift in the value from the register file
 					if(register32ReadDataValid) begin
-							length <= multiplier;
-							multiplier <= register32ReadData;
+							A <= B;
+							B <= register32ReadData;
 							paramCount <= 1;
 							
-							//The above block act as a shift register for length and multiplier (though not required) params
+							//The above block act as a shift register for operands A and B
 							if(paramCount == 1)begin
 								//Start requesting input data and execution
 								currState <= READ;
@@ -226,11 +223,11 @@ module simpleTestModuleOne #(
 					end
 					
 					//If the input memory accepted the last read, we can increment the address
-					if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd != lengthMinus1[(INMEM_ADDRESS_WIDTH - 1):0])begin
+					if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd != 15)begin
 						inputMemoryReadAdd <= inputMemoryReadAdd + 1;
 						currState <= WAIT_READ;
 					end
-					else if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd == lengthMinus1[(INMEM_ADDRESS_WIDTH - 1):0])begin
+					else if(inputMemoryReadReq == 1 && inputMemoryReadAck == 1 && inputMemoryReadAdd == 15)begin
 						inputDone <= 1;
 						LED[0] <= 1;
 						currState <= WAIT_READ;
@@ -318,7 +315,9 @@ mapping #(
 		.trigger(challenge_ready),
 		.dataIn(challengeReg),
 		.done(response_ready),
-		.dataOut(responseReg)
+		.dataOut(responseReg),
+		.opA(A[15:0]),
+		.opB(B[15:0])
 		//.flag(flag5)
 	);
 	

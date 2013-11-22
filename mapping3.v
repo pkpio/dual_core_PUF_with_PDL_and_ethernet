@@ -6,6 +6,8 @@ module mapping #(
 	input wire reset,
 	input wire trigger,
 	input wire [IN_WIDTH-1:0] dataIn,
+	input wire [15:0] opA,
+	input wire [15:0] opB,
 	output reg done,
 	output reg [OUT_WIDTH-1:0] dataOut
 	//input wire flag
@@ -76,6 +78,13 @@ module mapping #(
 		end
 	end
 
-pufMapping pufCore (.CHALLENGE(buffer), .RESPONSE(response), .trigger(startPUF), .reset(PUFreset) );
+pufMapping pufCore (
+	.CHALLENGE(buffer),
+	.RESPONSE(response),
+	.trigger(startPUF),
+	.reset(PUFreset),
+	.a(opA),
+	.b(opB)
+);
 	
 endmodule
