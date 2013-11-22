@@ -1,3 +1,0 @@
-vhdtdtfi -lang verilog -prj ethernet -o D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet/simpleTestModuleOne.tfi -lib work D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet//simpleTestModuleOne.v -module simpleTestModuleOne -template D:/ProgramFiles/Xilinx/ISE_DS/ISE//data/tfi.tft -deleteonerror 
-vhdtdtfi -lib work D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet/simpleTestModuleOne.v -lang verilog -prj ethernet -o simpleTestModuleOne.spl -module simpleTestModuleOne -template D:/ProgramFiles/Xilinx/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family virtex5 simpleTestModuleOne.spl D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet/simpleTestModuleOne.sym 

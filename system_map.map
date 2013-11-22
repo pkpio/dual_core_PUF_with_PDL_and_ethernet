@@ -10,278 +10,145 @@ Target Device  : xc5vlx110t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 12 20:55:15 2013
+Mapped Date    : Wed Nov 20 14:34:31 2013
 
 Mapping design into LUTs...
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/emac_ll/v5_emac_block_inst/v5_emac_wrapper_inst/v5_emac
-   of frag HOSTCLK connected to power/ground net N0
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKAU connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKAL connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKBU connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKBL connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKAU connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKAL connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKBU connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
-   of frag REGCLKBL connected to power/ground net
-   E2M/EC/memOutputData/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
-   alid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesi
-   g
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
-   of frag REGCLKAU connected to power/ground net
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
-   of frag REGCLKAL connected to power/ground net
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
-   of frag REGCLKBU connected to power/ground net
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP
-   of frag REGCLKBL connected to power/ground net
-   E2M/EC/register32File/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/
-   valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGLE_PRIM36.TDP_REGCLKBL_
-   tiesig
+WARNING:MapLib:1073 - This design has 3073 KEEP_HIERARCHY constraints specified
+   and therefore, may take a very long time to process. If your design has
+   unexpectedly long run times, please consider minimizing the number of
+   KEEP_HIERARCHY constraints in your design or use the -ignore_keep_hierarchy
+   command line switch to have them ignored by MAP.
 Running directed packing...
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B10/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B11/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B12/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B13/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B14/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B15/OBUFT".  This may result in suboptimal timing. 
-   The LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B0/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B1/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B2/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B3/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B4/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B5/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B6/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B7/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B8/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
-WARNING:Pack:2515 - The LUT-1 inverter "E2M/EC/sysACEIO_not00001_INV_0" failed
-   to join the OLOGIC comp matched to output buffer
-   "E2M/EC/sysACEIO/IOBUF_B9/OBUFT".  This may result in suboptimal timing.  The
-   LUT-1 inverter E2M/EC/sysACEIO_not00001_INV_0 drives multiple loads.
 Running delay-based LUT packing...
 Updating timing models...
-WARNING:Timing:3223 - Timing constraint TS_rx_fifo_rd_to_wr_0 = MAXDELAY FROM
-   TIMEGRP "rx_fifo_rd_to_wr_0" TO TIMEGRP "clk_125_eth" 8 ns DATAPATHONLY
-   ignored during timing analysis.
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 19 secs 
-Total CPU  time at the beginning of Placer: 18 secs 
+Total REAL time at the beginning of Placer: 23 secs 
+Total CPU  time at the beginning of Placer: 23 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4a603f82) REAL time: 21 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:838 - An IO Bus with more than one IO standard is found.
    Components associated with this bus are as follows: 
-   	 Comp: LED<0>   IOSTANDARD = LVDCI_18
-   	 Comp: LED<1>   IOSTANDARD = LVDCI_18
-   	 Comp: LED<2>   IOSTANDARD = LVDCI_18
-   	 Comp: LED<3>   IOSTANDARD = LVCMOS25
-   	 Comp: LED<4>   IOSTANDARD = LVDCI_18
-   	 Comp: LED<5>   IOSTANDARD = LVCMOS25
-   	 Comp: LED<6>   IOSTANDARD = LVCMOS25
-   	 Comp: LED<7>   IOSTANDARD = LVCMOS25
+   	 Comp: led<0>   IOSTANDARD = LVDCI_18
+   	 Comp: led<1>   IOSTANDARD = LVDCI_18
+   	 Comp: led<2>   IOSTANDARD = LVDCI_18
+   	 Comp: led<3>   IOSTANDARD = LVCMOS25
+   	 Comp: led<4>   IOSTANDARD = LVDCI_18
+   	 Comp: led<5>   IOSTANDARD = LVCMOS25
+   	 Comp: led<6>   IOSTANDARD = LVCMOS25
+   	 Comp: led<7>   IOSTANDARD = LVCMOS25
 
 
-Phase 2.7  Design Feasibility Check (Checksum:4a603f82) REAL time: 21 secs 
+Phase 2.7  Design Feasibility Check (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:67681012) REAL time: 21 secs 
+Phase 3.31  Local Placement Optimization (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:67681012) REAL time: 21 secs 
+Phase 4.37  Local Placement Optimization (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:67681012) REAL time: 45 secs 
+Phase 5.33  Local Placement Optimization (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:67681012) REAL time: 45 secs 
+Phase 6.32  Local Placement Optimization (Checksum:2aa7022) REAL time: 29 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:8373921f) REAL time: 46 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:1ff8b3e1) REAL time: 30 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
+Phase 8.36  Local Placement Optimization (Checksum:1ff8b3e1) REAL time: 30 secs 
 
 Phase 9.30  Global Clock Region Assignment
-Phase 9.30  Global Clock Region Assignment (Checksum:8373921f) REAL time: 46 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:1ff8b3e1) REAL time: 30 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
+Phase 10.3  Local Placement Optimization (Checksum:1ff8b3e1) REAL time: 30 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:8373921f) REAL time: 46 secs 
+Phase 11.5  Local Placement Optimization (Checksum:1ff8b3e1) REAL time: 30 secs 
 
 Phase 12.8  Global Placement
-....................................................
-........
-.................................................................
-................
-................
-................
-Phase 12.8  Global Placement (Checksum:1e2291df) REAL time: 54 secs 
+..
+..
+Phase 12.8  Global Placement (Checksum:32c949b0) REAL time: 30 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:1e2291df) REAL time: 54 secs 
+Phase 13.29  Local Placement Optimization (Checksum:32c949b0) REAL time: 30 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:1e2291df) REAL time: 55 secs 
+Phase 14.5  Local Placement Optimization (Checksum:32c949b0) REAL time: 30 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 34 secs 
+Phase 15.18  Placement Optimization (Checksum:401d4c64) REAL time: 41 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:b5ce6e44) REAL time: 1 mins 34 secs 
+Phase 16.5  Local Placement Optimization (Checksum:401d4c64) REAL time: 41 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:b5ce6e44) REAL time: 1 mins 35 secs 
+Phase 17.34  Placement Validation (Checksum:401d4c64) REAL time: 41 secs 
 
-Total REAL time to Placer completion: 1 mins 35 secs 
-Total CPU  time to Placer completion: 1 mins 33 secs 
+Total REAL time to Placer completion: 42 secs 
+Total CPU  time to Placer completion: 41 secs 
 Running post-placement packing...
 Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf2/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf3/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf4/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf5/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf6/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf7/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf8/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mp/pufCore/puf1/i2<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   31
+Number of warnings:   10
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,223 out of  69,120    1%
-    Number used as Flip Flops:               1,223
-  Number of Slice LUTs:                      2,349 out of  69,120    3%
-    Number used as logic:                    2,328 out of  69,120    3%
-      Number using O6 output only:           1,988
-      Number using O5 output only:             138
-      Number using O5 and O6:                  202
-    Number used as Memory:                      11 out of  17,920    1%
-      Number used as Shift Register:            11
-        Number using O6 output only:            11
-    Number used as exclusive route-thru:        10
-  Number of route-thrus:                       151
-    Number using O6 output only:               148
-    Number using O5 output only:                 3
+  Number of Slice Registers:                   308 out of  69,120    1%
+    Number used as Flip Flops:                 308
+  Number of Slice LUTs:                      4,435 out of  69,120    6%
+    Number used as logic:                    4,434 out of  69,120    6%
+      Number using O6 output only:           4,425
+      Number using O5 output only:               8
+      Number using O5 and O6:                    1
+    Number used as exclusive route-thru:         1
+  Number of route-thrus:                         9
+    Number using O6 output only:                 9
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,038 out of  17,280    6%
-  Number of LUT Flip Flop pairs used:        2,702
-    Number with an unused Flip Flop:         1,479 out of   2,702   54%
-    Number with an unused LUT:                 353 out of   2,702   13%
-    Number of fully used LUT-FF pairs:         870 out of   2,702   32%
-    Number of unique control sets:              84
+  Number of occupied Slices:                 4,309 out of  17,280   24%
+  Number of LUT Flip Flop pairs used:        4,572
+    Number with an unused Flip Flop:         4,264 out of   4,572   93%
+    Number with an unused LUT:                 137 out of   4,572    2%
+    Number of fully used LUT-FF pairs:         171 out of   4,572    3%
+    Number of unique control sets:             111
     Number of slice register sites lost
-      to control set restrictions:             182 out of  69,120    1%
+      to control set restrictions:             320 out of  69,120    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -292,30 +159,18 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        60 out of     640    9%
-    Number of LOCed IOBs:                       60 out of      60  100%
-    IOB Flip Flops:                             21
+  Number of bonded IOBs:                        12 out of     640    1%
+    Number of LOCed IOBs:                       12 out of      12  100%
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                       8 out of     148    5%
-    Number using BlockRAM only:                  6
-    Number using FIFO only:                      2
-    Total primitives used:
-      Number of 36k BlockRAM used:               3
-      Number of 18k BlockRAM used:               4
-      Number of 18k FIFO used:                   2
-    Total Memory used (KB):                    216 out of   5,328    4%
-  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
-    Number used as BUFGs:                        5
-  Number of IDELAYCTRLs:                         2 out of      22    9%
-  Number of PLL_ADVs:                            2 out of       6   33%
-  Number of TEMACs:                              1 out of       2   50%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
 
-Average Fanout of Non-Clock Nets:                4.32
+Average Fanout of Non-Clock Nets:                5.78
 
-Peak Memory Usage:  657 MB
-Total REAL time to MAP completion:  1 mins 38 secs 
-Total CPU time to MAP completion:   1 mins 36 secs 
+Peak Memory Usage:  626 MB
+Total REAL time to MAP completion:  46 secs 
+Total CPU time to MAP completion:   45 secs 
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.

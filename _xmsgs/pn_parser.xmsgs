@@ -8,58 +8,28 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/DLatch.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/PDL_PUF.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/DLatch_32.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/mapping3.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/PDL.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/pdl_based_switch.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/adder_32.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/pdl_block.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ethernet2BlockMem.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/pufMapping.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ethernetController.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/receiver.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/fifo36Wrapper.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/system.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/iobuf.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/client/fifo/eth_fifo_8.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/client/fifo/rx_client_fifo_8.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/client/fifo/tx_client_fifo_8.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/emac_single.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/emac_single_block.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/emac_single_locallink.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/ipcore_dir/emac_single/example_design/physical/gmii_if.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/simpleTestModuleOne.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/system.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Rice/Joonho/codes/dual_core_PUF_with_PDL_and_ethernet/top_PUF.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/transmitter.v&quot; into library work</arg>
 </msg>
 
 </messages>

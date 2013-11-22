@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=E:\Dropbox\Works and collections\Elec\Rice\Joonho\codes\dual_core_PUF_with_PDL_and_ethernet\system.ncd
-OUTFILE=E:\Dropbox\Works and collections\Elec\Rice\Joonho\codes\dual_core_PUF_with_PDL_and_ethernet\system.bit
+INFILE=E:\Dropbox\Works and collections\Elec\Xilinx_learning\dual_core_puf_testing2\system.ncd
+OUTFILE=E:\Dropbox\Works and collections\Elec\Xilinx_learning\dual_core_puf_testing2\system.bit
 FAMILY=Virtex5
 PART=xc5vlx110t-1ff1136
-WORKINGDIR=E:\Dropbox\Works and collections\Elec\Rice\Joonho\codes\dual_core_PUF_with_PDL_and_ethernet
+WORKINGDIR=E:\Dropbox\Works and collections\Elec\Xilinx_learning\dual_core_puf_testing2
 LICENSE=ISE
 USER_INFO=__0_0_0

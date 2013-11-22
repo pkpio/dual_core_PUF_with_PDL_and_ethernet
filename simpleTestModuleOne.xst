@@ -1,5 +1,0 @@
-set -tmpdir "D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet/xst/projnav.tmp"
-set -xsthdpdir "D:/ProgramFiles/Microsoft_Research/Simple_Interface/Ethernet/xst"
-elaborate
--ifn simpleTestModuleOne.prj
--ifmt mixed
