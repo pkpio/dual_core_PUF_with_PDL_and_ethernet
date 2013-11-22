@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3 (64-bit)
+# Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
+# Start of session at: Thu Nov 21 01:07:48 2013
+# Process ID: 6428
+# Log file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_2/planAhead.log
+# Journal file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing3/pa.fromNetlist.tcl}
+refresh_design
+exit
+stop_gui

@@ -7,8 +7,8 @@ module mapping #(
 	input wire trigger,
 	input wire [IN_WIDTH-1:0] dataIn,
 	output reg done,
-	output reg [OUT_WIDTH-1:0] dataOut,
-	input wire flag
+	output reg [OUT_WIDTH-1:0] dataOut
+	//input wire flag
 	);
 	
 	wire [15:0] response;

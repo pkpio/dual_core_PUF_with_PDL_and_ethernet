@@ -1,20 +1,10 @@
 #-----------------------------------------------------------
 # PlanAhead v13.3 (64-bit)
 # Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
-# Start of session at: Wed Nov 20 14:40:17 2013
-# Process ID: 964
-# Log file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/planAhead_run_1/planAhead.log
-# Journal file: E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/planAhead_run_1/planAhead.jou
+# Start of session at: Wed Nov 20 22:44:27 2013
+# Process ID: 5188
+# Log file: E:/Dropbox/Works and collections/Elec/Rice/Farinaz - Low power high speed PUFs/PUF testing code/SIRC_HW/XUPV5/SIRC_HW_Xilinx_XUPV5_Hardware_PUF/planAhead_run_1/planAhead.log
+# Journal file: E:/Dropbox/Works and collections/Elec/Rice/Farinaz - Low power high speed PUFs/PUF testing code/SIRC_HW/XUPV5/SIRC_HW_Xilinx_XUPV5_Hardware_PUF/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source {E:/Dropbox/Works and collections/Elec/Xilinx_learning/dual_core_puf_testing2/pa.fromNetlist.tcl}
-startgroup
-place_cell mp/pufCore/puf1/LUT1_inst_1 SLICE_X5Y149/A5LUT
-endgroup
-undo
-startgroup
-place_cell mp/pufCore/puf1/LUT1_inst_1 SLICE_X5Y150/A5LUT
-endgroup
-undo
-exit
-stop_gui
+source {E:/Dropbox/Works and collections/Elec/Rice/Farinaz - Low power high speed PUFs/PUF testing code/SIRC_HW/XUPV5/SIRC_HW_Xilinx_XUPV5_Hardware_PUF/pa.fromNetlist.tcl}
